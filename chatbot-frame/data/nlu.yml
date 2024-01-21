@@ -48,6 +48,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nah
 
 - intent: mood_great
   examples: |
@@ -65,6 +66,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - I am feeling refreshed 
 
 - intent: mood_unhappy
   examples: |
@@ -72,6 +74,7 @@ nlu:
     - I am sad
     - I don't feel very well
     - I am disappointed
+    - I am depressed
     - super sad
     - I'm so sad
     - sad
@@ -89,3 +92,4 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are you?
