@@ -51,6 +51,8 @@ nlu:
     - no way
     - not really
     - nah
+    - I don't want to
+    - I won't
 
 - intent: mood_great
   examples: |
