@@ -38,6 +38,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sure
+    - definitely 
 
 - intent: deny
   examples: |
@@ -56,6 +58,9 @@ nlu:
     - great
     - amazing
     - feeling like a king
+    - feeling like a queen
+    - feeling like a prince
+    - feeling like a princess 
     - wonderful
     - I am feeling very good
     - I am great
@@ -83,8 +88,7 @@ nlu:
     - not good
     - not very good
     - extremly sad
-    - so saad
-    - so sad
+    - so lonely
 
 - intent: bot_challenge
   examples: |
