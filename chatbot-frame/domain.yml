@@ -8,13 +8,14 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - mood_crying
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Sorry to hear that. If you'd like to talk about what's on your mind, 
+  utter_support:
+  - text: "I'm Sorry to hear that. If you'd like to talk about what's on your mind, 
   I'm here to listen and offer support. It's okay to express your feelings, 
   and sometimes sharing can make a difference."
   
@@ -35,6 +36,12 @@ responses:
    Remember, I'm here whenever you're ready. If there's anything specific you'd like to 
    discuss or if you have any questions, feel free to let me know."
 
+  utter_cheer_up:
+  - text: "It's okay to cry and to express your emotions.
+   If you feel comfortable, you can talk to me about what's going on or what hurt you.
+    Remember that you don't have to go through difficult times alone"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+s

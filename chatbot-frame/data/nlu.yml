@@ -92,6 +92,12 @@ nlu:
     - extremly sad
     - so lonely
 
+- intent: mood_crying
+  examples: |
+    - crying
+    - I am crying
+    - I cried
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
