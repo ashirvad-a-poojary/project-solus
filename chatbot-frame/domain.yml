@@ -12,7 +12,7 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi my friend! How are you :)?"
 
   utter_support:
   - text: "I'm Sorry to hear that. If you'd like to talk about what's on your mind, 
