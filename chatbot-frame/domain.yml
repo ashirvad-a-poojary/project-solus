@@ -13,15 +13,14 @@ responses:
   utter_greet:
   - text: "Hi my friend! How are you :)?"
   - text: "Hello, What's on your mind?"
+  - text: "Hii!, How's it going?"
+  - text: "Hi there!"
   - text: "Howdy!"
   - text: "Hiya!"
   - text: "Hey there!"
-  - text: "What's good?"
-  - text: "Hii!, How's it going?"
   - text: "Wassup?"
   - text: "How you doin'?"
   - text: "Hiya, champ!"
-  - text: "Hi there!"
   - text: "What's crackin'?"
 
   utter_support:
@@ -40,6 +39,9 @@ responses:
 
   utter_iamabot:
   - text: "I'm Solus, your AI companion."
+
+  utter_listen:
+  - text: "Sure, go ahead"
 
   utter_understand:
   - text: "I understand. It's completely okay if you don't want to talk about it right now.
