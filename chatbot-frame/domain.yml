@@ -30,12 +30,18 @@ responses:
   
   utter_help:
   - text: "Would you mind sharing?"
+  - text: "Let me hear it if you don't mind"
+  - text: "You can spill the beans with me"
 
   utter_happy:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Byee!"
+  - text: "Bye Bye!"
+  - text: "See you later"
+  - text: "Have a nice day"
+  - text: "Tkae care"
 
   utter_iamabot:
   - text: "I'm Solus, your AI companion."

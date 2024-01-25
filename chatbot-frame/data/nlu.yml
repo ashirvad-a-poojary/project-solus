@@ -7,6 +7,7 @@ nlu:
     - good evening 
     - good afternoon 
     - hello 
+    - yo
     - hi 
     - hey 
     - hey there 
@@ -24,7 +25,6 @@ nlu:
     - have a nice day
     - see you around
     - bye bye
-    - see you later
 
 - intent: affirm
   examples: |
@@ -36,8 +36,15 @@ nlu:
     - correct
     - sure
     - definitely 
+    - definately right
     - okay
     - ok
+    - sure
+    - correct
+    - that sounds good
+    - absolutely
+    - absolutely right
+    - certainly
 
 - intent: deny
   examples: |
@@ -51,6 +58,12 @@ nlu:
     - nah
     - I don't want to
     - I won't
+    - I disagree
+    - I refuse
+    - Absolutely not
+    - Not at all
+    - I refuse
+
 
 - intent: mood_great
   examples: |
@@ -80,6 +93,7 @@ nlu:
     - super sad
     - I'm so sad
     - I'm feeling sad
+    - I am not feeling good
     - sad
     - very sad
     - unhappy
@@ -87,6 +101,7 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
+    - left out
 
 - intent: bot_challenge
   examples: |
