@@ -3,27 +3,23 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - yo
-    - hello there
-    - good morning
-    - good evening
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - good morning 
+    - good evening 
+    - good afternoon 
+    - hello 
+    - hi 
+    - hey 
+    - hey there 
+    - let's go 
+    - hey dude     
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
+    - good bye
+    - see you later
     - good night
     - bye
+    - signing off
     - goodbye
     - have a nice day
     - see you around
@@ -40,6 +36,8 @@ nlu:
     - correct
     - sure
     - definitely 
+    - okay
+    - ok
 
 - intent: deny
   examples: |
@@ -81,6 +79,7 @@ nlu:
     - I am depressed
     - super sad
     - I'm so sad
+    - I'm feeling sad
     - sad
     - very sad
     - unhappy
@@ -88,9 +87,6 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
-    - [mood_crying="crying"]
-    - [mood_crying="I am crying"]
-    - [mood_crying="cried"]
 
 - intent: bot_challenge
   examples: |
