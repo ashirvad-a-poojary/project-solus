@@ -6,10 +6,10 @@ nlu:
     - hey
     - hello
     - hi
+    - yo
     - hello there
     - good morning
     - good evening
-    - moin
     - hey there
     - let's go
     - hey dude
@@ -59,13 +59,10 @@ nlu:
     - perfect
     - great
     - amazing
-    - feeling like a king
-    - feeling like a queen
-    - feeling like a prince
-    - feeling like a princess 
     - wonderful
     - I am feeling very good
     - I am great
+    - I an good
     - I am amazing
     - I am going to save the world
     - super stoked
@@ -91,6 +88,9 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
+    - [mood_crying="crying"]
+    - [mood_crying="I am crying"]
+    - [mood_crying="cried"]
 
 - intent: bot_challenge
   examples: |
