@@ -8,11 +8,21 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - mood_crying
 
 responses:
   utter_greet:
   - text: "Hi my friend! How are you :)?"
+  - text: "Hello, What's on your mind?"
+  - text: "Howdy!"
+  - text: "Hiya!"
+  - text: "Hey there!"
+  - text: "What's good?"
+  - text: "Hii!, How's it going?"
+  - text: "Wassup?"
+  - text: "How you doin'?"
+  - text: "Hiya, champ!"
+  - text: "Hi there!"
+  - text: "What's crackin'?"
 
   utter_support:
   - text: "I'm Sorry to hear that. If you'd like to talk about what's on your mind, 

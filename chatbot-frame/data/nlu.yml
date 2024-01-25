@@ -6,10 +6,10 @@ nlu:
     - hey
     - hello
     - hi
+    - yo
     - hello there
     - good morning
     - good evening
-    - moin
     - hey there
     - let's go
     - hey dude
@@ -88,12 +88,9 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
-
-- intent: mood_crying
-  examples: |
-    - crying
-    - I am crying
-    - I cried
+    - [mood_crying="crying"]
+    - [mood_crying="I am crying"]
+    - [mood_crying="cried"]
 
 - intent: bot_challenge
   examples: |
