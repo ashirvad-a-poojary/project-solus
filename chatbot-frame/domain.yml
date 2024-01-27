@@ -24,18 +24,22 @@ responses:
   - text: "What's crackin'?"
 
   utter_support:
-  - text: "I'm Sorry to hear that. If you'd like to talk about what's on your mind, 
-  I'm here to listen and offer support. It's okay to express your feelings, 
-  and sometimes sharing can make a difference."
-  
+  - text: "I'm sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen and offer support. It's okay to express your feelings, and sometimes sharing can make a difference."
+
   utter_help:
   - text: "Would you mind sharing?"
+  - text: "Let me hear it if you don't mind"
+  - text: "You can spill the beans with me"
 
   utter_happy:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Byee!"
+  - text: "Bye Bye!"
+  - text: "See you later"
+  - text: "Have a nice day"
+  - text: "Take care"
 
   utter_iamabot:
   - text: "I'm Solus, your AI companion."
@@ -44,14 +48,10 @@ responses:
   - text: "Sure, go ahead"
 
   utter_understand:
-  - text: "I understand. It's completely okay if you don't want to talk about it right now.
-   Remember, I'm here whenever you're ready. If there's anything specific you'd like to 
-   discuss or if you have any questions, feel free to let me know."
+  - text: "I understand. It's completely okay if you don't want to talk about it right now. Remember, I'm here whenever you're ready. If there's anything specific you'd like to discuss or if you have any questions, feel free to let me know."
 
   utter_cheer_up:
-  - text: "It's okay to cry and to express your emotions.
-   If you feel comfortable, you can talk to me about what's going on or what hurt you.
-    Remember that you don't have to go through difficult times alone"
+  - text: "It's okay to cry and to express your emotions. If you feel comfortable, you can talk to me about what's going on or what hurt you. Remember that you don't have to go through difficult times alone."
 
 session_config:
   session_expiration_time: 60
