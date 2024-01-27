@@ -9,10 +9,16 @@ nlu:
     - hello
     - yo
     - hi
+    - sup
     - hey
     - hey there
-    - let's go
     - hey dude
+    - whatsup
+    - hi solus
+    - hello solus
+    - hey solus
+    - yo solus
+    - whatsup solus
 
 - intent: goodbye
   examples: |
@@ -108,12 +114,16 @@ nlu:
     - cry
     - cried
     - cryiing
+    - I was crying
     - I cired
     - I'm crying
+    - I was about to cry
+    - I cried a lot
+    - that made me cry
     - I was crying
     - about to cry
     - I was in tears
-    - my teared up
+    - my eyes teared up
     - eyes were in tears
 
 - intent: bot_challenge
@@ -123,3 +133,5 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - who are you?
+    - are you an AI?
+    - what are you?
