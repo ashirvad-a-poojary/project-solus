@@ -7,6 +7,7 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
+  - mood_cry
   - bot_challenge
 
 responses:

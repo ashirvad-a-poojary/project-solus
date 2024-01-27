@@ -103,6 +103,19 @@ nlu:
     - so lonely
     - left out
 
+- intent: mood_cry
+  examples: |
+    - cry
+    - cried
+    - cryiing
+    - I cired
+    - I'm crying
+    - I was crying
+    - about to cry
+    - I was in tears
+    - my teared up
+    - eyes were in tears
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

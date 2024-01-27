@@ -17,6 +17,8 @@ stories:
   - action: utter_help
   - intent: affirm
   - action: utter_listen
+  - intent: mood_cry
+  - action: utter_cheer_up
 
 - story: sad path 2
   steps:
