@@ -9,17 +9,6 @@ intents:
   - mood_unhappy
   - bot_challenge
 
-entities:
-  - emotion_cry
-  - type: bool
-
-slots:
-   emotion_cry:
-      type: bool
-      mappings:
-      - type: from_entity
-        entity: emotion_cry
-
 responses:
   utter_greet:
   - text: "Hi my friend! How are you :)?"

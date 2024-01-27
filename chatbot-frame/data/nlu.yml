@@ -102,8 +102,6 @@ nlu:
     - extremly sad
     - so lonely
     - left out
-    - I [cried](emotion_cry)
-    - I'm [crying](emotion_cry)
 
 - intent: bot_challenge
   examples: |

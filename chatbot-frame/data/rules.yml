@@ -11,10 +11,3 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-
-- rule: "respond_to_crying"
-  steps:
-  - intent: mood_unhappy
-  - slot_was_set:
-    - emotion_cry: true
-  - action: utter_cheer_up
