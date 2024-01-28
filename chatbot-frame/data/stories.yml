@@ -20,6 +20,16 @@ stories:
   - intent: mood_cry
   - action: utter_cheer_up
 
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: ask_recover
+  - action: utter_improve
+
 - story: sad path 2
   steps:
   - intent: greet
@@ -29,3 +39,8 @@ stories:
   - action: utter_help
   - intent: deny
   - action: utter_understand
+
+- story: validate feelings
+  steps:
+  - intent: ask_feelings
+  - action: utter_validate
