@@ -134,7 +134,7 @@ nlu:
     - Why do I feel like this?
     - Is it normal to feel so hopeless and helpless?
     - Is feeling hopeless normal?
-    - What's the purpose of my constant sadness?
+    - What's the purpose of my sadness?
     - What causes my constant sadness?
     - why am I always sad?
     - why am I like this?
@@ -164,6 +164,16 @@ nlu:
     - What's the point of anything?
     - Why can't I just be happy like everyone else?
     - How come I can't find joy like others do?
+    - Why does everything seem so meaningless?
+    - Is there any purpose to my existence?
+    - How do I find joy like others seem to?
+    - Why do I always have to struggle?
+    - why am I depressed?
+    - Why am I always leftout?
+    - Can I discover a path to happiness?
+    - Is there a way to find purpose in life?
+    - my life feels pointless
+    - I feel like I'm useless 
 
 - intent: bot_challenge
   examples: |
