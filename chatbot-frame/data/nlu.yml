@@ -9,10 +9,16 @@ nlu:
     - hello
     - yo
     - hi
+    - sup
     - hey
     - hey there
-    - let's go
     - hey dude
+    - whatsup
+    - hi solus
+    - hello solus
+    - hey solus
+    - yo solus
+    - whatsup solus
 
 - intent: goodbye
   examples: |
@@ -73,7 +79,7 @@ nlu:
     - wonderful
     - I am feeling very good
     - I am great
-    - I an good
+    - I am good
     - I am amazing
     - I am going to save the world
     - super stoked
@@ -94,6 +100,8 @@ nlu:
     - I'm so sad
     - I'm feeling sad
     - I am not feeling good
+    - I'm feeling really down today.
+    - I am feeling down
     - sad
     - very sad
     - unhappy
@@ -103,6 +111,60 @@ nlu:
     - so lonely
     - left out
 
+- intent: mood_cry
+  examples: |
+    - cry
+    - cried
+    - cryiing
+    - I was crying
+    - I cired
+    - I'm crying
+    - I was about to cry
+    - I cried a lot
+    - that made me cry
+    - I was crying
+    - about to cry
+    - I was in tears
+    - my eyes teared up
+    - eyes were in tears
+
+- intent: ask_feelings
+  examples: |
+    - Why do I feel this way?
+    - Why do I feel like this?
+    - Is it normal to feel so hopeless and helpless?
+    - Is feeling hopeless normal?
+    - What's the purpose of my constant sadness?
+    - What causes my constant sadness?
+    - why am I always sad?
+    - why am I like this?
+    - Can you help me understand why I'm feeling overwhelmed?
+    - I'm struggling to pinpoint the cause of my emotions. Any insights?
+    - Why do certain situations trigger my sadness?
+    - How can I identify the reasons behind my constant anxiety?
+
+- intent: ask_recover
+  examples: |
+    - Will I ever get better?
+    - Will things ever get brighter for me?
+    - Will I see improvement in my situation?
+    - I will be better right?
+    - Can things turn around for the better?
+    - will things change for me?
+    - will all this change?
+    - I will see change right?
+    - will things change?
+    - Will I overcome these challenges eventually?
+    - I'll be better eventually right?
+    - Eventually it will be better right?
+    - will it be better eventually?
+
+- intent: life_meaning
+  examples: |
+    - What's the point of anything?
+    - Why can't I just be happy like everyone else?
+    - How come I can't find joy like others do?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -110,3 +172,5 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - who are you?
+    - are you an AI?
+    - what are you?
