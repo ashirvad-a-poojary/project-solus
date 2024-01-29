@@ -17,8 +17,6 @@ stories:
   - action: utter_help
   - intent: affirm
   - action: utter_listen
-  - intent: mood_cry
-  - action: utter_cheer_up
 
 - story: sad path 1
   steps:
@@ -27,8 +25,6 @@ stories:
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
-  - intent: ask_recover
-  - action: utter_improve
 
 - story: sad path 2
   steps:
@@ -40,7 +36,22 @@ stories:
   - intent: deny
   - action: utter_understand
 
+- story: recovering
+  steps:
+  - intent: ask_recover
+  - action: utter_improve
+
+- story: crying
+  steps:
+  - intent: mood_cry
+  - action: utter_cheer_up
+
 - story: validate feelings
   steps:
   - intent: ask_feelings
   - action: utter_validate
+
+- story: meaning of life
+  steps:
+  - intent: life_meaning
+  - action: utter_motivate

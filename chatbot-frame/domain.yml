@@ -71,6 +71,11 @@ responses:
   - text: "Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better."
   - text: "Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better."
 
+  utter_motivate:
+  - text: "Discovering the meaning of life is like uncovering a unique masterpiece. Embrace the journey, for each step brings you closer to your own masterpiece. Your path is yours to define, and the pursuit of happiness is a powerful force. Let's embark on this journey with optimism, unlocking the richness of your experiences along the way."
+  - text: "Sounds like your finding a meaning in your life. Figuring out the meaning of life is like crafting your own special mixtape. Embrace this creative journey, where each beat adds to your unique rhythm. Your path is a constantly evolving playlist, and the pursuit of joy is the guiding melod"
+  - text: "Life's kinda like putting together your favorite playlist. Just go with the flow, each track adding to your own vibe. Your journey is like curating the perfect mix, and chasing happiness is the main tune. Let's kick back and discover the richness in your experiences along the way."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
