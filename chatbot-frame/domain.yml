@@ -13,6 +13,7 @@ intents:
   - ask_recover
   - life_meaning
   - commit_suicide
+  - ask_professional
 
 responses:
   utter_greet:
@@ -82,6 +83,10 @@ responses:
   - text: "Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it."
   - text: "You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges."
   - text: "Hey, I’m really sorry you’re feeling so bad. You’re not alone, and things can get better. You’re an awesome and unique person, and you have a lot to live for. Please don’t hurt yourself or end your life."
+
+  utter_go_therapist:
+  - text: "Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice."
+  - text: "Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality."
 
 session_config:
   session_expiration_time: 60

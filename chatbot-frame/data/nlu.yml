@@ -163,7 +163,8 @@ nlu:
   examples: |
     - What's the point of anything?
     - Why can't I just be happy like everyone else?
-    - How come I can't find joy like others do?
+    - How come 
+    - I can't find joy like others do?
     - Why does everything seem so meaningless?
     - Is there any purpose to my existence?
     - How do I find joy like others seem to?
@@ -174,6 +175,19 @@ nlu:
     - Is there a way to find purpose in life?
     - my life feels pointless
     - I feel like I'm useless
+
+- intent: ask_professional
+  examples: |
+    - should I ask advice from a therapist?
+    - Is it good to go near a therapist?
+    - Do I need to go near therapist?
+    - should I seek help from therapist?
+    - should I seek help from professional?
+    - Do I need professional help?
+    - can a therapist help me?
+    - Is going to a therapist recommended?
+    - can a therapist help me?
+    - does therapy really work?
 
 - intent: commit_suicide
   examples: |

@@ -55,3 +55,8 @@ stories:
   steps:
   - intent: life_meaning
   - action: utter_motivate
+
+- story: seeking therapy
+  steps:
+  - intent: ask_professional
+  - action: utter_go_therapist
