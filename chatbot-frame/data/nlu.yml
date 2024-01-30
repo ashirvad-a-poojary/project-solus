@@ -134,7 +134,7 @@ nlu:
     - Why do I feel like this?
     - Is it normal to feel so hopeless and helpless?
     - Is feeling hopeless normal?
-    - What's the purpose of my constant sadness?
+    - What's the purpose of my sadness?
     - What causes my constant sadness?
     - why am I always sad?
     - why am I like this?
@@ -163,7 +163,42 @@ nlu:
   examples: |
     - What's the point of anything?
     - Why can't I just be happy like everyone else?
-    - How come I can't find joy like others do?
+    - How come 
+    - I can't find joy like others do?
+    - Why does everything seem so meaningless?
+    - Is there any purpose to my existence?
+    - How do I find joy like others seem to?
+    - Why do I always have to struggle?
+    - why am I depressed?
+    - Why am I always leftout?
+    - Can I discover a path to happiness?
+    - Is there a way to find purpose in life?
+    - my life feels pointless
+    - I feel like I'm useless
+
+- intent: ask_professional
+  examples: |
+    - should I ask advice from a therapist?
+    - Is it good to go near a therapist?
+    - Do I need to go near therapist?
+    - should I seek help from therapist?
+    - should I seek help from professional?
+    - Do I need professional help?
+    - can a therapist help me?
+    - Is going to a therapist recommended?
+    - can a therapist help me?
+    - does therapy really work?
+
+- intent: commit_suicide
+  examples: |
+    - I'm committing suicide
+    - I'll kill myself
+    - I will die
+    - I feel like committing suicide
+    - I don't want to live
+    - I don't feel like living
+    - I want to end myself
+    - I feel like ending myself
 
 - intent: bot_challenge
   examples: |

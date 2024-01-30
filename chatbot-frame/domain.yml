@@ -12,6 +12,8 @@ intents:
   - ask_feelings
   - ask_recover
   - life_meaning
+  - commit_suicide
+  - ask_professional
 
 responses:
   utter_greet:
@@ -72,9 +74,19 @@ responses:
   - text: "Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better."
 
   utter_motivate:
-  - text: "Discovering the meaning of life is like uncovering a unique masterpiece. Embrace the journey, for each step brings you closer to your own masterpiece. Your path is yours to define, and the pursuit of happiness is a powerful force. Let's embark on this journey with optimism, unlocking the richness of your experiences along the way."
-  - text: "Sounds like your finding a meaning in your life. Figuring out the meaning of life is like crafting your own special mixtape. Embrace this creative journey, where each beat adds to your unique rhythm. Your path is a constantly evolving playlist, and the pursuit of joy is the guiding melod"
-  - text: "Life's kinda like putting together your favorite playlist. Just go with the flow, each track adding to your own vibe. Your journey is like curating the perfect mix, and chasing happiness is the main tune. Let's kick back and discover the richness in your experiences along the way."
+  - text: "Feeling lost and left out is something everyone goes through. Maybe you're trying to find meaning in your life. Finding the meaning of life is like creating your own special mixtape. Your journey is like a playlist that keeps changing, and the goal is to be happy. Stay positive, my friend, and let go of those negative thoughts."
+  - text: "Feeling useless or overlooked are all common among people. Maybe you're stuggling to find a meaning in your life. Figuring out the meaning of life is like crafting your own special mixtape. Your path is a constantly evolving playlist, and the pursuit of joy is the guiding melod. You need to forget the negative thoughts my friend."
+  - text: "Life's not always up, everyone has hit a the bottom atleast once. Just go with the flow, you need to accept it and move on focusing on what's ahead of you. Chasing happiness should be the main goal instead of thinking about the present. Hope you understand and do well."
+
+  utter_nonexist:
+  - text: "I’m sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don’t give up on yourself or your life."
+  - text: "Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it."
+  - text: "You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges."
+  - text: "Hey, I’m really sorry you’re feeling so bad. You’re not alone, and things can get better. You’re an awesome and unique person, and you have a lot to live for. Please don’t hurt yourself or end your life."
+
+  utter_go_therapist:
+  - text: "Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice."
+  - text: "Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality."
 
 session_config:
   session_expiration_time: 60
