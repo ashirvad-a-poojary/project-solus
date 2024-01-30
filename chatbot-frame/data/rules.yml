@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Committing suicide
+  steps:
+  - intent: commit_suicide
+  - action: utter_nonexist

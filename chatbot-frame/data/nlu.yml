@@ -173,7 +173,18 @@ nlu:
     - Can I discover a path to happiness?
     - Is there a way to find purpose in life?
     - my life feels pointless
-    - I feel like I'm useless 
+    - I feel like I'm useless
+
+- intent: commit_suicide
+  examples: |
+    - I'm committing suicide
+    - I'll kill myself
+    - I will die
+    - I feel like committing suicide
+    - I don't want to live
+    - I don't feel like living
+    - I want to end myself
+    - I feel like ending myself
 
 - intent: bot_challenge
   examples: |
