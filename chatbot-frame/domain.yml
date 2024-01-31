@@ -79,10 +79,10 @@ responses:
   - text: "Life's not always up, everyone has hit a the bottom atleast once. Just go with the flow, you need to accept it and move on focusing on what's ahead of you. Chasing happiness should be the main goal instead of thinking about the present. Hope you understand and do well."
 
   utter_nonexist:
-  - text: "I’m sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don’t give up on yourself or your life."
+  - text: "I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself or your life."
   - text: "Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it."
   - text: "You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges."
-  - text: "Hey, I’m really sorry you’re feeling so bad. You’re not alone, and things can get better. You’re an awesome and unique person, and you have a lot to live for. Please don’t hurt yourself or end your life."
+  - text: "Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for. Please don't hurt yourself or end your life."
 
   utter_go_therapist:
   - text: "Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice."
