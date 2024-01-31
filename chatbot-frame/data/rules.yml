@@ -15,4 +15,5 @@ rules:
 - rule: Committing suicide
   steps:
   - intent: commit_suicide
-  - action: utter_nonexist
+  - action: utter_dont_suicide
+  - action: utter_ears
