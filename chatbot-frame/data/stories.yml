@@ -1,6 +1,13 @@
 version: "3.1"
 
 stories:
+<<<<<<< HEAD
+=======
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+>>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 
 - story: happy path
   steps:
@@ -11,6 +18,7 @@ stories:
 
 - story: sad path 1
   steps:
+<<<<<<< HEAD
   - intent: greet
   - action: utter_greet
   - intent: mood_unhappy
@@ -28,3 +36,62 @@ stories:
   - action: utter_help
   - intent: deny
   - action: utter_understand
+=======
+  - action: utter_help
+  - intent: affirm
+  - action: utter_listen
+
+- story: sad path 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: deny
+  - action: utter_understand
+
+- story: recovering
+  steps:
+  - intent: ask_recover
+  - action: utter_improve
+
+- story: crying
+  steps:
+  - intent: mood_cry
+  - action: utter_cheer_up
+
+- story: validate feelings
+  steps:
+  - intent: ask_feelings
+  - action: utter_validate
+
+- story: meaning of life
+  steps:
+  - intent: life_meaning
+  - action: utter_motivate
+
+- story: seeking therapy
+  steps:
+  - intent: ask_professional
+  - action: utter_go_therapist
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: commit_suicide
+  - action: utter_dont_suicide
+  - action: utter_ears
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: deny
+  - action: utter_understand
+  - intent: ask_professional
+  - action: utter_go_therapist
+>>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
