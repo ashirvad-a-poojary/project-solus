@@ -1,1 +1,4 @@
 venv/
+
+chatbot-frame/.rasa/cache/cache.db
+
