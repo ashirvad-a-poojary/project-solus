@@ -1,6 +1,11 @@
 version: "3.1"
 
 stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - story: happy path
   steps:
   - intent: greet
@@ -10,26 +15,18 @@ stories:
 
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_support
   - action: utter_help
   - intent: affirm
   - action: utter_listen
 
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
 
 - story: sad path 2
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
@@ -58,5 +55,20 @@ stories:
 
 - story: seeking therapy
   steps:
+  - intent: ask_professional
+  - action: utter_go_therapist
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: commit_suicide
+  - action: utter_dont_suicide
+  - action: utter_ears
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: deny
+  - action: utter_understand
   - intent: ask_professional
   - action: utter_go_therapist

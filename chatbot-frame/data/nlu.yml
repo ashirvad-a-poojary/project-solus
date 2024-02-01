@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -19,7 +18,7 @@ nlu:
     - hey solus
     - yo solus
     - whatsup solus
-
+    - Hello
 - intent: goodbye
   examples: |
     - good bye
@@ -31,7 +30,6 @@ nlu:
     - have a nice day
     - see you around
     - bye bye
-
 - intent: affirm
   examples: |
     - yes
@@ -41,17 +39,13 @@ nlu:
     - that sounds good
     - correct
     - sure
-    - definitely 
+    - definitely
     - definately right
     - okay
     - ok
-    - sure
-    - correct
-    - that sounds good
     - absolutely
     - absolutely right
     - certainly
-
 - intent: deny
   examples: |
     - no
@@ -68,9 +62,7 @@ nlu:
     - I refuse
     - Absolutely not
     - Not at all
-    - I refuse
-
-
+    - No
 - intent: mood_great
   examples: |
     - perfect
@@ -87,8 +79,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-    - I am feeling refreshed 
-
+    - I am feeling refreshed
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -110,7 +101,7 @@ nlu:
     - extremly sad
     - so lonely
     - left out
-
+    - I am depressed and I feel so lonely
 - intent: mood_cry
   examples: |
     - cry
@@ -122,12 +113,10 @@ nlu:
     - I was about to cry
     - I cried a lot
     - that made me cry
-    - I was crying
     - about to cry
     - I was in tears
     - my eyes teared up
     - eyes were in tears
-
 - intent: ask_feelings
   examples: |
     - Why do I feel this way?
@@ -142,7 +131,6 @@ nlu:
     - I'm struggling to pinpoint the cause of my emotions. Any insights?
     - Why do certain situations trigger my sadness?
     - How can I identify the reasons behind my constant anxiety?
-
 - intent: ask_recover
   examples: |
     - Will I ever get better?
@@ -158,12 +146,11 @@ nlu:
     - I'll be better eventually right?
     - Eventually it will be better right?
     - will it be better eventually?
-
 - intent: life_meaning
   examples: |
     - What's the point of anything?
     - Why can't I just be happy like everyone else?
-    - How come 
+    - How come
     - I can't find joy like others do?
     - Why does everything seem so meaningless?
     - Is there any purpose to my existence?
@@ -175,7 +162,6 @@ nlu:
     - Is there a way to find purpose in life?
     - my life feels pointless
     - I feel like I'm useless
-
 - intent: ask_professional
   examples: |
     - should I ask advice from a therapist?
@@ -186,9 +172,8 @@ nlu:
     - Do I need professional help?
     - can a therapist help me?
     - Is going to a therapist recommended?
-    - can a therapist help me?
     - does therapy really work?
-
+    - Should i go to therapy?
 - intent: commit_suicide
   examples: |
     - I'm committing suicide
@@ -199,7 +184,7 @@ nlu:
     - I don't feel like living
     - I want to end myself
     - I feel like ending myself
-
+    - I want to commit suicide
 - intent: bot_challenge
   examples: |
     - are you a bot?
