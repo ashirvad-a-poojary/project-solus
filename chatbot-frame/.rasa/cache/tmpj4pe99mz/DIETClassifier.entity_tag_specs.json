@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-emotion_cry",
+      "2": "I-emotion_cry",
+      "3": "L-emotion_cry",
+      "4": "U-emotion_cry",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-emotion_cry": 1,
+      "I-emotion_cry": 2,
+      "L-emotion_cry": 3,
+      "U-emotion_cry": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

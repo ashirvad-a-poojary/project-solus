@@ -1,35 +1,35 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
     - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
     - good afternoon
-
+    - good evening
+    - hello
+    - yo
+    - hi
+    - sup
+    - hey
+    - hey there
+    - hey dude
+    - whatsup
+    - hi solus
+    - hello solus
+    - hey solus
+    - yo solus
+    - whatsup solus
+    - Hello
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
+    - good bye
+    - see you later
     - good night
     - bye
+    - signing off
     - goodbye
     - have a nice day
     - see you around
     - bye bye
-    - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,8 +39,13 @@ nlu:
     - that sounds good
     - correct
     - sure
-    - definitely 
-
+    - definitely
+    - definately right
+    - okay
+    - ok
+    - absolutely
+    - absolutely right
+    - certainly
 - intent: deny
   examples: |
     - no
@@ -53,19 +58,20 @@ nlu:
     - nah
     - I don't want to
     - I won't
-
+    - I disagree
+    - I refuse
+    - Absolutely not
+    - Not at all
+    - No
 - intent: mood_great
   examples: |
     - perfect
     - great
     - amazing
-    - feeling like a king
-    - feeling like a queen
-    - feeling like a prince
-    - feeling like a princess 
     - wonderful
     - I am feeling very good
     - I am great
+    - I am good
     - I am amazing
     - I am going to save the world
     - super stoked
@@ -73,8 +79,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-    - I am feeling refreshed 
-
+    - I am feeling refreshed
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -84,6 +89,10 @@ nlu:
     - I am depressed
     - super sad
     - I'm so sad
+    - I'm feeling sad
+    - I am not feeling good
+    - I'm feeling really down today.
+    - I am feeling down
     - sad
     - very sad
     - unhappy
@@ -91,7 +100,91 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
-
+    - left out
+    - I am depressed and I feel so lonely
+- intent: mood_cry
+  examples: |
+    - cry
+    - cried
+    - cryiing
+    - I was crying
+    - I cired
+    - I'm crying
+    - I was about to cry
+    - I cried a lot
+    - that made me cry
+    - about to cry
+    - I was in tears
+    - my eyes teared up
+    - eyes were in tears
+- intent: ask_feelings
+  examples: |
+    - Why do I feel this way?
+    - Why do I feel like this?
+    - Is it normal to feel so hopeless and helpless?
+    - Is feeling hopeless normal?
+    - What's the purpose of my sadness?
+    - What causes my constant sadness?
+    - why am I always sad?
+    - why am I like this?
+    - Can you help me understand why I'm feeling overwhelmed?
+    - I'm struggling to pinpoint the cause of my emotions. Any insights?
+    - Why do certain situations trigger my sadness?
+    - How can I identify the reasons behind my constant anxiety?
+- intent: ask_recover
+  examples: |
+    - Will I ever get better?
+    - Will things ever get brighter for me?
+    - Will I see improvement in my situation?
+    - I will be better right?
+    - Can things turn around for the better?
+    - will things change for me?
+    - will all this change?
+    - I will see change right?
+    - will things change?
+    - Will I overcome these challenges eventually?
+    - I'll be better eventually right?
+    - Eventually it will be better right?
+    - will it be better eventually?
+- intent: life_meaning
+  examples: |
+    - What's the point of anything?
+    - Why can't I just be happy like everyone else?
+    - How come
+    - I can't find joy like others do?
+    - Why does everything seem so meaningless?
+    - Is there any purpose to my existence?
+    - How do I find joy like others seem to?
+    - Why do I always have to struggle?
+    - why am I depressed?
+    - Why am I always leftout?
+    - Can I discover a path to happiness?
+    - Is there a way to find purpose in life?
+    - my life feels pointless
+    - I feel like I'm useless
+- intent: ask_professional
+  examples: |
+    - should I ask advice from a therapist?
+    - Is it good to go near a therapist?
+    - Do I need to go near therapist?
+    - should I seek help from therapist?
+    - should I seek help from professional?
+    - Do I need professional help?
+    - can a therapist help me?
+    - Is going to a therapist recommended?
+    - does therapy really work?
+    - Should i go to therapy?
+- intent: commit_suicide
+  examples: |
+    - I'm committing suicide
+    - I'll kill myself
+    - I will die
+    - I feel like committing suicide
+    - I don't want to live
+    - I don't feel like living
+    - I want to end myself
+    - I feel like ending myself
+    - I want to commit suicide
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -99,3 +192,5 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - who are you?
+    - are you an AI?
+    - what are you?
