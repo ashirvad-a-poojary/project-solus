@@ -13,6 +13,8 @@ intents:
 - mood_cry
 - mood_great
 - mood_unhappy
+- feeling_leftout
+- problem_communicating
 responses:
   utter_greet:
   - text: Hi my friend! How are you :)?
@@ -74,6 +76,9 @@ responses:
   utter_go_therapist:
   - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
+  utter_hereforyou:
+  - text: Hey friend, I totally get it – feeling left out is rough. But guess what? You've got a buddy right here (that's me!) ready to chat anytime, any day. Whether it's to vent, share a laugh, or just shoot the breeze, I'm all ears. Hit me up whenever you feel like it! If you still find it hard, speaking to a therapist is better.
+  - text: My besto friendo! I know the feeling of being left out isn't great. But hey, chin up! Your bot pal is always here, rain or shine, day or night. Feel free to drop a message anytime you want to chat or just chill. I'm here for you! If you still don't feel astisfied don't be hesitant to meet a therapist.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

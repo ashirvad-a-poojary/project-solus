@@ -112,7 +112,6 @@ nlu:
     - extremly sad
     - so lonely
     - left out
-    - I am depressed and I feel so lonely
 - intent: mood_cry
   examples: |
     - cry
@@ -142,6 +141,30 @@ nlu:
     - I'm struggling to pinpoint the cause of my emotions. Any insights?
     - Why do certain situations trigger my sadness?
     - How can I identify the reasons behind my constant anxiety?
+- intent: problem_communicating
+  examples: |
+    - It's very difficult for me to open up to people
+    - I find it difficult to open up with people
+- intent: feeling_leftout
+  examples: |
+    - I have been ignored a lot
+    - I'm ignored by people
+    - I'm beinng ignored
+    - I feel ignored by others
+    - It feels I'm being lef tout
+    - I'm so lonely
+    - It seems like I'm always the one left out.
+    - Others don't seem to notice me.
+    - Feeling invisible lately, like no one acknowledges my presence.
+    - Loneliness is becoming a regular thing for me.
+    - I'm starting to think people intentionally ignore me.
+    - Lonely again. What can I do about it?
+    - It's like nobody pays attention to me.
+    - I'm often left out, and it's getting to me
+    - Feeling ignored is becoming a constant thing.
+    - It seems people don't include me.
+    - Loneliness is something I deal with a lot.
+    - I'm overlooked, and it's tough.
 - intent: ask_recover
   examples: |
     - Will I ever get better?
