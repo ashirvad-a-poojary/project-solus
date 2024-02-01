@@ -10,9 +10,6 @@ rules:
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
-<<<<<<< HEAD
-  - action: utter_iamabot 
-=======
   - action: utter_iamabot
 
 - rule: Committing suicide
@@ -20,4 +17,3 @@ rules:
   - intent: commit_suicide
   - action: utter_dont_suicide
   - action: utter_ears
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01

@@ -1,31 +1,5 @@
 version: "3.1"
-<<<<<<< HEAD
 
-nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - good morning
-    - good evening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-=======
 nlu:
 - intent: greet
   examples: |
@@ -53,16 +27,11 @@ nlu:
     - good night
     - bye
     - signing off
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
     - goodbye
     - have a nice day
     - see you around
     - bye bye
-<<<<<<< HEAD
     - see you later
-
-=======
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 - intent: affirm
   examples: |
     - yes
@@ -72,10 +41,7 @@ nlu:
     - that sounds good
     - correct
     - sure
-<<<<<<< HEAD
     - definitely 
-
-=======
     - definitely
     - definately right
     - okay
@@ -83,7 +49,6 @@ nlu:
     - absolutely
     - absolutely right
     - certainly
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 - intent: deny
   examples: |
     - no
@@ -96,21 +61,16 @@ nlu:
     - nah
     - I don't want to
     - I won't
-<<<<<<< HEAD
-
-=======
     - I disagree
     - I refuse
     - Absolutely not
     - Not at all
     - No
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 - intent: mood_great
   examples: |
     - perfect
     - great
     - amazing
-<<<<<<< HEAD
     - feeling like a king
     - feeling like a queen
     - feeling like a prince
@@ -118,12 +78,10 @@ nlu:
     - wonderful
     - I am feeling very good
     - I am great
-=======
     - wonderful
     - I am feeling very good
     - I am great
     - I am good
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
     - I am amazing
     - I am going to save the world
     - super stoked
@@ -131,12 +89,8 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-<<<<<<< HEAD
     - I am feeling refreshed 
-
-=======
     - I am feeling refreshed
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -146,13 +100,10 @@ nlu:
     - I am depressed
     - super sad
     - I'm so sad
-<<<<<<< HEAD
-=======
     - I'm feeling sad
     - I am not feeling good
     - I'm feeling really down today.
     - I am feeling down
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
     - sad
     - very sad
     - unhappy
@@ -160,9 +111,6 @@ nlu:
     - not very good
     - extremly sad
     - so lonely
-<<<<<<< HEAD
-
-=======
     - left out
     - I am depressed and I feel so lonely
 - intent: mood_cry
@@ -248,7 +196,6 @@ nlu:
     - I want to end myself
     - I feel like ending myself
     - I want to commit suicide
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -256,8 +203,5 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - who are you?
-<<<<<<< HEAD
-=======
     - are you an AI?
     - what are you?
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01

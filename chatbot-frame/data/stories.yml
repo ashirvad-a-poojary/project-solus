@@ -1,13 +1,10 @@
 version: "3.1"
 
 stories:
-<<<<<<< HEAD
-=======
 - story: greet
   steps:
   - intent: greet
   - action: utter_greet
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
 
 - story: happy path
   steps:
@@ -18,25 +15,6 @@ stories:
 
 - story: sad path 1
   steps:
-<<<<<<< HEAD
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_help
-  - intent: deny
-  - action: utter_understand
-=======
   - action: utter_help
   - intent: affirm
   - action: utter_listen
@@ -94,4 +72,3 @@ stories:
   - action: utter_understand
   - intent: ask_professional
   - action: utter_go_therapist
->>>>>>> 65175dee811a78aa904ced3f9b5a4004497d7b01
