@@ -110,6 +110,15 @@ nlu:
     - not good
     - not very good
     - extremly sad
+- intent: heartbreak
+    - My heart got broken
+    - My girlfriend broke up with me
+    - My boyfriend broke up with me
+    - I went through a breakup
+    - I had a brrakup
+    - She broke my heart
+    - He broke my heart
+    - It was a heartbreak
 - intent: mood_cry
   examples: |
     - cry
