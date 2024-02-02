@@ -110,8 +110,6 @@ nlu:
     - not good
     - not very good
     - extremly sad
-    - so lonely
-    - left out
 - intent: mood_cry
   examples: |
     - cry
@@ -151,20 +149,28 @@ nlu:
     - I'm ignored by people
     - I'm beinng ignored
     - I feel ignored by others
-    - It feels I'm being lef tout
+    - It feels I'm being left out
     - I'm so lonely
     - It seems like I'm always the one left out.
     - Others don't seem to notice me.
     - Feeling invisible lately, like no one acknowledges my presence.
-    - Loneliness is becoming a regular thing for me.
     - I'm starting to think people intentionally ignore me.
     - Lonely again. What can I do about it?
     - It's like nobody pays attention to me.
     - I'm often left out, and it's getting to me
-    - Feeling ignored is becoming a constant thing.
+    - Feeling ignored by everyone
+    - Feeling ignored by others
     - It seems people don't include me.
     - Loneliness is something I deal with a lot.
-    - I'm overlooked, and it's tough.
+    - I'm dealing with loneliness a lot
+    - I'm overlooked.
+    - so lonely
+    - left out
+    - people are going away from me
+    - people are staying away from me
+    - I feel like I'm avoided by others
+    - I'm being avoided
+    - my freids are starting to avoid me 
 - intent: ask_recover
   examples: |
     - Will I ever get better?
