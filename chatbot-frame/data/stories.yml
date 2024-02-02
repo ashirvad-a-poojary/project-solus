@@ -58,10 +58,15 @@ stories:
   - intent: ask_professional
   - action: utter_go_therapist
 
-- story: sad path 3
+- story: motivation
   steps:
   - intent: feeling_leftout
   - action: utter_motivate
+
+- story: communication
+  steps:
+  - intent: problem_communicating
+  - action: utter_comm_reply
 
 - story: interactive_story_1
   steps:
