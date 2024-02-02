@@ -17,16 +17,11 @@ intents:
 - problem_communicating
 responses:
   utter_greet:
-  - text: Hi my friend! How are you :)?
+  - text: Hi my friend! How are you?
   - text: Hello, What's on your mind?
   - text: Hii!, How's it going?
-  - text: Hi there!
-  - text: Howdy!
-  - text: Hiya!
-  - text: Hey there!
-  - text: Wassup?
-  - text: How you doin'?
-  - text: Hiya, champ!
+  - text: Hey there! whatsupp?
+  - text: Hii, How you doin'?
   - text: What's crackin'?
   utter_support:
   - text: I'm sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
@@ -68,8 +63,8 @@ responses:
   - text: Feeling lost and left out is something everyone goes through. Maybe you're trying to find meaning in your life. Finding the meaning of life is like creating your own special mixtape. Your journey is like a playlist that keeps changing, and the goal is to be happy. Stay positive, my friend, and let go of those negative thoughts.
   - text: Feeling useless or overlooked are all common among people. Maybe you're stuggling to find a meaning in your life. Figuring out the meaning of life is like crafting your own special mixtape. Your path is a constantly evolving playlist, and the pursuit of joy is the guiding melod. You need to forget the negative thoughts my friend.
   - text: Life's not always up, everyone has hit a the bottom atleast once. Just go with the flow, you need to accept it and move on focusing on what's ahead of you. Chasing happiness should be the main goal instead of thinking about the present. Hope you understand and do well.
-  - text: Hey friend, I totally get it, feeling left out is rough. But guess what? You've got a buddy right here (that's me!) ready to chat anytime, any day. Whether it's to vent, share a laugh, or just shoot the breeze, I'm all ears. Hit me up whenever you feel like it! If you still find it hard, speaking to a therapist is better.
-  - text: My besto friendo! I know the feeling of being left out isn't great. But hey, chin up! Your bot pal is always here, rain or shine, day or night. Feel free to drop a message anytime you want to chat or just chill. I'm here for you! If you still don't feel astisfied don't be hesitant to meet a therapist.
+  - text: Feeling left out is rough. But guess what? You've got a buddy right here (that's me!) ready to chat anytime, any day. Whether it's to vent, share a laugh, or just shoot the breeze, I'm all ears. Hit me up whenever you feel like it! If you still find it hard, speaking to a therapist is better.
+  - text: The feeling of being left out isn't great. But hey, chin up! Your bot pal is always here, rain or shine, day or night. Feel free to drop a message anytime you want to chat or just chill. I'm here for you! If you still don't feel astisfied don't be hesitant to meet a therapist.
   utter_dont_suicide:
   - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself or your life.
   - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
@@ -78,6 +73,8 @@ responses:
   utter_go_therapist:
   - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
+  utter_comm_reply:
+  - text: I understand your problem. I'm an AI so you can tell me anything you have in your mind, I won't judge. I reccomend you to meet new people who can understnd you and and treat you well.  
 session_config:
   session_expiration_time: 60
 #  carry_over_slots_to_new_session: true

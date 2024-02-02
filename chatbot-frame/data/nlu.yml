@@ -135,14 +135,28 @@ nlu:
     - What causes my constant sadness?
     - why am I always sad?
     - why am I like this?
-    - Can you help me understand why I'm feeling overwhelmed?
-    - I'm struggling to pinpoint the cause of my emotions. Any insights?
-    - Why do certain situations trigger my sadness?
-    - How can I identify the reasons behind my constant anxiety?
+    - why am I depressed?
+    - What is the reson of feeling this way?
+    - What is the reson of feeling like this?
+    - I'm struggling to know the cause of my emotions.
 - intent: problem_communicating
   examples: |
     - It's very difficult for me to open up to people
     - I find it difficult to open up with people
+    - I's hard for me to open up with people
+    - It's very difficult for me to talk to people about my emotions
+    - It's very difficult for me to talk to people about my feelings
+    - I find it difficult to talk people about my feelings or emotions
+    - I find it difficult to talk people about my feelings or feelings
+    - I's hard for me to talk with people about my emotions
+    - I's hard for me to talk with people about my feelings
+    - I don't like to share feeligs with people
+    - I don't like to share feeligs with people
+    - I don't want to share because I feel judged
+    - people judge me when i share feelings
+    - people judge me when i share emotions
+    - I'm judges for sharing my feelings
+    - I'm judges for sharing my emotions
 - intent: feeling_leftout
   examples: |
     - I have been ignored a lot

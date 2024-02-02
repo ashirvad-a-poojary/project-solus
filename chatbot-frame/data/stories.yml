@@ -63,6 +63,11 @@ stories:
   - intent: feeling_leftout
   - action: utter_motivate
 
+- story: communication
+  steps:
+  - intent: problem_communicating
+  - action: utter_comm_reply
+
 - story: interactive_story_1
   steps:
   - intent: greet
