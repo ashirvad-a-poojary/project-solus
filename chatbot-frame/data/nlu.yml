@@ -111,6 +111,7 @@ nlu:
     - not very good
     - extremly sad
 - intent: heartbreak
+  examples: |
     - My heart got broken
     - My girlfriend broke up with me
     - My boyfriend broke up with me
