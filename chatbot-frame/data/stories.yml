@@ -68,6 +68,11 @@ stories:
   - intent: problem_communicating
   - action: utter_comm_reply
 
+- story: broken heart
+  steps:
+  - intent: heartbreak
+  - action: utter_supp_heartbreak
+
 - story: interactive_story_1
   steps:
   - intent: greet

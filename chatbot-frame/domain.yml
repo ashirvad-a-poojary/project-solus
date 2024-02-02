@@ -15,6 +15,7 @@ intents:
 - mood_unhappy
 - feeling_leftout
 - problem_communicating
+- heartbreak
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
@@ -75,6 +76,8 @@ responses:
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
   utter_comm_reply:
   - text: I understand your problem. I'm an AI so you can tell me anything you have in your mind, I won't judge. I reccomend you to meet new people who can understnd you and and treat you well.  
+  utter_supp_heartbreak:
+  - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
 session_config:
   session_expiration_time: 60
 #  carry_over_slots_to_new_session: true
