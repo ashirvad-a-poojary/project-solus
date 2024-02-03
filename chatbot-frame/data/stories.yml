@@ -69,6 +69,7 @@ stories:
   - action: utter_comm_reply
 
 - story: close one's death
+  steps:
   - intent: close_ones_death
   - action: 
 
