@@ -80,7 +80,7 @@ responses:
   - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
 session_config:
   session_expiration_time: 60
-#  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: true
 #actions:
 #- utter_greet
 #- utter_support
