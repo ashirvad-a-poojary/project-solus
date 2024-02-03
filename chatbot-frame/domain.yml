@@ -78,6 +78,9 @@ responses:
   - text: I understand your problem. I'm an AI so you can tell me anything you have in your mind, I won't judge. I reccomend you to meet new people who can understnd you and and treat you well.  
   utter_supp_heartbreak:
   - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
+  utter_sorry_for_death:
+  - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.
+  - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
