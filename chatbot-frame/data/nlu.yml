@@ -120,6 +120,38 @@ nlu:
     - She broke my heart
     - He broke my heart
     - It was a heartbreak
+- intent: close_ones_death
+  examples: |
+    - My mom passed away recently
+    - I lost my mom recently
+    - It's been tough since my mom passed away
+    - my dad passed away recemtly
+    - I lost my dad recemtly
+    - It's been tough since my dad passed away
+    - My wife passed away recently
+    - I lost my wife recently
+    - It's been tough since my wife passed away
+    - my girlfriend passed away recemtly
+    - I lost my girlfriend recemtly
+    - It's been tough since my girlfriend passed away
+    - my girlfriend passed away recemtly
+    - I lost my boyfriend recemtly
+    - It's been tough since my boyfriend passed away
+    - my son passed away recemtly
+    - I lost my son recemtly
+    - It's been tough since my son passed away
+    - my daughter passed away recemtly
+    - I lost my daughter recemtly
+    - It's been tough since my daughter passed away
+    - My kid passed away recently.
+    - I lost my kid recently.
+    - It's been tough since my kid passed away.
+    - My grandpa passed away recently.
+    - I lost my grandpa recently.
+    - It's been tough since my grandpa passed away.
+    - My grandma passed away recently.
+    - I lost my grandma recently.
+    - It's been tough since my grandma passed away.
 - intent: mood_cry
   examples: |
     - cry

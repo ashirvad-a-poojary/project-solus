@@ -68,10 +68,20 @@ stories:
   - intent: problem_communicating
   - action: utter_comm_reply
 
+- story: close one's death
+  steps:
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+
 - story: broken heart
   steps:
   - intent: heartbreak
   - action: utter_supp_heartbreak
+
+- story: death
+  steps:
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
 
 - story: interactive_story_1
   steps:
