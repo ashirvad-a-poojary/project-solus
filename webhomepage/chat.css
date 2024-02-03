@@ -1,13 +1,11 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 body {
-  background: #141414
+  background: #cae6ff
 
 }
 .navbar {
@@ -178,20 +176,7 @@ body {
   }
 }
 .chatbot-toggler {
-  position: fixed;
-  bottom: 30px;
-  right: 35px;
-  outline: none;
-  border: none;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #724ae8;
-  transition: all 0.2s ease;
+  display: none;
 }
 body.show-chatbot .chatbot-toggler {
   transform: rotate(90deg);
@@ -208,21 +193,20 @@ body.show-chatbot .chatbot-toggler span:last-child {
   opacity: 1;
 }
 .chatbot {
-  position: fixed;
-  right: 250px;
-  bottom: 90px;
   height: 650px;
   width: 1100px;
-  background: linear-gradient(to right, #87CEEB,  #FFB6C1);
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;
   overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.5);
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
   transform-origin: bottom right;
-  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-              0 32px 64px -48px rgba(0,0,0,0.5);
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease;
 }
 body.show-chatbot .chatbot {
