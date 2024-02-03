@@ -1,40 +1,101 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- affirm
+- ask_feelings
+- ask_professional
+- ask_recover
+- bot_challenge
+- commit_suicide
+- deny
+- goodbye
+- greet
+- life_meaning
+- mood_cry
+- mood_great
+- mood_unhappy
+- feeling_leftout
+- problem_communicating
+- heartbreak
+- close_ones_death
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Sorry to hear that. If you'd like to talk about what's on your mind, 
-  I'm here to listen and offer support. It's okay to express your feelings, 
-  and sometimes sharing can make a difference."
-  
+  - text: Hi my friend! How are you?
+  - text: Hello, What's on your mind?
+  - text: Hii!, How's it going?
+  - text: Hey there! whatsupp?
+  - text: Hii, How you doin'?
+  - text: What's crackin'?
+  utter_support:
+  - text: I'm sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
   utter_help:
-  - text: "Would you mind sharing?"
-
+  - text: Would you mind sharing?
+  - text: Let me hear it if you don't mind
+  - text: You can spill the beans with me
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Byee!
+  - text: Bye Bye!
+  - text: See you later
+  - text: Have a nice day
+  - text: Take care
   utter_iamabot:
-  - text: "I'm Solus, your AI companion."
-
+  - text: I'm Solus, your AI companion.
+  utter_listen:
+  - text: Sure, go ahead
+  - text: Sure thing, spill it! I'm all ears.
+  - text: Sure, spill the beans! I'm here to chat, no judgment.
+  utter_ears:
+  - text: Tell me what happened
   utter_understand:
-  - text: "I understand. It's completely okay if you don't want to talk about it right now.
-   Remember, I'm here whenever you're ready. If there's anything specific you'd like to 
-   discuss or if you have any questions, feel free to let me know."
-
+  - text: I understand. It's completely okay if you don't want to talk about it right now. Remember, I'm here whenever you're ready. Speaking to a therapist is a good idea. You should open up your feelings and emotions, throw it all out my friend.
+  - text: I get it. Take your time. I'm here whenever you're ready to talk or if you have questions. Or consider speeking to a professional therapist, please don't shut your feelings inside.
+  - text: I completely understand if you're not ready to talk about it right now. Just know that I'm here for you whenever you feel comfortable. Whether you want to discuss something specific or if you have any questions, feel free to reach out whenever you're ready. And consider the option of seeking advice from a professional therapist.
+  utter_cheer_up:
+  - text: It's okay to cry and to express your emotions. If you feel comfortable, you can talk to me about what's going on or what hurt you. Remember that you don't have to go through difficult times alone.
+  utter_validate:
+  - text: I want you to know that your emotions matter. Everyone goes through different feelings, and it's okay to experience what you're going through. I'm here to provide support and understanding as you navigate your emotions.
+  - text: Understanding our emotions is a journey. It's completely normal to experience a range of emotions, and I'm here to support you through whatever you're feeling.
+  - text: Your feelings are valid and important. It's completely normal to go through various emotions, and I'm here to acknowledge and support you as you navigate through them.
+  utter_improve:
+  - text: Yess! Defintely, you have the strength to see positive changes and improvement in your situation. I'm here to support you every step of the way on your journey towards a brighter future.
+  - text: Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better.
+  - text: Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better.
+  utter_motivate:
+  - text: Feeling lost and left out is something everyone goes through. Maybe you're trying to find meaning in your life. Finding the meaning of life is like creating your own special mixtape. Your journey is like a playlist that keeps changing, and the goal is to be happy. Stay positive, my friend, and let go of those negative thoughts.
+  - text: Feeling useless or overlooked are all common among people. Maybe you're stuggling to find a meaning in your life. Figuring out the meaning of life is like crafting your own special mixtape. Your path is a constantly evolving playlist, and the pursuit of joy is the guiding melod. You need to forget the negative thoughts my friend.
+  - text: Life's not always up, everyone has hit a the bottom atleast once. Just go with the flow, you need to accept it and move on focusing on what's ahead of you. Chasing happiness should be the main goal instead of thinking about the present. Hope you understand and do well.
+  - text: Feeling left out is rough. But guess what? You've got a buddy right here (that's me!) ready to chat anytime, any day. Whether it's to vent, share a laugh, or just shoot the breeze, I'm all ears. Hit me up whenever you feel like it! If you still find it hard, speaking to a therapist is better.
+  - text: The feeling of being left out isn't great. But hey, chin up! Your bot pal is always here, rain or shine, day or night. Feel free to drop a message anytime you want to chat or just chill. I'm here for you! If you still don't feel astisfied don't be hesitant to meet a therapist.
+  utter_dont_suicide:
+  - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself or your life.
+  - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
+  - text: You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges.
+  - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for. Please don't hurt yourself or end your life.
+  utter_go_therapist:
+  - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
+  - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
+  utter_comm_reply:
+  - text: I understand your problem. I'm an AI so you can tell me anything you have in your mind, I won't judge. I reccomend you to meet new people who can understnd you and and treat you well.  
+  utter_supp_heartbreak:
+  - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
+  utter_sorry_for_death:
+  - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.
+  - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+#actions:
+#- utter_greet
+#- utter_support
+#- utter_help
+#- utter_go_therapist
+#- utter_understand
+#- utter_dont_suicide
+#- utter_listen
+#- utter_ears
+#- utter_validate
+#- utter_improve
+#- utter_motivate
+#- utter_cheer_up
+#- utter_happy
