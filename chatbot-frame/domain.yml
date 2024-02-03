@@ -16,6 +16,7 @@ intents:
 - feeling_leftout
 - problem_communicating
 - heartbreak
+- close_ones_death
 responses:
   utter_greet:
   - text: Hi my friend! How are you?

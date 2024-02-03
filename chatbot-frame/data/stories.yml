@@ -71,7 +71,7 @@ stories:
 - story: close one's death
   steps:
   - intent: close_ones_death
-  - action: 
+  - action: utter_sorry_for_death
 
 - story: broken heart
   steps:
