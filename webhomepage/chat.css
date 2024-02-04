@@ -1,13 +1,10 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
-body {
-  background: #cae6ff
 
-}
 .navbar {
   background: #131313;
   height: 80px;
@@ -17,7 +14,7 @@ body {
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navbar__container {
@@ -194,11 +191,11 @@ body.show-chatbot .chatbot-toggler span:last-child {
   opacity: 1;
 }
 .chatbot {
-  height: 650px;
+  height: 900px;
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 50px;
   background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;
   overflow: hidden;
@@ -236,7 +233,7 @@ header h2 {
 }
 .chatbot .chatbox {
   overflow-y: auto;
-  height: 510px;
+  height: 900px;
   padding: 15px 20px 100px;
 }
 .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
@@ -306,7 +303,7 @@ header h2 {
   border: none;
   outline: none;
   resize: none;
-  max-height: 180px;
+  max-height: 69px;
   padding: 15px 15px 15px 0;
   font-size: 0.95rem;
 }

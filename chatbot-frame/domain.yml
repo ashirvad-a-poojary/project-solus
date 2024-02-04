@@ -17,6 +17,14 @@ intents:
 - problem_communicating
 - heartbreak
 - close_ones_death
+slots:
+   distress:
+     type: text
+     mappings:
+     - type: from_entity
+       entity: distress
+entities:
+  - distress
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
