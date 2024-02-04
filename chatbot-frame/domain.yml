@@ -32,7 +32,6 @@ responses:
   - text: Hii!, How's it going?
   - text: Hey there! whatsupp?
   - text: Hii, How you doin'?
-  - text: What's crackin'?
   utter_support:
   - text: I'm sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
   utter_help:
@@ -93,17 +92,5 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-#actions:
-#- utter_greet
-#- utter_support
-#- utter_help
-#- utter_go_therapist
-#- utter_understand
-#- utter_dont_suicide
-#- utter_listen
-#- utter_ears
-#- utter_validate
-#- utter_improve
-#- utter_motivate
-#- utter_cheer_up
-#- utter_happy
+actions:
+- action_handle_distress

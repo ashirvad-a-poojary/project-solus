@@ -18,7 +18,7 @@
 <body>
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>SolusAI</a>
+      <a href="/" id="navbar__logo"></i>SolusAI</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> <span class="bar"></span>
         <span class="bar"></span>
@@ -33,20 +33,24 @@
       </ul>
     </div>
   </nav>
-  <div class="chatbot">
-    <header>
-      <h2>SolusAI</h2>
-      <span class="close-btn material-symbols-outlined">close</span>
-    </header>
-    <ul class="chatbox">
-      <li class="chat incoming">
-        <span class="material-symbols-outlined">smart_toy</span>
-        <p>Hi there 👋<br>How can I help you today?</p>
-      </li>
-    </ul>
-    <div class="chat-input">
-      <textarea placeholder="Type here..." spellcheck="false" required></textarea>
-      <span id="send-btn" class="material-symbols-rounded">send</span>
+  <div class="main">
+    <div class="main__container">
+      <div class="chatbot">
+        <header>
+          <h2>SolusAI</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Type here..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
     </div>
   </div>
 </body>

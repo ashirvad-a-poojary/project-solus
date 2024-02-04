@@ -83,17 +83,8 @@ stories:
   - intent: close_ones_death
   - action: utter_sorry_for_death
 
-- story: interactive_story_1
+- story: Committing suicide
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: commit_suicide
   - action: utter_dont_suicide
   - action: utter_ears
-  - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
-  - intent: deny
-  - action: utter_understand
-  - intent: ask_professional
-  - action: utter_go_therapist
