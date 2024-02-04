@@ -39,7 +39,12 @@ class ActionHandleDistress(Action):
                 to="+918971005536"
             )
 
-            dispatcher.utter_message(f"Distress message sent.")
+            # Bot's response to the user
+            dispatcher.utter_message(
+                template="utter_dont_suicide"
+            )
+
+            # Additional response or action if needed
+            dispatcher.utter_message("Your friend need immediate help.")
 
         return []
-
