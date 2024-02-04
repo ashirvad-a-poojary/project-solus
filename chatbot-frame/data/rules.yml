@@ -12,8 +12,3 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Committing suicide
-  steps:
-  - intent: commit_suicide
-  - action: utter_dont_suicide
-  - action: utter_ears

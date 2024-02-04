@@ -170,32 +170,15 @@
     height: 80px;
     margin: 0;
   }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-  }
-
-  .navbar__toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
 }
-
+.main__container {
+  align-items: center;
+  justify-self: center;
+  margin: auto;
+  height: 100%;
+  background: #ffffff;
+  width: 100%;
+}
 .chatbot-toggler {
   display: none;
 }
@@ -214,11 +197,11 @@ body.show-chatbot .chatbot-toggler span:last-child {
   opacity: 1;
 }
 .chatbot {
-  height: 900px;
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 55%;
+  max-width: 1200px;
   margin-top: 50px;
+  margin-bottom: 50px;
   background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;
   overflow: hidden;
@@ -256,7 +239,7 @@ header h2 {
 }
 .chatbot .chatbox {
   overflow-y: auto;
-  height: 900px;
+  height: 850px;
   padding: 15px 20px 100px;
 }
 .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
@@ -314,10 +297,11 @@ header h2 {
   display: flex;
   gap: 5px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   background: #fff;
   padding: 3px 20px;
+  border-radius: 15px;
   border-top: 1px solid #ddd;
 }
 .chat-input textarea {
