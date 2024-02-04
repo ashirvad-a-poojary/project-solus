@@ -76,8 +76,8 @@ stories:
   - intent: problem_communicating
   - action: utter_comm_reply
   
-- story: Committing suicide
+stories:
+- story: Handle distress
   steps:
-  - intent: distress
-  - action: utter_dont_suicide
-  - action: utter_ears
+    - intent: distress
+    - action: action_handle_distress
