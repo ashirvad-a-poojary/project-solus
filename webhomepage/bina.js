@@ -1,5 +1,3 @@
-console.log("Welcome to Spotify");
-
 // Initialize the Variables
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
@@ -10,13 +8,13 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "A BINAURAL JOURNEY", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Autumn Sky Meditation", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Happy Mysterious Piano Relaxation", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Just Relax", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "A BINAURAL JOURNEY", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
+    {songName: "Autumn Sky Meditation", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg"},
+    {songName: "Happy Mysterious Piano Relaxation", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg"},
+    {songName: "Just Relax", filePath: "songs/4.mp3", coverPath: "covers/4.jpeg"},
     {songName: "Mind Relaxation", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Morning Garden Acoustic Chill", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Peaceful Garden Healing", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
+    {songName: "Morning Garden Acoustic Chill", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg"},
+    {songName: "Peaceful Garden Healing", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg"},
     
 ]
 
