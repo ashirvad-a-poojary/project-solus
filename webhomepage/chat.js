@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to handle Rasa response
     const handleRasaResponse = (data) => {
-        // Add logic to parse and display Rasa response in your chat box
         const responseText = data[0].text || 'Sorry, I didn\'t understand that.';
         addChatMessage('bot', responseText);
+        scrollChatboxToBottom(); // Scroll to the bottom after adding a message
     };
 
     // Function to add a new chat message to the chat box
@@ -32,6 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbox.appendChild(newMessage);
     };
 
+    // Function to scroll the chatbox to the bottom
+    const scrollChatboxToBottom = () => {
+        const lastMessage = chatbox.lastElementChild;
+        if (lastMessage) {
+            lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+        }
+    };
+    
+
     // Function to handle sending message
     const sendMessage = () => {
         const userMessage = inputField.value.trim();
@@ -39,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             addChatMessage('user', userMessage);
             sendUserMessage(userMessage);
             inputField.value = '';
+            scrollChatboxToBottom(); // Scroll to the bottom after sending a message
         }
     };
 
