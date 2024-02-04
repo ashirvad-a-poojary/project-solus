@@ -1,0 +1,99 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - action: utter_help
+  - intent: affirm
+  - action: utter_listen
+
+- story: sad path 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: deny
+  - action: utter_understand
+
+- story: recovering
+  steps:
+  - intent: ask_recover
+  - action: utter_improve
+
+- story: crying
+  steps:
+  - intent: mood_cry
+  - action: utter_cheer_up
+
+- story: validate feelings
+  steps:
+  - intent: ask_feelings
+  - action: utter_validate
+
+- story: meaning of life
+  steps:
+  - intent: life_meaning
+  - action: utter_motivate
+
+- story: seeking therapy
+  steps:
+  - intent: ask_professional
+  - action: utter_go_therapist
+
+- story: motivation
+  steps:
+  - intent: feeling_leftout
+  - action: utter_motivate
+
+- story: communication
+  steps:
+  - intent: problem_communicating
+  - action: utter_comm_reply
+
+- story: close one's death
+  steps:
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+
+- story: broken heart
+  steps:
+  - intent: heartbreak
+  - action: utter_supp_heartbreak
+
+- story: death
+  steps:
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: commit_suicide
+  - action: utter_dont_suicide
+  - action: utter_ears
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: deny
+  - action: utter_understand
+  - intent: ask_professional
+  - action: utter_go_therapist
