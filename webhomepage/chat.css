@@ -1,13 +1,10 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
-body {
-  background: #cae6ff
 
-}
 .navbar {
   background: #131313;
   height: 80px;
@@ -17,7 +14,7 @@ body {
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navbar__container {

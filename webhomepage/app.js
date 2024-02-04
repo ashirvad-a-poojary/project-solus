@@ -1,4 +1,3 @@
-const io = require('socket.io-client');
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
