@@ -78,6 +78,6 @@ stories:
   
 - story: Committing suicide
   steps:
-  - intent: commit_suicide
+  - intent: distress
   - action: utter_dont_suicide
   - action: utter_ears

@@ -272,14 +272,14 @@ nlu:
 - intent: distress
   examples: |
     - I'm committing suicide
-    - I'll [kill myself](distress)
-    - I will [die](distress)
-    - I feel like committing [suicide](distress)
-    - I [don't want to live](distress)
-    - I [don't feel like living](distress)
-    - I want to [end myself](distress)
-    - I feel like [ending myself](distress)
-    - I want to [commit suicide](distress)
+    - I'll kill myself
+    - I will die distress
+    - I feel like committing suicide
+    - I don't want to live
+    - I don't feel like living
+    - I want to end myself
+    - I feel like ending myself
+    - I want to commit suicide
 
 - intent: bot_challenge
   examples: |
