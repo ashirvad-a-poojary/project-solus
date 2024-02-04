@@ -269,9 +269,9 @@ nlu:
     - Is going to a therapist recommended?
     - does therapy really work?
     - Should i go to therapy?
-- intent: commit_suicide
+- intent: distress
   examples: |
-    - I'm committing [suicide](distress)
+    - I'm committing suicide
     - I'll [kill myself](distress)
     - I will [die](distress)
     - I feel like committing [suicide](distress)

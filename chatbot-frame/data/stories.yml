@@ -15,23 +15,31 @@ stories:
 
 - story: sad path 1
   steps:
-  - action: utter_help
-  - intent: affirm
-  - action: utter_listen
-
-- story: sad path 1
-  steps:
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
+  - intent: deny
+  - action: utter_understand
 
 - story: sad path 2
   steps:
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
-  - intent: deny
-  - action: utter_understand
+  - intent: affirm
+  - action: utter_listen
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+
+- story: sad path 3
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: affirm
+  - action: utter_listen
+  - intent: heartbreak
+  - action: utter_supp_heartbreak
 
 - story: recovering
   steps:
@@ -67,22 +75,7 @@ stories:
   steps:
   - intent: problem_communicating
   - action: utter_comm_reply
-
-- story: close one's death
-  steps:
-  - intent: close_ones_death
-  - action: utter_sorry_for_death
-
-- story: broken heart
-  steps:
-  - intent: heartbreak
-  - action: utter_supp_heartbreak
-
-- story: death
-  steps:
-  - intent: close_ones_death
-  - action: utter_sorry_for_death
-
+  
 - story: Committing suicide
   steps:
   - intent: commit_suicide

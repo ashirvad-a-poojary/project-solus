@@ -298,11 +298,10 @@ header h2 {
   display: flex;
   gap: 5px;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
   background: #fff;
   padding: 3px 20px;
-  border-radius: 15px;
   border-top: 1px solid #ddd;
 }
 .chat-input textarea {

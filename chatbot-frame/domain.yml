@@ -17,6 +17,8 @@ intents:
 - problem_communicating
 - heartbreak
 - close_ones_death
+- distress
+
 slots:
    distress:
      type: text
