@@ -199,19 +199,23 @@
     min-height: 72vh;
     background-color: black;
     color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
-   background-image: url('bgp.jpg');
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bgp.jpg');
 }
 
 .bottom{
     position: sticky;
     bottom: 0;
     height: 100px;
+    border-radius: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
     background-color: black;
     color: white;
     display: flex;
