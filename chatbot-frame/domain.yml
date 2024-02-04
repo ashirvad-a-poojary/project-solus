@@ -5,7 +5,6 @@ intents:
 - ask_professional
 - ask_recover
 - bot_challenge
-- commit_suicide
 - deny
 - goodbye
 - greet
@@ -17,14 +16,8 @@ intents:
 - problem_communicating
 - heartbreak
 - close_ones_death
-slots:
-   distress:
-     type: text
-     mappings:
-     - type: from_entity
-       entity: distress
-entities:
-  - distress
+- distress
+
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
