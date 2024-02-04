@@ -7,7 +7,16 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #141414
+  body {
+    
+    background: linear-gradient(to top, #3ad4ff, #bdf7ff);
+   
+}
+
+.content {
+    text-align: center;
+}
+
 
 }
 .navbar {
@@ -45,6 +54,7 @@ body {
   -moz-text-fill-color: transparent;
   display: flex;
   align-items: center;
+  
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -215,7 +225,6 @@ body.show-chatbot .chatbot-toggler span:last-child {
   height: 650px;
   width: 1100px;
   background: linear-gradient(to right, #87CEEB,  #FFB6C1);
-
   border-radius: 15px;
   overflow: hidden;
   opacity: 0;
