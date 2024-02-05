@@ -79,4 +79,4 @@ stories:
 - story: Handle distress
   steps:
     - intent: distress
-    - action: action_handle_distress
+    - action: utter_dont_suicide
