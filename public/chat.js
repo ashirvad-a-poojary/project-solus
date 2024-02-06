@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
             handleRasaResponse(response.data);
         } catch (error) {
             console.error('Error sending message to Rasa:', error);
+            addChatMessage('bot', 'Sorry, something went wrong while processing your request.');
+            scrollChatboxToBottom(); // Scroll to the bottom after adding a message
         }
     };
 
@@ -34,12 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to scroll the chatbox to the bottom
     const scrollChatboxToBottom = () => {
-        const lastMessage = chatbox.lastElementChild;
-        if (lastMessage) {
-            lastMessage.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
-        }
+        chatbox.scrollTop = chatbox.scrollHeight;
     };
-    
 
     // Function to handle sending message
     const sendMessage = () => {
@@ -48,19 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
             addChatMessage('user', userMessage);
             sendUserMessage(userMessage);
             inputField.value = '';
-            scrollChatboxToBottom(); // Scroll to the bottom after sending a message
         }
     };
 
-    // Event listener for Enter and Shift + Enter in the textarea
+    // Event listener for Enter key in the textarea
     inputField.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            if (!event.shiftKey) {
-                event.preventDefault(); // Prevents the newline character
-                sendMessage();
-            }
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault(); // Prevents the newline character
+            sendMessage();
         }
     });
 
+    // Event listener for send button click
     sendButton.addEventListener('click', sendMessage);
 });

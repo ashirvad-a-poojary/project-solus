@@ -7,7 +7,7 @@
 
 .navbar {
   background: #131313;
-  height: 80px;
+  height: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,13 +20,13 @@
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 6vh;
   z-index: 1;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 3vw;
+  padding-left: 3vw;
 }
 
 #navbar__logo {
@@ -173,12 +173,15 @@
 }
 .main__container {
   align-items: center;
-  justify-self: center;
+  justify-content: center;
+  display: flex;
   margin: auto;
   height: 100%;
-  background: #ffffff;
+  background: #eefeff;
   width: 100%;
+  overflow: hidden;
 }
+
 .chatbot-toggler {
   display: none;
 }
@@ -200,8 +203,8 @@ body.show-chatbot .chatbot-toggler span:last-child {
   margin: 0 auto;
   width: 55%;
   max-width: 1200px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;
   overflow: hidden;
