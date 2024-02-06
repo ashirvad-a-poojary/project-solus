@@ -122,10 +122,14 @@ nlu:
     - My girlfriend broke up with me
     - My boyfriend broke up with me
     - I went through a breakup
-    - I had a brrakup
+    - I had a breakup
     - She broke my heart
     - He broke my heart
     - It was a heartbreak
+    - I broke up
+    - I recently broke up
+    - I recently broke up with my girlfriend
+    - I recently broke up with my boyfriend
 - intent: close_ones_death
   examples: |
     - My mom passed away recently

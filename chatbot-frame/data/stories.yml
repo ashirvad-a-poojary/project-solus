@@ -21,7 +21,7 @@ stories:
   - intent: deny
   - action: utter_understand
 
-- story: sad path 2
+- story: close ones death 1
   steps:
   - intent: mood_unhappy
   - action: utter_support
@@ -31,13 +31,29 @@ stories:
   - intent: close_ones_death
   - action: utter_sorry_for_death
 
-- story: sad path 3
+- story: close ones death 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+
+- story: heart break 1
   steps:
   - intent: mood_unhappy
   - action: utter_support
   - action: utter_help
   - intent: affirm
   - action: utter_listen
+  - intent: heartbreak
+  - action: utter_supp_heartbreak
+
+- story: heart break 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_support
+  - action: utter_help
   - intent: heartbreak
   - action: utter_supp_heartbreak
 

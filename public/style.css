@@ -206,11 +206,11 @@
     align-items: center;
     justify-self: center;
     margin: auto;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(to right, #87CEEB, #FFB6C1);
-    width: 100%;
-    padding-right: 250px;
-    padding-left: 250px;
+    width: 90%;
+    padding-right: 8vw;
+    padding-left: 8vw;
   }
   
   .main__content {
