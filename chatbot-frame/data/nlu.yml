@@ -81,6 +81,10 @@ nlu:
     - wonderful
     - I am feeling very good
     - I am great
+    - I'm happy
+    - I am happy
+    - I am very happy
+    - I'm feeling happy
     - I am good
     - I am amazing
     - I am going to save the world
@@ -88,6 +92,8 @@ nlu:
     - extremely good
     - so so perfect
     - so good
+    - I'm fine
+    - fine
     - so perfect
     - I am feeling refreshed 
     - I am feeling refreshed
