@@ -81,6 +81,10 @@ nlu:
     - wonderful
     - I am feeling very good
     - I am great
+    - I'm happy
+    - I am happy
+    - I am very happy
+    - I'm feeling happy
     - I am good
     - I am amazing
     - I am going to save the world
@@ -88,6 +92,8 @@ nlu:
     - extremely good
     - so so perfect
     - so good
+    - I'm fine
+    - fine
     - so perfect
     - I am feeling refreshed 
     - I am feeling refreshed
@@ -116,10 +122,14 @@ nlu:
     - My girlfriend broke up with me
     - My boyfriend broke up with me
     - I went through a breakup
-    - I had a brrakup
+    - I had a breakup
     - She broke my heart
     - He broke my heart
     - It was a heartbreak
+    - I broke up
+    - I recently broke up
+    - I recently broke up with my girlfriend
+    - I recently broke up with my boyfriend
 - intent: close_ones_death
   examples: |
     - My mom passed away recently
@@ -271,15 +281,16 @@ nlu:
     - Should i go to therapy?
 - intent: distress
   examples: |
-    - I'm committing suicide
-    - I'll kill myself
-    - I will die distress
-    - I feel like committing suicide
-    - I don't want to live
-    - I don't feel like living
-    - I want to end myself
-    - I feel like ending myself
-    - I want to commit suicide
+    - I'm committing suicide [distress]
+    - I'll kill myself [distress]
+    - I will die [distress]
+    - I feel like committing suicide [distress]
+    - I don't want to live [distress]
+    - I don't feel like living [distress]
+    - I want to end myself [distress]
+    - I feel like ending myself [distress]
+    - I want to commit suicide [distress]
+
 
 - intent: bot_challenge
   examples: |
