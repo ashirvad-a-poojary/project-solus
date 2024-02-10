@@ -179,6 +179,7 @@
   background: #ffffff;
   width: 100%;
 }
+
 .chatbot-toggler {
   display: none;
 }
@@ -350,3 +351,4 @@ header h2 {
     display: block;
   }
 }
+
