@@ -12,6 +12,7 @@ intents:
 - mood_cry
 - mood_great
 - mood_unhappy
+- mood_sad
 - feeling_leftout
 - problem_communicating
 - heartbreak
@@ -24,15 +25,18 @@ responses:
   - text: Hello, What's on your mind?
   - text: Hii!, How's it going?
   - text: Hey there! whatsupp?
-  - text: Hii, How you doin'?
-  utter_support:
-  - text: I'm sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
+  utter_unhappy:
+  - text: What's the matter? Tell me.
+  - text: What happend my friend?
+  utter_sad:
+  - text: Sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
   utter_help:
   - text: Would you mind sharing?
   - text: Let me hear it if you don't mind
   - text: You can spill the beans with me
   utter_happy:
-  - text: Great, carry on!
+  - text: Great, carry on my friend!
+  - text: That's good to hear
   utter_goodbye:
   - text: Byee!
   - text: Bye Bye!
@@ -72,12 +76,12 @@ responses:
   - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
   - text: You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges.
   - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for. Please don't hurt yourself or end your life.
-  utter_go_therapist:
+  utter_therapist:
   - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
   utter_comm_reply:
   - text: I understand your problem. I'm an AI so you can tell me anything you have in your mind, I won't judge. I reccomend you to meet new people who can understnd you and and treat you well.  
-  utter_supp_heartbreak:
+  utter_heartbreak:
   - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
   utter_sorry_for_death:
   - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.

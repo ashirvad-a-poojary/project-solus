@@ -99,22 +99,26 @@ nlu:
     - I am feeling refreshed
 - intent: mood_unhappy
   examples: |
+    - my day was not good
+    - my day was bad
+    - I don't feel very well
+    - I am not feeling good
+    - I'm feeling really down today.
+    - I am feeling down
+    - unhappy
+    - not good
+    - not very good
+- intent: mood_sad
+  examples: |
     - my day was horrible
     - I am sad
-    - I don't feel very well
     - I am disappointed
     - I am depressed
     - super sad
     - I'm so sad
     - I'm feeling sad
-    - I am not feeling good
-    - I'm feeling really down today.
-    - I am feeling down
     - sad
     - very sad
-    - unhappy
-    - not good
-    - not very good
     - extremly sad
 - intent: heartbreak
   examples: |
