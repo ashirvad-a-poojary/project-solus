@@ -48,6 +48,13 @@ stories:
   - intent: heartbreak
   - action: utter_heartbreak
 
+- story: asking feelings
+  steps:
+  - intent: question
+  - action: utter_question
+  - intent: life_meaning
+  - action: utter_motivate
+
 - story: recovering
   steps:
   - intent: ask_recover
@@ -57,16 +64,6 @@ stories:
   steps:
   - intent: mood_cry
   - action: utter_cheer_up
-
-- story: validate feelings
-  steps:
-  - intent: ask_feelings
-  - action: utter_validate
-
-- story: meaning of life
-  steps:
-  - intent: life_meaning
-  - action: utter_motivate
 
 - story: seeking therapy
   steps:

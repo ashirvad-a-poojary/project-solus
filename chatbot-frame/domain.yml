@@ -18,7 +18,7 @@ intents:
 - heartbreak
 - close_ones_death
 - distress
-
+- question
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
@@ -49,8 +49,9 @@ responses:
   - text: Sure, go ahead
   - text: Sure thing, spill it! I'm all ears.
   - text: Sure, spill the beans! I'm here to chat, no judgment.
-  utter_ears:
-  - text: Tell me what happened
+  utter_question:
+  - text: What is it?
+  - text: Yeah sure, ask me
   utter_understand:
   - text: I understand. It's completely okay if you don't want to talk about it right now. Remember, I'm here whenever you're ready. Speaking to a therapist is a good idea. You should open up your feelings and emotions, throw it all out my friend.
   - text: I get it. Take your time. I'm here whenever you're ready to talk or if you have questions. Or consider speeking to a professional therapist, please don't shut your feelings inside.
