@@ -45,10 +45,6 @@ responses:
   - text: Take care
   utter_iamabot:
   - text: I'm Solus, your AI companion.
-  utter_listen:
-  - text: Sure, go ahead
-  - text: Sure thing, spill it! I'm all ears.
-  - text: Sure, spill the beans! I'm here to chat, no judgment.
   utter_question:
   - text: What is it?
   - text: Yeah sure, ask me
