@@ -18,14 +18,14 @@ stories:
   - intent: mood_unhappy
   - action: utter_unhappy
   - intent: feeling_leftout
-  - action: utter_validate
+  - action: utter_leftout
 
 - story: feeling leftout 2
   steps:
   - intent: mood_sad
   - action: utter_sad
   - intent: feeling_leftout
-  - action: utter_validate
+  - action: utter_leftout
 
 - story: close ones death
   steps:
@@ -53,7 +53,7 @@ stories:
   - intent: question
   - action: utter_question
   - intent: life_meaning
-  - action: utter_validate
+  - action: utter_life_meaning
   - intent: ask_recover
   - action: utter_recover
 
@@ -78,5 +78,7 @@ stories:
   
 - story: Handle distress
   steps:
-    - intent: distress
-    - action: utter_dont_suicide
+  - intent: distress
+  - action: utter_dont_suicide
+  - intent: life_meaning
+  - action: utter_life_meaning

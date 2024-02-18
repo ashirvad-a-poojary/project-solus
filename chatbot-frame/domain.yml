@@ -55,10 +55,8 @@ responses:
   - text: I completely understand if you're not ready to talk about it right now. Just know that I'm here for you whenever you feel comfortable. Whether you want to discuss something specific or if you have any questions, feel free to reach out whenever you're ready. And consider the option of seeking advice from a professional therapist.
   utter_cheer_up:
   - text: It's okay to cry and to express your emotions. If you feel comfortable, you can talk to me about what's going on or what hurt you. Remember that you don't have to go through difficult times alone.
-  utter_validate:
-  - text: I want you to know that your emotions matter. Everyone goes through different feelings, and it's okay to experience what you're going through. I'm here to provide support and understanding as you navigate your emotions.
-  - text: Understanding our emotions is a journey. It's completely normal to experience a range of emotions, and I'm here to support you through whatever you're feeling.
-  - text: Your feelings are valid and important. It's completely normal to go through various emotions, and I'm here to acknowledge and support you as you navigate through them.
+  utter_life_meaning:
+  - text: It's like trying to solve a Rubik's Cube blindfolded, right? Life can be a bit of a puzzle sometimes. we're all just trying to figure it out as we go along.
   utter_recover:
   - text: Yess! Defintely, you have the strength to see positive changes and improvement in your situation. I'm here to support you every step of the way on your journey towards a brighter future.
   - text: Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better.
