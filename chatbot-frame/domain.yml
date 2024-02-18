@@ -49,12 +49,8 @@ responses:
   utter_question:
   - text: What is it buddy?
   - text: Sure, go ahead
-  utter_understand:
-  - text: I understand. It's completely okay if you don't want to talk about it right now. Remember, I'm here whenever you're ready. Speaking to a therapist is a good idea. You should open up your feelings and emotions, throw it all out my friend.
-  - text: I get it. Take your time. I'm here whenever you're ready to talk or if you have questions. Or consider speeking to a professional therapist, please don't shut your feelings inside.
-  - text: I completely understand if you're not ready to talk about it right now. Just know that I'm here for you whenever you feel comfortable. Whether you want to discuss something specific or if you have any questions, feel free to reach out whenever you're ready. And consider the option of seeking advice from a professional therapist.
-  utter_cheer_up:
-  - text: It's okay to cry and to express your emotions. If you feel comfortable, you can talk to me about what's going on or what hurt you. Remember that you don't have to go through difficult times alone.
+  utter_cry:
+  - text: It's okay to cry and to express your emotions, we all have that situation at one point. Remember that you don't have to go through difficult times alone, talk to your close friends or family.
   utter_life_meaning:
   - text: It's like trying to solve a Rubik's Cube blindfolded, right? Life can be a bit of a puzzle sometimes. we're all just trying to figure it out as we go along.
   utter_recover:
@@ -64,10 +60,11 @@ responses:
   utter_leftout:
   - text: So you are being ignored by people. Don't worry, I have a solution for you my friend. They can't ignore you if you ignore them. Just move away from them, you'll surely find good people out there.
   utter_dont_suicide:
-  - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself or your life.
   - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
   - text: You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges.
-  - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for. Please don't hurt yourself or end your life.
+  utter_ask_feelings:
+  - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself.
+  - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for.
   utter_therapist:
   - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
