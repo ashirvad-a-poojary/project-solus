@@ -161,15 +161,6 @@
   .navbar__btn {
     padding-bottom: 2rem;
   }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
 }
 .main__container {
   align-items: center;
@@ -204,6 +195,8 @@ body.show-chatbot .chatbot-toggler span:last-child {
   width: 55%;
   max-width: 1200px;
   margin-top: 5vh;
+  height: 100%;
+  max-height: 90vh;
   margin-bottom: 5vh;
   background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;

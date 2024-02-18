@@ -9,7 +9,7 @@
   
   .navbar {
     background: #131313;
-    height: 80px;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +23,13 @@
   .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 6vh;
     z-index: 1;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 3vw;
+    padding-left: 3vw;
   }
   
   #navbar__logo {

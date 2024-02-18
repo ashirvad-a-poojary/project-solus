@@ -48,17 +48,14 @@ stories:
   - intent: heartbreak
   - action: utter_heartbreak
 
-- story: asking feelings
+- story: asking feelings and recovery
   steps:
   - intent: question
   - action: utter_question
   - intent: life_meaning
   - action: utter_motivate
-
-- story: recovering
-  steps:
   - intent: ask_recover
-  - action: utter_improve
+  - action: utter_recover
 
 - story: crying
   steps:

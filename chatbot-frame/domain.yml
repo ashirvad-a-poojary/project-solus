@@ -62,7 +62,7 @@ responses:
   - text: I want you to know that your emotions matter. Everyone goes through different feelings, and it's okay to experience what you're going through. I'm here to provide support and understanding as you navigate your emotions.
   - text: Understanding our emotions is a journey. It's completely normal to experience a range of emotions, and I'm here to support you through whatever you're feeling.
   - text: Your feelings are valid and important. It's completely normal to go through various emotions, and I'm here to acknowledge and support you as you navigate through them.
-  utter_improve:
+  utter_recover:
   - text: Yess! Defintely, you have the strength to see positive changes and improvement in your situation. I'm here to support you every step of the way on your journey towards a brighter future.
   - text: Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better.
   - text: Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better.
