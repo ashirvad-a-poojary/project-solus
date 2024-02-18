@@ -70,7 +70,7 @@ stories:
 - story: communication
   steps:
   - intent: problem_communicating
-  - action: utter_comm_reply
+  - action: utter_communicate
   
 - story: Handle distress
   steps:

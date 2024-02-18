@@ -110,6 +110,23 @@ nlu:
     - so perfect
     - I am feeling refreshed 
     - I am feeling refreshed
+- intent: issue
+  examples: |
+    - I'm having an issue
+    - I have an issue
+    - I got one issue
+    - I'm having a problem
+    - I have a problem
+    - I'm facing a problem
+    - there is one issue
+    - there is one problem
+    - I encountered a problem
+    - I'm experiencing an issue
+    - There seems to be a problem
+    - I'm having trouble with something
+    - Can you help me with a problem?
+    - I need assistance with an issue
+    - There's an issue I need help with
 - intent: mood_unhappy
   examples: |
     - my day was not good
