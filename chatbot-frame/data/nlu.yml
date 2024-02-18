@@ -66,6 +66,19 @@ nlu:
     - Absolutely not
     - Not at all
     - No
+- intent: question
+  examples: |
+    - I have a question
+    - I want to ask a question
+    - I want to ask few questions
+    - I want ot ask something
+    - can I ask a question
+    - can I ask a few questions?
+    - can I ask something?
+    - I need to ask something
+    - I have a question for you
+    - answer this for me
+    - I need you to answer this for me
 - intent: mood_great
   examples: |
     - perfect
@@ -99,22 +112,26 @@ nlu:
     - I am feeling refreshed
 - intent: mood_unhappy
   examples: |
+    - my day was not good
+    - my day was bad
+    - I don't feel very well
+    - I am not feeling good
+    - I'm feeling really down today.
+    - I am feeling down
+    - unhappy
+    - not good
+    - not very good
+- intent: mood_sad
+  examples: |
     - my day was horrible
     - I am sad
-    - I don't feel very well
     - I am disappointed
     - I am depressed
     - super sad
     - I'm so sad
     - I'm feeling sad
-    - I am not feeling good
-    - I'm feeling really down today.
-    - I am feeling down
     - sad
     - very sad
-    - unhappy
-    - not good
-    - not very good
     - extremly sad
 - intent: heartbreak
   examples: |
@@ -256,7 +273,6 @@ nlu:
   examples: |
     - What's the point of anything?
     - Why can't I just be happy like everyone else?
-    - How come
     - I can't find joy like others do?
     - Why does everything seem so meaningless?
     - Is there any purpose to my existence?

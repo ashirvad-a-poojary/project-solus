@@ -13,49 +13,47 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: feeling leftout 1
   steps:
   - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
-  - intent: deny
-  - action: utter_understand
+  - action: utter_unhappy
+  - intent: feeling_leftout
+  - action: utter_motivate
 
-- story: close ones death 1
+- story: feeling leftout 2
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: feeling_leftout
+  - action: utter_motivate
+
+- story: close ones death
   steps:
   - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
-  - intent: affirm
-  - action: utter_listen
+  - action: utter_unhappy
   - intent: close_ones_death
   - action: utter_sorry_for_death
 
-- story: close ones death 2
+- story: close ones death
   steps:
-  - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
+  - intent: mood_sad
+  - action: utter_sad
   - intent: close_ones_death
   - action: utter_sorry_for_death
 
-- story: heart break 1
+- story: heart break
   steps:
-  - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
-  - intent: affirm
-  - action: utter_listen
+  - intent: mood_sad
+  - action: utter_sad
   - intent: heartbreak
-  - action: utter_supp_heartbreak
+  - action: utter_heartbreak
 
-- story: heart break 1
+- story: asking feelings
   steps:
-  - intent: mood_unhappy
-  - action: utter_support
-  - action: utter_help
-  - intent: heartbreak
-  - action: utter_supp_heartbreak
+  - intent: question
+  - action: utter_question
+  - intent: life_meaning
+  - action: utter_motivate
 
 - story: recovering
   steps:
@@ -67,26 +65,11 @@ stories:
   - intent: mood_cry
   - action: utter_cheer_up
 
-- story: validate feelings
-  steps:
-  - intent: ask_feelings
-  - action: utter_validate
-
-- story: meaning of life
-  steps:
-  - intent: life_meaning
-  - action: utter_motivate
-
 - story: seeking therapy
   steps:
   - intent: ask_professional
-  - action: utter_go_therapist
-
-- story: motivation
-  steps:
-  - intent: feeling_leftout
-  - action: utter_motivate
-
+  - action: utter_therapist
+  
 - story: communication
   steps:
   - intent: problem_communicating

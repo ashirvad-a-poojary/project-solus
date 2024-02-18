@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 // Define proxy middleware to forward requests to the Rasa server
 const rasaProxy = createProxyMiddleware({
-  target: 'http://localhost:5005', // URL of the Rasa server
+  target: 'http://localhost:5005',
   changeOrigin: true, // Needed for virtual hosted sites
   ws: true, // Proxy websockets
 });
