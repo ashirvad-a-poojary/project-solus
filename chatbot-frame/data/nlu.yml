@@ -233,13 +233,9 @@ nlu:
     - I find it difficult to talk people about my feelings or feelings
     - I's hard for me to talk with people about my emotions
     - I's hard for me to talk with people about my feelings
-    - I don't like to share feeligs with people
-    - I don't like to share feeligs with people
-    - I don't want to share because I feel judged
-    - people judge me when i share feelings
-    - people judge me when i share emotions
-    - I'm judges for sharing my feelings
-    - I'm judges for sharing my emotions
+    - I find it difficult to communicate
+    - I don't feel like communicating with others
+    - It's hard for me to communicate
 - intent: feeling_leftout
   examples: |
     - I have been ignored a lot
@@ -254,11 +250,10 @@ nlu:
     - I'm starting to think people intentionally ignore me.
     - Lonely again. What can I do about it?
     - It's like nobody pays attention to me.
-    - I'm often left out, and it's getting to me
+    - I'm often left out
     - Feeling ignored by everyone
     - Feeling ignored by others
     - It seems people don't include me.
-    - Loneliness is something I deal with a lot.
     - I'm dealing with loneliness a lot
     - I'm overlooked.
     - so lonely
@@ -268,6 +263,13 @@ nlu:
     - I feel like I'm avoided by others
     - I'm being avoided
     - my freids are starting to avoid me 
+#- intent: judged
+#  examples: |
+#    - I feel judged
+#    - people judge me when i share feelings
+#    - people judge me when i share emotions
+#    - I'm judged for sharing my feelings
+#    - I'm judged for sharing my emotions
 - intent: ask_recover
   examples: |
     - Will I ever get better?

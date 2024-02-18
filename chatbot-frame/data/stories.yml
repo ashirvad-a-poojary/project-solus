@@ -18,14 +18,14 @@ stories:
   - intent: mood_unhappy
   - action: utter_unhappy
   - intent: feeling_leftout
-  - action: utter_motivate
+  - action: utter_validate
 
 - story: feeling leftout 2
   steps:
   - intent: mood_sad
   - action: utter_sad
   - intent: feeling_leftout
-  - action: utter_motivate
+  - action: utter_validate
 
 - story: close ones death
   steps:
@@ -53,9 +53,18 @@ stories:
   - intent: question
   - action: utter_question
   - intent: life_meaning
-  - action: utter_motivate
+  - action: utter_validate
   - intent: ask_recover
   - action: utter_recover
+
+- story: having trouble
+  steps:
+  - intent: issue
+  - action: utter_question
+  - intent: problem_communicating
+  - action: utter_communicate
+  - intent: feeling_leftout
+  - action: utter_leftout
 
 - story: crying
   steps:
@@ -66,11 +75,6 @@ stories:
   steps:
   - intent: ask_professional
   - action: utter_therapist
-  
-- story: communication
-  steps:
-  - intent: problem_communicating
-  - action: utter_communicate
   
 - story: Handle distress
   steps:
