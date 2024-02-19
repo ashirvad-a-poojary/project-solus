@@ -168,9 +168,7 @@
   /* Main Content CSS */
   .main {
     background: linear-gradient(to right, #87CEEB,  #FFB6C1);
-
   }
-  
   .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -178,12 +176,11 @@
     justify-self: center;
     margin: auto;
     height: 100vh;
-    background: linear-gradient(to right, #87CEEB, #FFB6C1);
+    background: linear-gradient(to right, #87CEEB,  #FFB6C1);
     width: 100%;
     padding-right: 12vw;
     padding-left: 12vw;
   }
-  
   .main__content {
     color: #fff;
     width: 100%;
@@ -268,8 +265,10 @@
     height: 110%;
     width: 110%;
     border-radius: 20px;
+    transform-origin: bottom right;
+  box-shadow: 0 0 50px rgb(47, 46, 46),
+              0 16px 30px  rgb(166, 150, 150);
   }
-  
   /* Mobile Responsive */
   @media screen and (max-width: 768px) {
     .main__container {
