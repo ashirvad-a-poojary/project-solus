@@ -18,14 +18,14 @@ stories:
   - intent: mood_unhappy
   - action: utter_unhappy
   - intent: feeling_leftout
-  - action: utter_motivate
+  - action: utter_leftout
 
 - story: feeling leftout 2
   steps:
   - intent: mood_sad
   - action: utter_sad
   - intent: feeling_leftout
-  - action: utter_motivate
+  - action: utter_leftout
 
 - story: close ones death
   steps:
@@ -33,6 +33,8 @@ stories:
   - action: utter_unhappy
   - intent: close_ones_death
   - action: utter_sorry_for_death
+  - intent: mood_cry
+  - action: utter_cry
 
 - story: close ones death
   steps:
@@ -40,6 +42,8 @@ stories:
   - action: utter_sad
   - intent: close_ones_death
   - action: utter_sorry_for_death
+  - intent: mood_cry
+  - action: utter_cry
 
 - story: heart break
   steps:
@@ -47,32 +51,37 @@ stories:
   - action: utter_sad
   - intent: heartbreak
   - action: utter_heartbreak
+  - intent: mood_cry
+  - action: utter_cry
 
 - story: asking feelings and recovery
   steps:
   - intent: question
   - action: utter_question
   - intent: life_meaning
-  - action: utter_motivate
+  - action: utter_life_meaning
   - intent: ask_recover
   - action: utter_recover
 
-- story: crying
+- story: having trouble
   steps:
-  - intent: mood_cry
-  - action: utter_cheer_up
+  - intent: issue
+  - action: utter_question
+  - intent: problem_communicating
+  - action: utter_communicate
+  - intent: feeling_leftout
+  - action: utter_leftout
 
 - story: seeking therapy
   steps:
   - intent: ask_professional
   - action: utter_therapist
   
-- story: communication
-  steps:
-  - intent: problem_communicating
-  - action: utter_communicate
-  
 - story: Handle distress
   steps:
-    - intent: distress
-    - action: utter_dont_suicide
+  - intent: distress
+  - action: utter_dont_suicide
+  - intent: life_meaning
+  - action: utter_life_meaning
+  - intent: ask_feelings
+  - action: utter_ask_feelings

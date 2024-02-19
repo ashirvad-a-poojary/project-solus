@@ -3,37 +3,32 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="img.css">
     <title>Image Therapy</title>
-    <style>
-        body {
-            font-family: 'Karla', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .slider-frame {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .slide-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .img-container {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .img-container img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
+    
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="./index.html" id="navbar__logo">SolusAI</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="img.html" class="navbar__links">IMAGE THERAPY</a>
+            </li>
+            <li class="navbar__item">
+              <a href="bina.html" class="navbar__links">BINAURAL BEATS</a>
+            </li>
+            <li class="navbar__item">
+              <a href="maps.html" class="navbar__links">APPOINTMENTS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     <div class="slider-frame">
         <div class="slide-images" id="slider">
             <div class="img-container">
