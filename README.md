@@ -1,7 +1,7 @@
 # project-solus
 SolusAI is a friendly AI companion which assists user with mental health support 
 
-# Running rasa server
+### Running rasa server
 Make sure you are in the directory containing rasa model.
 In our case, 'chatbot-frame' then run this command
 
