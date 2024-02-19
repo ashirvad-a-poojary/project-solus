@@ -67,19 +67,6 @@
     height: 100%;
   }
   
-  .navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
-  }
-  
   .navbar__links:hover {
     color: #f77062;
     transition: all 0.3s ease;
@@ -280,6 +267,7 @@
   #main__img {
     height: 110%;
     width: 110%;
+    border-radius: 20px;
   }
   
   /* Mobile Responsive */
