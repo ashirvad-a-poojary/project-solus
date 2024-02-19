@@ -263,13 +263,15 @@ nlu:
     - I feel like I'm avoided by others
     - I'm being avoided
     - my freids are starting to avoid me 
-#- intent: judged
-#  examples: |
-#    - I feel judged
-#    - people judge me when i share feelings
-#    - people judge me when i share emotions
-#    - I'm judged for sharing my feelings
-#    - I'm judged for sharing my emotions
+- intent: judged
+  examples: |
+    - I feel judged
+    - people judge me when i share feelings
+    - people judge me when i share emotions
+    - I'm judged for sharing my feelings
+    - I'm judged for sharing my emotions
+    - It seems like everyone is constantly judging me.
+    - they judge me
 - intent: ask_recover
   examples: |
     - Will I ever get better?
@@ -322,6 +324,19 @@ nlu:
     - I want to end myself
     - I feel like ending myself
     - I want to commit suicide
+- intent: worried
+  examples: |
+    - I am worried
+    - It's making me worry
+    - I am worried a lot
+    - very worried
+    - It is stressful
+    - I'm stressed
+    - very stressful
+    - lot of stress
+- intent: exam
+  examples: |
+    - 
 - intent: bot_challenge
   examples: |
     - are you a bot?

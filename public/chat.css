@@ -167,7 +167,7 @@
   justify-content: center;
   display: flex;
   margin: auto;
-  height: 100%;
+  height: 94vh;
   background: #eefeff;
   width: 100%;
   overflow: hidden;
@@ -204,8 +204,11 @@ body.show-chatbot .chatbot-toggler span:last-child {
   pointer-events: auto;
   transform: scale(1);
   transform-origin: bottom right;
-  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  box-shadow: 
+    0 0 128px 0 rgba(0, 0, 0, 0.1), /* Bottom shadow */
+    0 32px 64px -48px rgba(0, 0, 0, 0.4), /* Bottom shadow */
+    32px 0 64px -48px rgba(0, 0, 0, 0.4), /* Right side shadow */
+    -32px 0 64px -48px rgba(0, 0, 0, 0.4); /* Left side shadow */
   transition: all 0.1s ease;
 }
 body.show-chatbot .chatbot {

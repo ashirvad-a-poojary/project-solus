@@ -20,6 +20,8 @@ intents:
 - distress
 - question
 - issue
+- worried
+- exam
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
