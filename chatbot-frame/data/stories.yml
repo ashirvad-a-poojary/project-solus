@@ -36,7 +36,16 @@ stories:
   - intent: mood_cry
   - action: utter_cry
 
-- story: heart break
+- story: close ones death 2
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+  - intent: mood_sad
+  - action: utter_help
+
+- story: heart break 1
   steps:
   - intent: mood_sad
   - action: utter_sad
@@ -44,6 +53,15 @@ stories:
   - action: utter_heartbreak
   - intent: mood_cry
   - action: utter_cry
+
+- story: heart break 2
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: heartbreak
+  - action: utter_heartbreak
+  - intent: mood_sad
+  - action: utter_help
 
 - story: asking feelings and recovery
   steps:

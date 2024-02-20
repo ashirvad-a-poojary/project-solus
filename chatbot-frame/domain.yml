@@ -34,9 +34,7 @@ responses:
   utter_sad:
   - text: Sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
   utter_help:
-  - text: Would you mind sharing?
-  - text: Let me hear it if you don't mind
-  - text: You can spill the beans with me
+  - text: Don't worry my friend. Its surely very hard for you dealing with all this. It's okay, take your time and you'll be alright soon.
   utter_happy:
   - text: Great, carry on my friend!
   - text: That's good to hear
