@@ -72,7 +72,7 @@ stories:
   - intent: ask_recover
   - action: utter_recover
 
-- story: having trouble communicating
+- story: having trouble communicating 1
   steps:
   - intent: issue
   - action: utter_question
@@ -80,6 +80,15 @@ stories:
   - action: utter_communicate
   - intent: feeling_leftout
   - action: utter_leftout
+
+- story: having trouble communicating 2
+  steps:
+  - intent: issue
+  - action: utter_question
+  - intent: problem_communicating
+  - action: utter_communicate
+  - intent: judged
+  - action: utter_judged
 
 - story: seeking therapy
   steps:
