@@ -175,18 +175,23 @@
     align-items: center;
     justify-self: center;
     margin: auto;
-    height: 94vh;
-    background: linear-gradient(to right, #87CEEB,  #FFB6C1);
+    height: 100vh;
     width: 100%;
     padding-right: 12vw;
     padding-left: 12vw;
-  }
+    background-image: 
+    linear-gradient(to bottom, #87CEEB, #87CEEB), 
+    linear-gradient(to top, #4f005f, #FFB6C1); 
+    background-size: 100% 50%, 100% 50%;
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+}
   .main__content {
     color: #fff;
     width: 100%;
   }
   
-  .main__content h1 {
+  .main__content h2 {
     font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0000 50%, #ff944c 140%);
@@ -195,9 +200,10 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    padding-top: 11%;
   }
   
-  .main__content h2 {
+  .main__content h3 {
     font-size: 4rem;
     margin-top: 10px;
     background-color: #ff8177;
@@ -209,11 +215,16 @@
     -moz-text-fill-color: transparent;
   }
   
-  .main__content p {
+  .main__container h1 {
+    position: absolute; /* Make the h3 position absolute */
+    top: 6rem; /* Position at the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center properly */
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff;
+    text-align: center; /* Center the text */
   }
   
   .main__btn {
@@ -286,32 +297,32 @@
       margin-bottom: 4rem;
     }
   
-    .main__content h1 {
+    .main__content h2 {
       font-size: 2.5rem;
       margin-top: 2rem;
     }
   
-    .main__content h2 {
+    .main__content h3 {
       font-size: 3rem;
     }
   
-    .main__content p {
+    .main__container h1 {
       margin-top: 1rem;
       font-size: 1.5rem;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .main__content h1 {
+    .main__content h2 {
       font-size: 2rem;
       margin-top: 3rem;
     }
   
-    .main__content h2 {
+    .main__content h3 {
       font-size: 2rem;
     }
   
-    .main__content p {
+    .main__container h1 {
       margin-top: 2rem;
       font-size: 1.5rem;
     }
