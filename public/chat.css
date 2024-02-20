@@ -168,7 +168,7 @@
   display: flex;
   margin: auto;
   height: 94vh;
-  background: #eefeff;
+  background: #d8c1ea;
   width: 100%;
   overflow: hidden;
 }
@@ -197,7 +197,7 @@ body.show-chatbot .chatbot-toggler span:last-child {
   margin-top: 4vh;
   max-height: 86vh;
   margin-bottom: 4vh;
-  background: linear-gradient(to right, #87CEEB, #FFB6C1);
+  background: #cccccc84;
   border-radius: 15px;
   overflow: hidden;
   opacity: 1;
