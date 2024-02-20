@@ -16,7 +16,7 @@ stories:
 - story: feeling leftout 1
   steps:
   - intent: mood_unhappy
-  - action: utter_unhappy
+  - action: utter_what
   - intent: feeling_leftout
   - action: utter_leftout
 
@@ -27,16 +27,7 @@ stories:
   - intent: feeling_leftout
   - action: utter_leftout
 
-- story: close ones death
-  steps:
-  - intent: mood_unhappy
-  - action: utter_unhappy
-  - intent: close_ones_death
-  - action: utter_sorry_for_death
-  - intent: mood_cry
-  - action: utter_cry
-
-- story: close ones death
+- story: close ones death 1
   steps:
   - intent: mood_sad
   - action: utter_sad
@@ -45,7 +36,16 @@ stories:
   - intent: mood_cry
   - action: utter_cry
 
-- story: heart break
+- story: close ones death 2
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: close_ones_death
+  - action: utter_sorry_for_death
+  - intent: mood_sad
+  - action: utter_help
+
+- story: heart break 1
   steps:
   - intent: mood_sad
   - action: utter_sad
@@ -53,6 +53,22 @@ stories:
   - action: utter_heartbreak
   - intent: mood_cry
   - action: utter_cry
+
+- story: heart break 2
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: heartbreak
+  - action: utter_heartbreak
+  - intent: mood_sad
+  - action: utter_help
+
+- story: user life meaning
+  steps:
+  - intent: life_meaning
+  - action: utter_life_meaning
+  - intent: ask_feelings
+  - action: utter_ask_feelings
 
 - story: asking feelings and recovery
   steps:
@@ -63,7 +79,7 @@ stories:
   - intent: ask_recover
   - action: utter_recover
 
-- story: having trouble
+- story: having trouble communicating 1
   steps:
   - intent: issue
   - action: utter_question
@@ -72,12 +88,21 @@ stories:
   - intent: feeling_leftout
   - action: utter_leftout
 
+- story: having trouble communicating 2
+  steps:
+  - intent: issue
+  - action: utter_question
+  - intent: problem_communicating
+  - action: utter_communicate
+  - intent: judged
+  - action: utter_judged
+
 - story: seeking therapy
   steps:
   - intent: ask_professional
   - action: utter_therapist
   
-- story: Handle distress
+- story: user distress and life meaning
   steps:
   - intent: distress
   - action: utter_dont_suicide
@@ -85,3 +110,25 @@ stories:
   - action: utter_life_meaning
   - intent: ask_feelings
   - action: utter_ask_feelings
+
+- story: user distress and seek help
+  steps:
+  - intent: distress
+  - action: utter_dont_suicide
+  - intent: ask_professional
+  - action: utter_therapist
+
+- story: preparing for exam 1
+  steps:
+  - intent: exam
+  - action: utter_exam
+  - intent: worried
+  - action: utter_exam_motivate
+
+- story: preparing for exam 2
+  steps:
+  - intent: worried
+  - action: utter_what
+  - intent: exam
+  - action: utter_exam_motivate
+  - action: utter_exam

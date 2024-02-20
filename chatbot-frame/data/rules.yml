@@ -12,3 +12,7 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: telling a joke
+  steps:
+  - intent: ask_joke
+  - action: utter_joke
