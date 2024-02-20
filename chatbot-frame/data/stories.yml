@@ -63,6 +63,13 @@ stories:
   - intent: mood_sad
   - action: utter_help
 
+- story: user life meaning
+  steps:
+  - intent: life_meaning
+  - action: utter_life_meaning
+  - intent: ask_feelings
+  - action: utter_ask_feelings
+
 - story: asking feelings and recovery
   steps:
   - intent: question
@@ -95,7 +102,7 @@ stories:
   - intent: ask_professional
   - action: utter_therapist
   
-- story: Handle distress and life meaning
+- story: user distress and life meaning
   steps:
   - intent: distress
   - action: utter_dont_suicide
@@ -103,6 +110,13 @@ stories:
   - action: utter_life_meaning
   - intent: ask_feelings
   - action: utter_ask_feelings
+
+- story: user distress and seek help
+  steps:
+  - intent: distress
+  - action: utter_dont_suicide
+  - intent: ask_professional
+  - action: utter_therapist
 
 - story: preparing for exam 1
   steps:
