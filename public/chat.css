@@ -194,9 +194,9 @@ body.show-chatbot .chatbot-toggler span:last-child {
   margin: 0 auto;
   width: 55%;
   max-width: 80vw;
-  margin-top: 5vh;
-  max-height: 90vh;
-  margin-bottom: 5vh;
+  margin-top: 4vh;
+  max-height: 86vh;
+  margin-bottom: 4vh;
   background: linear-gradient(to right, #87CEEB, #FFB6C1);
   border-radius: 15px;
   overflow: hidden;

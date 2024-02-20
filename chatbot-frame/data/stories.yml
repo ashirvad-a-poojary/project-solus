@@ -27,16 +27,7 @@ stories:
   - intent: feeling_leftout
   - action: utter_leftout
 
-- story: close ones death
-  steps:
-  - intent: mood_unhappy
-  - action: utter_unhappy
-  - intent: close_ones_death
-  - action: utter_sorry_for_death
-  - intent: mood_cry
-  - action: utter_cry
-
-- story: close ones death
+- story: close ones death 1
   steps:
   - intent: mood_sad
   - action: utter_sad

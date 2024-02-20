@@ -150,6 +150,8 @@ nlu:
     - sad
     - very sad
     - extremly sad
+    - sad right now
+    - depressed right now
 - intent: heartbreak
   examples: |
     - My heart got broken
