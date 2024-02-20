@@ -22,6 +22,8 @@ intents:
 - issue
 - worried
 - exam
+- judged
+- ask_joke
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
@@ -79,6 +81,15 @@ responses:
   - text: All the best for exams, do well my friend.
   utter_exam_motivate:
   - text: Don't take stress, it will just make the situation bad. If you are very limited by time, revise what you already learnt.
+  utter_joke:
+  - text: Why don't scientists trust atoms? Because they make up everything!
+  - text: What did one wall say to the other wall? "I'll meet you at the corner!"
+  - text: Why was the math book sad? Because it had too many problems.
+  - text: How does a penguin build its house? Igloos it together!
+  - text: Why did the scarecrow win an award? Because he was outstanding in his field!
+  - text: Why don't skeletons fight each other? They don't have the guts!
+  - text: What do you call fake spaghetti? An impasta!
+  - text: SAD spelled backwards is DAS. And das not good.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

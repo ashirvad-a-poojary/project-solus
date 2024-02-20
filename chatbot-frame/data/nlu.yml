@@ -279,6 +279,8 @@ nlu:
     - I'm judged for sharing my emotions
     - It seems like everyone is constantly judging me.
     - they judge me
+    - everyone judges me
+    - lot of people judge me
 - intent: ask_recover
   examples: |
     - Will I ever get better?
@@ -352,7 +354,31 @@ nlu:
     - preparing for JEE exam
     - preparing for NEET exam
     - preparing for CET exam
+    - I'm preparing for entrance exam
     - studiyinng for exams
+- intent: ask_joke
+  examples: |
+    - tell me a joke
+    - say a joke
+    - make me laugh
+    - do you have any jokes?
+    - are you good at jokes?
+    - let me hear a joke
+    - tell me a joke
+    - say a joke
+    - make me laugh
+    - do you have any jokes?
+    - are you good at jokes?
+    - let me hear a joke
+    - I need a laugh
+    - I want to hear something funny
+    - Can you lighten the mood?
+    - Could you share something humorous?
+    - Can you crack a joke?
+    - Got any funny stories?
+    - Hit me with a punchline
+    - Got any comedy material?
+    - Can you tell something amusing?
 - intent: bot_challenge
   examples: |
     - are you a bot?
