@@ -341,9 +341,18 @@ nlu:
     - I'm stressed
     - very stressful
     - lot of stress
+    - so much stress
+    - feeling anxious
 - intent: exam
   examples: |
-    - 
+    - I have exams
+    - I have examination
+    - exams are coming up
+    - preparing foe exam
+    - preparing for JEE exam
+    - preparing for NEET exam
+    - preparing for CET exam
+    - studiyinng for exams
 - intent: bot_challenge
   examples: |
     - are you a bot?

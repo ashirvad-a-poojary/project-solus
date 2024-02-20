@@ -28,7 +28,7 @@ responses:
   - text: Hello, What's on your mind?
   - text: Hii!, How's it going?
   - text: Hey there! whatsupp?
-  utter_unhappy:
+  utter_what:
   - text: What's the matter? Tell me.
   - text: What happend my friend?
   utter_sad:
@@ -75,6 +75,10 @@ responses:
   utter_sorry_for_death:
   - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.
   - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
+  utter_exam:
+  - text: All the best for exams, do well my friend.
+  utter_exam_motivate:
+  - text: Don't take stress, it will just make the situation bad. If you are very limited by time, revise what you already learnt.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

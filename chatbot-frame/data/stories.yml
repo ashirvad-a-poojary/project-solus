@@ -16,7 +16,7 @@ stories:
 - story: feeling leftout 1
   steps:
   - intent: mood_unhappy
-  - action: utter_unhappy
+  - action: utter_what
   - intent: feeling_leftout
   - action: utter_leftout
 
@@ -72,7 +72,7 @@ stories:
   - intent: ask_recover
   - action: utter_recover
 
-- story: having trouble
+- story: having trouble communicating
   steps:
   - intent: issue
   - action: utter_question
@@ -86,7 +86,7 @@ stories:
   - intent: ask_professional
   - action: utter_therapist
   
-- story: Handle distress
+- story: Handle distress and life meaning
   steps:
   - intent: distress
   - action: utter_dont_suicide
@@ -94,3 +94,18 @@ stories:
   - action: utter_life_meaning
   - intent: ask_feelings
   - action: utter_ask_feelings
+
+- story: preparing for exam 1
+  steps:
+  - intent: exam
+  - action: utter_exam
+  - intent: worried
+  - action: utter_exam_motivate
+
+- story: preparing for exam 2
+  steps:
+  - intent: worried
+  - action: utter_what
+  - intent: exam
+  - action: utter_exam_motivate
+  - action: utter_exam
