@@ -2,22 +2,16 @@ import os
 import random
 import json
 import pandas as pd
+import spacy
 
 import nltk
 from nltk.stem import WordNetLemmatizer
-
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from nltk.stem import WordNetLemmatizer
 
 import torch
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
-
-import spacy
-from gensim import models
-
-#from flask import Flask, request, jsonify
 
 #import rasa
 #from rasa.core.agent import Agent
@@ -27,5 +21,12 @@ nltk.download('punkt')
 nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 
-basdir="."
-intents = json.loads(open(f'{basedir}/intents.json').read())
+with open('intents.json', 'r') as file:
+    intents = json.load(file)
+
+def clean_up_sentence(sentence):
+  sentence_words = nltk.word_tokenize(sentence)
+  sentence_words = [
+    lemmatizer.lemmatize(word.lower()) for word in sentence_words
+  ]
+  return sentence_words
