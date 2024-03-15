@@ -230,16 +230,16 @@
   }
   
   .main__container h1 {
-    position: absolute; /* Make the h3 position absolute */
-    top: 6rem; /* Position at the top of the container */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center properly */
+    position: absolute; 
+    top: 6rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
     margin-top: 1rem;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
-    text-align: center; /* Center the text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.303);
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.399);
   }
   
   .main__btn {
