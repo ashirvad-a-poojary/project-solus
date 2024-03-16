@@ -221,14 +221,15 @@
           "sad",
           "I'm feeling very bad",
           "It's a bad time for me",
-          "worst time foe me",
+          "worst time for me",
           "very sad",
           "extremly sad",
           "sad right now",
           "depressed right now"
         ],
         "responses": [
-          "Sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen."
+          "Sorry to hear that. I'm sure it's very overvelming for you. If you'd like to talk about what's on your mind, I'm here to listen.",
+          "I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Please take good care of yourself."
         ]
       },
       {
