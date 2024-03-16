@@ -378,7 +378,7 @@ nlu:
     - I'm preparing for entrance exam
     - studiyinng for exams
 
-- intent: not_satisfies
+- intent: not_satisfied
   examples: |
     - that's not enough
     - not satisfied

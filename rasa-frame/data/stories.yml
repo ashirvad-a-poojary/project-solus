@@ -132,3 +132,48 @@ stories:
   - intent: exam
   - action: utter_worried
   - action: utter_exam
+
+- story: User feels judged and left out
+  steps:
+  - intent: judged
+  - action: utter_judged
+  - intent: feeling_leftout
+  - action: utter_leftout
+  - intent: not_satisfied
+  - action: utter_not_satisfied
+
+- story: feeling sad and wants to know why
+  steps:
+  - intent: mood_sad
+  - action: utter_sad
+  - intent: ask_feelings
+  - action: utter_ask_feelings
+  - intent: deny
+  - action: utter_communicate
+
+- story: feeling lonely and ignored
+  steps:
+  - intent: feeling_leftout
+  - action: utter_leftout
+  - intent: deny
+  - action: utter_help
+
+- story: feeling hopeless and wants to know if things get better
+  steps:
+  - intent: mood_unhappy
+  - action: utter_what
+  - intent: ask_recover
+  - action: utter_recover
+  - intent: deny
+  - action: utter_therapist
+
+- story: user feeling stressed and unmotivated
+  steps:
+  - intent: mood_unhappy
+  - action: utter_what
+  - intent: worried
+  - action: utter_relax
+  - intent: mood_unhappy
+  - action: utter_motivate
+  - intent: affirm
+  - action: utter_compliment
