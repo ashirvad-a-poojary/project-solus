@@ -20,6 +20,7 @@ nlu:
     - yo solus
     - whatsup solus
     - Hello
+
 - intent: goodbye
   examples: |
     - good bye
@@ -32,6 +33,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+
 - intent: affirm
   examples: |
     - yes
@@ -49,6 +51,7 @@ nlu:
     - absolutely
     - absolutely right
     - certainly
+
 - intent: deny
   examples: |
     - no
@@ -66,6 +69,7 @@ nlu:
     - Absolutely not
     - Not at all
     - No
+
 - intent: question
   examples: |
     - I have a question
@@ -81,6 +85,7 @@ nlu:
     - I have a question for you
     - answer this for me
     - I need you to answer this for me
+
 - intent: mood_great
   examples: |
     - perfect
@@ -112,6 +117,7 @@ nlu:
     - so perfect
     - I am feeling refreshed 
     - I am feeling refreshed
+
 - intent: issue
   examples: |
     - I'm having an issue
@@ -129,6 +135,7 @@ nlu:
     - Can you help me with a problem?
     - I need assistance with an issue
     - There's an issue I need help with
+
 - intent: mood_unhappy
   examples: |
     - my day was not good
@@ -140,6 +147,7 @@ nlu:
     - unhappy
     - not good
     - not very good
+
 - intent: mood_sad
   examples: |
     - my day was horrible
@@ -157,6 +165,7 @@ nlu:
     - extremly sad
     - sad right now
     - depressed right now
+
 - intent: heartbreak
   examples: |
     - My heart got broken
@@ -171,6 +180,7 @@ nlu:
     - I recently broke up
     - I recently broke up with my girlfriend
     - I recently broke up with my boyfriend
+
 - intent: close_ones_death
   examples: |
     - My mom passed away recently
@@ -203,6 +213,7 @@ nlu:
     - My grandma passed away recently.
     - I lost my grandma recently.
     - It's been tough since my grandma passed away.
+
 - intent: mood_cry
   examples: |
     - I was crying
@@ -215,6 +226,7 @@ nlu:
     - I was in tears
     - my eyes teared up
     - eyes were in tears
+
 - intent: ask_feelings
   examples: |
     - Why do I feel this way?
@@ -229,6 +241,7 @@ nlu:
     - What is the reson of feeling this way?
     - What is the reson of feeling like this?
     - I'm struggling to know the cause of my emotions.
+
 - intent: problem_communicating
   examples: |
     - It's very difficult for me to open up to people
@@ -243,6 +256,7 @@ nlu:
     - I find it difficult to communicate
     - I don't feel like communicating with others
     - It's hard for me to communicate
+
 - intent: feeling_leftout
   examples: |
     - I have been ignored a lot
@@ -270,6 +284,7 @@ nlu:
     - I feel like I'm avoided by others
     - I'm being avoided
     - my freids are starting to avoid me 
+
 - intent: judged
   examples: |
     - I feel judged
@@ -281,6 +296,7 @@ nlu:
     - they judge me
     - everyone judges me
     - lot of people judge me
+
 - intent: ask_recover
   examples: |
     - Will I ever get better?
@@ -296,6 +312,7 @@ nlu:
     - I'll be better eventually right?
     - Eventually it will be better right?
     - will it be better eventually?
+
 - intent: life_meaning
   examples: |
     - What's the point of anything?
@@ -310,6 +327,7 @@ nlu:
     - Is there a way to find purpose in life?
     - my life feels pointless
     - I feel like I'm useless
+
 - intent: ask_professional
   examples: |
     - should I ask advice from a therapist?
@@ -322,6 +340,7 @@ nlu:
     - Is going to a therapist recommended?
     - does therapy really work?
     - Should i go to therapy?
+
 - intent: distress
   examples: |
     - I'm committing suicide
@@ -333,6 +352,7 @@ nlu:
     - I want to end myself
     - I feel like ending myself
     - I want to commit suicide
+
 - intent: worried
   examples: |
     - I am worried
@@ -345,6 +365,7 @@ nlu:
     - lot of stress
     - so much stress
     - feeling anxious
+
 - intent: exam
   examples: |
     - I have exams
@@ -356,6 +377,19 @@ nlu:
     - preparing for CET exam
     - I'm preparing for entrance exam
     - studiyinng for exams
+
+- intent: not_satisfies
+  examples: |
+    - that's not enough
+    - not satisfied
+    - not happy with it
+    - not enough
+    - that wont do much
+    - that wont cut it
+    - im am not convinced
+    - not enough to convince me
+    - too little
+
 - intent: ask_joke
   examples: |
     - tell me a joke
@@ -379,6 +413,7 @@ nlu:
     - Hit me with a punchline
     - Got any comedy material?
     - Can you tell something amusing?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

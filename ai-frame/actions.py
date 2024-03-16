@@ -30,3 +30,14 @@ def clean_up_sentence(sentence):
     lemmatizer.lemmatize(word.lower()) for word in sentence_words
   ]
   return sentence_words
+
+def bow(sentence, words, show_details=True):
+  sentence_words = clean_up_sentence(sentence)
+  bag = [0] * len(words)
+
+  for s in sentence_words:
+    for i, w in enumerate(words):
+      if w == s:
+        bag[i] = 1
+
+  return (np.array(bag))

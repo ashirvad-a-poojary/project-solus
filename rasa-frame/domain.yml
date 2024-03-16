@@ -24,65 +24,88 @@ intents:
 - exam
 - judged
 - ask_joke
+- not_satisfies
+
 responses:
   utter_greet:
   - text: Hi my friend! How are you?
   - text: Hello, What's on your mind?
   - text: Hii!, How's it going?
   - text: Hey there! whatsupp?
+
   utter_what:
   - text: What's the matter? Tell me.
   - text: What happend my friend?
+
   utter_sad:
   - text: Sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen.
+  
   utter_help:
   - text: Don't worry my friend. Its surely very hard for you dealing with all this. It's okay, take your time and you'll be alright soon.
+  
   utter_happy:
   - text: Great, carry on my friend!
   - text: That's good to hear
+  
   utter_goodbye:
   - text: Byee!
   - text: Bye Bye!
   - text: See you later
   - text: Have a nice day
   - text: Take care
+  
   utter_iamabot:
   - text: I'm Solus, your AI companion.
+  
   utter_question:
   - text: What is it buddy?
   - text: Sure, go ahead
+  
   utter_cry:
   - text: It's okay to cry and to express your emotions, we all have that situation at one point. Remember that you don't have to go through difficult times alone, talk to your close friends or family.
+  
   utter_life_meaning:
   - text: It's like trying to solve a Rubik's Cube blindfolded, right? Life can be a bit of a puzzle sometimes. we're all just trying to figure it out as we go along.
+  
   utter_recover:
   - text: Yess! Defintely, you have the strength to see positive changes and improvement in your situation. I'm here to support you every step of the way on your journey towards a brighter future.
   - text: Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better.
   - text: Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better.
+  
   utter_leftout:
   - text: So you are being ignored by people. Don't worry, I have a solution for you my friend. They can't ignore you if you ignore them. Just move away from them, you'll surely find good people out there.
+  
   utter_dont_suicide:
   - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
   - text: You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges.
+  
   utter_ask_feelings:
   - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself.
   - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for.
+  
   utter_therapist:
   - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
   - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
+ 
   utter_communicate:
   - text: I see. You are having trouble with communicating with people. Is there any reason you're having this trouble? Let me know.
+  
   utter_heartbreak:
   - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
+  
   utter_judged:
   - text: It's understandable to feel that way sometimes, but try to surround yourself with supportive people who appreciate you for who you are.
+  
   utter_sorry_for_death:
   - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.
   - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
+  
   utter_exam:
   - text: All the best for exams, do well my friend.
+  
   utter_exam_motivate:
   - text: Don't take stress, it will just make the situation bad. If you are very limited by time, revise what you already learnt.
+  
   utter_joke:
   - text: Why don't scientists trust atoms? Because they make up everything!
   - text: What did one wall say to the other wall? "I'll meet you at the corner!"
