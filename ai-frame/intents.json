@@ -68,6 +68,14 @@
           "absolutely",
           "absolutely right",
           "certainly"
+        ],
+        "responses": [
+          "Great to hear!",
+          "Thank you for confirming.",
+          "That's fantastic!",
+          "Excellent, let me know if you need any further assistance.",
+          "Got it, is there anything else I can help you with?",
+          "Awesome, how can I assist you further?"
         ]
       },
       {
@@ -88,6 +96,14 @@
           "Absolutely not",
           "Not at all",
           "No"
+        ],
+        "responses": [
+          "No problem, let me know if you change your mind.",
+          "Alright, feel free to ask if you have any other questions.",
+          "That's okay, we can explore other options.",
+          "Understood, Let me know if there something else you'd like to know",
+          "No worries, I'm here to help whenever you need.",
+          "Sure, just let me know if you need assistance in the future."
         ]
       },
       {
@@ -106,6 +122,10 @@
           "I have a question for you",
           "answer this for me",
           "I need you to answer this for me"
+        ],
+        "responses": [
+          "What is it buddy?",
+          "Go ahead, ask me"
         ]
       },
       {
@@ -140,6 +160,10 @@
           "so perfect",
           "I am feeling refreshed",
           "I am feeling refreshed"
+        ],
+        "responses": [
+          "Great, carry on my friend!",
+          "That's good to hear"
         ]
       },
       {
@@ -160,6 +184,10 @@
           "Can you help me with a problem?",
           "I need assistance with an issue",
           "There's an issue I need help with"
+        ],
+        "responses": [
+          "What's the matter? Tell me.",
+          "What happend my friend?"
         ]
       },
       {
@@ -174,6 +202,10 @@
           "unhappy",
           "not good",
           "not very good"
+        ],
+        "responses": [
+          "What's the matter? Tell me.",
+          "What happend my friend?"
         ]
       },
       {
@@ -194,6 +226,9 @@
           "extremly sad",
           "sad right now",
           "depressed right now"
+        ],
+        "responses": [
+          "Sorry to hear that. If you'd like to talk about what's on your mind, I'm here to listen."
         ]
       },
       {
@@ -211,6 +246,10 @@
           "I recently broke up",
           "I recently broke up with my girlfriend",
           "I recently broke up with my boyfriend"
+        ],
+        "responses": [
+          "I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.",
+          "I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Remember, healing is a journey that unfolds gradually, and it's perfectly alright to take things one step at a time. Please take good care of yourself and prioritize your well-being during this difficult period."
         ]
       },
       {
@@ -246,6 +285,10 @@
           "My grandma passed away recently.",
           "I lost my grandma recently.",
           "It's been tough since my grandma passed away."
+        ],
+        "responses": [
+          "I offer my deepest condolences for the profound pain you are experiencing. Losing someone dear is an immense challenge, and I hope you are able to find solace during this difficult time. Please take care of yourself, and may the departed find eternal peace.",
+          "I extend my heartfelt sympathy for the anguish you're enduring. Losing a loved one is an indescribable hardship, and I wish you strength as you navigate through this sorrowful period. Please remember to prioritize self-care, and may the soul of the departed find eternal tranquility."
         ]
       },
       {
@@ -261,6 +304,10 @@
           "I was in tears",
           "my eyes teared up",
           "eyes were in tears"
+        ],
+        "responses": [
+          "It's okay to cry and to express your emotions, we all have that situation at one point. Remember that you don't have to go through difficult times alone, talk to your close friends or family.",
+          "It's completely okay to cry. Expressing your emotions is a healthy way to cope with difficult situations. Remember, you're not alone in experiencing these feelings. Don't hesitate to reach out to your close friends or family for support during this time."
         ]
       },
       {
@@ -278,6 +325,14 @@
           "What is the reson of feeling this way?",
           "What is the reson of feeling like this?",
           "I'm struggling to know the cause of my emotions."
+        ],
+        "responses": [
+          "It's completely normal to have questions about your feelings. I'm here to help you explore and understand them.",
+          "Feeling this way can be tough, but it's okay to seek answers and support. Let's talk about it.",
+          "Many people experience similar emotions and wonder about their causes. You're not alone in this journey.",
+          "Understanding our emotions can sometimes be a complex process. Let's try to unpack your feelings together.",
+          "It's brave of you to ask these questions. I'm here to provide guidance and support as you navigate your emotions.",
+          "Exploring the reasons behind our feelings can be a meaningful step towards healing and growth. I'm here to support you every step of the way."
         ]
       },
       {
@@ -295,6 +350,12 @@
           "I find it difficult to communicate",
           "I don't feel like communicating with others",
           "It's hard for me to communicate"
+        ],
+        "responses": [
+          "I understand. It's not uncommon to feel this way. If you ever want to talk, I'm here to listen.",
+          "Opening up can be challenging, but you're not alone. Take your time, and remember that it's okay to share when you're ready.",
+          "Communication can be difficult, especially when it comes to emotions. It's okay to take small steps at your own pace.",
+          "Feeling hesitant to communicate is understandable. Remember, there's no rush, and it's okay to reach out whenever you feel comfortable."
         ]
       },
       {
@@ -325,7 +386,13 @@
           "I feel like I'm avoided by others",
           "I'm being avoided",
           "my freids are starting to avoid me"
-        ]
+        ],
+        "responses": [
+          "Feeling left out can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.",
+          "It's understandable to feel left out sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.",
+          "Feeling ignored or left out can be difficult. Consider talking to someone you trust about how you're feeling. You deserve to be included and valued by those around you.",
+          "You're not alone in feeling this way. Many people experience moments of loneliness or feeling left out. Take steps to prioritize self-care and reach out to supportive friends or family members for company and connection."
+      ]
       },
       {
         "intent": "judged",
@@ -339,6 +406,12 @@
           "they judge me",
           "everyone judges me",
           "lot of people judge me"
+        ],
+        "responses": [
+          "Feeling judged can be challenging. Remember that you have the right to express yourself authentically, and the opinions of others don't define your worth. Surround yourself with supportive individuals who accept you for who you are.",
+          "It's natural to feel judged at times, but it's important to remember that you're worthy of respect and understanding. Focus on being true to yourself and seek out non-judgmental people who appreciate you for who you are.",
+          "Feeling judged when sharing your feelings or emotions can be tough. Remember that your experiences are valid, and you deserve to be heard without fear of judgment. Seek out understanding and empathetic individuals who will support you.",
+          "Feeling judged by others can be hurtful, but try to focus on surrounding yourself with people who uplift and support you. Your feelings are valid, and you deserve to express yourself without fear of criticism or judgment."
         ]
       },
       {
@@ -357,6 +430,12 @@
           "I'll be better eventually right?",
           "Eventually it will be better right?",
           "will it be better eventually?"
+        ],
+        "responses": [
+          "It's normal to have doubts about the future, but remember that change is possible. Keep taking positive steps towards your well-being and believe in your ability to overcome challenges.",
+          "Recovery is a journey, and it's natural to wonder about the future. Stay hopeful and focus on the progress you've already made. With time and effort, things can improve.",
+          "Believe in the possibility of recovery and keep moving forward. Every small step you take towards healing brings you closer to a brighter future.",
+          "It's okay to have doubts about the future, but try to stay hopeful and focus on the steps you can take to improve your situation. Recovery is possible, and you're not alone in your journey."
         ]
       },
       {
@@ -374,6 +453,15 @@
           "Is there a way to find purpose in life?",
           "my life feels pointless",
           "I feel like I'm useless"
+        ],
+        "responses": [
+          "It's common to question the meaning of life, especially during challenging times. Remember that each person's journey is unique, and finding purpose takes time and self-discovery.",
+          "Comparing your happiness to others' can be misleading. Focus on what brings you joy and fulfillment, and don't hesitate to seek support if you're struggling.",
+          "Finding joy and purpose in life is a personal journey. Explore your interests, connect with supportive people, and seek professional guidance if needed.",
+          "Feeling like life is meaningless is a valid emotion, but remember that your experiences and struggles shape who you are. Keep exploring, learning, and seeking meaning.",
+          "Finding purpose in life can be a gradual process. Reflect on your values, interests, and goals, and take steps towards activities and relationships that bring you fulfillment.",
+          "Struggling with feelings of worthlessness is tough, but you're not alone. Reach out to loved ones or a mental health professional for support and guidance.",
+          "It's okay to feel lost or useless at times. Remember that your worth isn't defined by productivity or achievements. Take small steps towards self-care and self-discovery."
         ]
       },
       {
@@ -389,6 +477,13 @@
           "Is going to a therapist recommended?",
           "does therapy really work?",
           "Should i go to therapy?"
+        ],
+        "responses": [
+          "Seeking help from a therapist or professional can be beneficial for managing your mental health. It's important to prioritize your well-being and explore options that can support you on your journey toward healing.",
+          "If you're struggling with your mental health, seeking help from a therapist or professional can provide valuable support and guidance. Remember, you don't have to face your challenges alone.",
+          "Therapy can be a helpful resource for addressing various mental health concerns and improving overall well-being. Consider reaching out to a therapist or professional to explore your options and receive support tailored to your needs.",
+          "Therapy has been proven to be effective for many individuals dealing with mental health issues. If you're unsure about therapy, consider scheduling a consultation with a therapist to discuss your concerns and determine if it's the right option for you.",
+          "Speaking with a therapist or professional can offer valuable insights and support for managing your mental health. Don't hesitate to reach out if you feel overwhelmed or in need of guidance."
         ]
       },
       {
@@ -403,6 +498,11 @@
           "I want to end myself",
           "I feel like ending myself",
           "I want to commit suicide"
+        ],
+        "responses": [
+          "I'm deeply concerned to hear that you're feeling this way. Your safety is the most important thing right now. Please, if you're in immediate danger, call emergency services or a suicide hotline right away. You are not alone, and there are people who want to help you through this difficult time. You can also reach out to a trusted friend, family member, or mental health professional for support. Remember, there is hope and help available, and you deserve to receive support and care.",
+          "It's important to know that there are people who care about you and want to support you through this difficult time. Please reach out for help, whether it's from a friend, family member, or mental health professional. Your life is valuable, and there are resources available to help you cope with your feelings and find hope for the future.",
+          "You're not alone in feeling this way, and there are people who can help you through this difficult time. It's important to reach out for support and talk to someone you trust about how you're feeling. Remember, there is hope for a brighter tomorrow, and you deserve to find happiness and fulfillment in life."
         ]
       },
       {
@@ -418,6 +518,13 @@
           "lot of stress",
           "so much stress",
           "feeling anxious"
+        ],
+        "responses": [
+          "Take a deep breath and focus.",
+          "Try to relax and take it one step at a time.",
+          "Remember, you're not alone in feeling this way.",
+          "Let's take a moment to calm down together.",
+          "You're stronger than you think. We'll get through this."
         ]
       },
       {
@@ -432,10 +539,19 @@
           "preparing for CET exam",
           "I'm preparing for entrance exam",
           "studiyinng for exams"
+        ],
+        "responses": [
+          "Stay focused and keep studying! Good luck.",
+          "You got this! Keep up the hard work. Best wishes!",
+          "Take regular breaks to keep your mind fresh. Wishing you success!",
+          "Believe in yourself and your abilities. Do well!",
+          "Practice makes perfect. Keep practicing! Best of luck.",
+          "Don't stress. Just do your best. Sending positive vibes!",
+          "Keep calm and study on! Wish you all the success."
         ]
       },
       {
-        "intent": "ask_joke",
+        "intent": "jokes",
         "patterns": [
           "tell me a joke",
           "say a joke",
@@ -458,6 +574,16 @@
           "Hit me with a punchline",
           "Got any comedy material?",
           "Can you tell something amusing?"
+        ],
+        "responses": [
+          "Why don't scientists trust atoms? Because they make up everything!",
+          "What did one wall say to the other wall? 'I'll meet you at the corner!'",
+          "Why was the math book sad? Because it had too many problems.",
+          "How does a penguin build its house? Igloos it together!",
+          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "Why don't skeletons fight each other? They don't have the guts!",
+          "What do you call fake spaghetti? An impasta!",
+          "SAD spelled backwards is DAS. And das not good."
         ]
       },
       {
@@ -472,6 +598,11 @@
           "what are you?",
           "what is your name?",
           "Who is this?"
+        ],
+        "responses": [
+          "I'm Solus, your AI companion.",
+          "Hey, I'm Solus, an AI assistant.",
+          "My name is Solus, an assistant for your support."
         ]
       }
     ]

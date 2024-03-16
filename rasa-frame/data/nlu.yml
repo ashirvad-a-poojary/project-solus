@@ -390,7 +390,7 @@ nlu:
     - not enough to convince me
     - too little
 
-- intent: ask_joke
+- intent: jokes
   examples: |
     - tell me a joke
     - say a joke

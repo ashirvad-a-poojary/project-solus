@@ -14,5 +14,5 @@ rules:
 
 - rule: telling a joke
   steps:
-  - intent: ask_joke
+  - intent: jokes
   - action: utter_joke

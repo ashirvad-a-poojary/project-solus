@@ -123,12 +123,12 @@ stories:
   - intent: exam
   - action: utter_exam
   - intent: worried
-  - action: utter_exam_motivate
+  - action: utter_worried
 
 - story: preparing for exam 2
   steps:
   - intent: worried
   - action: utter_what
   - intent: exam
-  - action: utter_exam_motivate
+  - action: utter_worried
   - action: utter_exam

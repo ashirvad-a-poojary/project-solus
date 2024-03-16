@@ -23,7 +23,7 @@ intents:
 - worried
 - exam
 - judged
-- ask_joke
+- jokes
 - not_satisfies
 
 responses:
@@ -56,56 +56,94 @@ responses:
   
   utter_iamabot:
   - text: I'm Solus, your AI companion.
+  - text: Hey, I'm Solus, an AI assistant.
+  - text: My name is Solus, an assistant for your support.
+
   
   utter_question:
   - text: What is it buddy?
-  - text: Sure, go ahead
+  - text: Go ahead, ask me.
   
   utter_cry:
   - text: It's okay to cry and to express your emotions, we all have that situation at one point. Remember that you don't have to go through difficult times alone, talk to your close friends or family.
   
   utter_life_meaning:
-  - text: It's like trying to solve a Rubik's Cube blindfolded, right? Life can be a bit of a puzzle sometimes. we're all just trying to figure it out as we go along.
-  
+  - text: It's common to question the meaning of life, especially during challenging times. Remember that each person's journey is unique, and finding purpose takes time and self-discovery.
+  - text: Comparing your happiness to others' can be misleading. Focus on what brings you joy and fulfillment, and don't hesitate to seek support if you're struggling.
+  - text: Finding joy and purpose in life is a personal journey. Explore your interests, connect with supportive people, and seek professional guidance if needed.
+  - text: Feeling like life is meaningless is a valid emotion, but remember that your experiences and struggles shape who you are. Keep exploring, learning, and seeking meaning.
+  - text: Finding purpose in life can be a gradual process. Reflect on your values, interests, and goals, and take steps towards activities and relationships that bring you fulfillment.
+  - text: Struggling with feelings of worthlessness is tough, but you're not alone. Reach out to loved ones or a mental health professional for support and guidance.
+  - text: It's okay to feel lost or useless at times. Remember that your worth isn't defined by productivity or achievements. Take small steps towards self-care and self-discovery.
+
+
   utter_recover:
-  - text: Yess! Defintely, you have the strength to see positive changes and improvement in your situation. I'm here to support you every step of the way on your journey towards a brighter future.
-  - text: Absolutely, there is potential for improvement and positive changes ahead. I'm here to support you on your journey, and with time and resilience, things can indeed get better.
-  - text: Positive change is a gradual process, and it's okay to hope for a brighter future. I'm here to support you through the journey, and with time, you may find that challenges can be overcome, and things can indeed get better.
-  
+  - text: It's normal to have doubts about the future, but remember that change is possible. Keep taking positive steps towards your well-being and believe in your ability to overcome challenges.
+  - text: Recovery is a journey, and it's natural to wonder about the future. Stay hopeful and focus on the progress you've already made. With time and effort, things can improve.
+  - text: Believe in the possibility of recovery and keep moving forward. Every small step you take towards healing brings you closer to a brighter future.
+  - text: It's okay to have doubts about the future, but try to stay hopeful and focus on the steps you can take to improve your situation. Recovery is possible, and you're not alone in your journey.
+
   utter_leftout:
-  - text: So you are being ignored by people. Don't worry, I have a solution for you my friend. They can't ignore you if you ignore them. Just move away from them, you'll surely find good people out there.
-  
+  - text: Feeling left out can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
+  - text: It's understandable to feel left out sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
+  - text: Feeling ignored or left out can be difficult. Consider talking to someone you trust about how you're feeling. You deserve to be included and valued by those around you.
+  - text: You're not alone in feeling this way. Many people experience moments of loneliness or feeling left out. Take steps to prioritize self-care and reach out to supportive friends or family members for company and connection.
+
   utter_dont_suicide:
-  - text: Please remember that you are not alone, and you are not hopeless. You are strong, and you can get through this. I care about you, and I want you to be safe and well. Please take care of yourself, and reach out for help. You are worth it.
-  - text: You deserve to live, and you deserve to be happy. There are effective treatments and resources that can help you cope with your pain and overcome your challenges.
-  
+  - text: I'm deeply concerned to hear that you're feeling this way. Your safety is the most important thing right now. Please, if you're in immediate danger, call emergency services or a suicide hotline right away. You are not alone, and there are people who want to help you through this difficult time. You can also reach out to a trusted friend, family member, or mental health professional for support. Remember, there is hope and help available, and you deserve to receive support and care.
+  - text: It's important to know that there are people who care about you and want to support you through this difficult time. Please reach out for help, whether it's from a friend, family member, or mental health professional. Your life is valuable, and there are resources available to help you cope with your feelings and find hope for the future.
+  - text: You're not alone in feeling this way, and there are people who can help you through this difficult time. It's important to reach out for support and talk to someone you trust about how you're feeling. Remember, there is hope for a brighter tomorrow, and you deserve to find happiness and fulfillment in life.
+
   utter_ask_feelings:
-  - text: I'm sorry to hear that you are feeling this way. You are not alone, and there is hope for a better future. You are a valuable and unique person, and you have so much to offer the world. Please don't give up on yourself.
-  - text: Hey, I'm really sorry you're feeling so bad. You're not alone, and things can get better. You're an awesome and unique person, and you have a lot to live for.
+  - text: It's completely normal to have questions about your feelings. I'm here to help you explore and understand them.
+  - text: Feeling this way can be tough, but it's okay to seek answers and support. Let's talk about it.
+  - text: Many people experience similar emotions and wonder about their causes. You're not alone in this journey.
+  - text: Understanding our emotions can sometimes be a complex process. Let's try to unpack your feelings together.
+  - text: It's brave of you to ask these questions. I'm here to provide guidance and support as you navigate your emotions.
+  - text: Exploring the reasons behind our feelings can be a meaningful step towards healing and growth. I'm here to support you every step of the way.
   
   utter_therapist:
-  - text: Yess, definetly. Seeking a help of professional is always better, a human can understand you much better than me and give better advice.
-  - text: Yup, therapy can be a game-changer for stuff like depression and anxiety. It's like a teamwork thing between you and your therapist. Keep in mind, finding the right therapist might take a bit, but once you click, it can help manage your symptoms and boost your life quality.
- 
+  - text: Seeking help from a therapist or professional can be beneficial for managing difficult emotions and experiences. Consider reaching out for support if you feel overwhelmed or stuck.
+  - text: Therapy can be an effective way to address various challenges and improve your overall well-being. Don't hesitate to explore therapy options if you think it could be helpful for you.
+  - text: If you're unsure about seeking professional help, consider talking to a trusted individual or researching therapy options to better understand how therapy works and whether it's right for you.
+  - text: Therapy offers a safe space to explore your thoughts and feelings, gain insights, and develop coping strategies. It's worth considering if you're struggling with issues that affect your daily life.
+  - text: While therapy may not be the solution for everyone, many people find it helpful in managing stress, anxiety, depression, and other mental health concerns. It's worth exploring if you're open to it.
+
   utter_communicate:
-  - text: I see. You are having trouble with communicating with people. Is there any reason you're having this trouble? Let me know.
+  - text: I understand. It's not uncommon to feel this way. If you ever want to talk, I'm here to listen.
+  - text: Opening up can be challenging, but you're not alone. Take your time, and remember that it's okay to share when you're ready.
+  - text: Communication can be difficult, especially when it comes to emotions. It's okay to take small steps at your own pace.
+  - text: Feeling hesitant to communicate is understandable. Remember, there's no rush, and it's okay to reach out whenever you feel comfortable.
   
   utter_heartbreak:
   - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
   
   utter_judged:
-  - text: It's understandable to feel that way sometimes, but try to surround yourself with supportive people who appreciate you for who you are.
-  
+  - text: Feeling judged can be challenging. Remember that you have the right to express yourself authentically, and the opinions of others don't define your worth. Surround yourself with supportive individuals who accept you for who you are.
+  - text: It's natural to feel judged at times, but it's important to remember that you're worthy of respect and understanding. Focus on being true to yourself and seek out non-judgmental people who appreciate you for who you are.
+  - text: Feeling judged when sharing your feelings or emotions can be tough. Remember that your experiences are valid, and you deserve to be heard without fear of judgment. Seek out understanding and empathetic individuals who will support you.
+  - text: Feeling judged by others can be hurtful, but try to focus on surrounding yourself with people who uplift and support you. Your feelings are valid, and you deserve to express yourself without fear of criticism or judgment.
+
   utter_sorry_for_death:
-  - text: I'm truly sorry for the pain you're going through. Losing someone close is incredibly difficult, and it's okay to feel a mix of emotions. Remember to take things one step at a time, surround yourself with supportive friends and family, and prioritize self-care during this challenging period.
+  - text: I offer my deepest condolences for the profound pain you are experiencing. Losing someone dear is an immense challenge, and I hope you are able to find solace during this difficult time. Please take care of yourself, and may the departed find eternal peace.
   - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
   
   utter_exam:
-  - text: All the best for exams, do well my friend.
+  - text: Stay focused and keep studying! Good luck.
+  - text: You got this! Keep up the hard work. Best wishes!
+  - text: Take regular breaks to keep your mind fresh. Wishing you success!
+  - text: Believe in yourself and your abilities. Do well!
+  - text: Practice makes perfect. Keep practicing! Best of luck.
+  - text: Don't stress. Just do your best. Sending positive vibes!
+  - text: Keep calm and study on! Wish you all the success.
   
-  utter_exam_motivate:
-  - text: Don't take stress, it will just make the situation bad. If you are very limited by time, revise what you already learnt.
-  
+  utter_worried:
+  - text: Take a deep breath and focus.
+  - text: Try to relax and take it one step at a time.
+  - text: Remember, you're not alone in feeling this way.
+  - text: Let's take a moment to calm down together.
+  - text: You're stronger than you think. We'll get through this.
+
   utter_joke:
   - text: Why don't scientists trust atoms? Because they make up everything!
   - text: What did one wall say to the other wall? "I'll meet you at the corner!"
