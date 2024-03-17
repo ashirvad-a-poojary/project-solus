@@ -14,23 +14,52 @@ document.addEventListener("DOMContentLoaded", function () {
             handleRasaResponse(response.data);
         } catch (error) {
             console.error('Error sending message to Rasa:', error);
-            addChatMessage('bot', 'Sorry, something went wrong while processing your request.');
-            scrollChatboxToBottom(); 
+            handleError(error);
         }
     };
 
-    // Function to handle Rasa response
+
     const handleRasaResponse = (data) => {
         const responseText = data[0].text || 'Sorry, I didn\'t understand that.';
         addChatMessage('bot', responseText);
         scrollChatboxToBottom(); 
     };
 
+    const handleError = (error) => {
+        const errorMessage = 'Sorry, something went wrong while processing your request.';
+        addChatMessage('bot', errorMessage);
+        scrollChatboxToBottom(); 
+    };
+
     const addChatMessage = (sender, message) => {
         const newMessage = document.createElement('li');
         newMessage.className = `chat ${sender === 'user' ? 'outgoing' : 'incoming'}`;
-        newMessage.innerHTML = `<span class="material-symbols-outlined">${sender === 'user' ? 'account_circle' : 'smart_toy'}</span><p>${message}</p>`;
         chatbox.appendChild(newMessage);
+
+        const messageElement = document.createElement('p');
+        newMessage.appendChild(messageElement);
+
+        if (sender === 'user') {
+            messageElement.textContent = message;
+        } else {
+            typeWriter(message, messageElement);
+        }
+
+        newMessage.innerHTML = `<span class="material-symbols-outlined">${sender === 'user' ? 'account_circle' : 'smart_toy'}</span>`;
+        newMessage.appendChild(messageElement);
+    };
+
+    const typeWriter = (text, element) => {
+        let i = 0;
+        const speed = 15;
+        const type = () => {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        };
+        type();
     };
 
     const scrollChatboxToBottom = () => {

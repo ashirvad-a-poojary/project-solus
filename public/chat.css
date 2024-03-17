@@ -287,7 +287,7 @@ body.show-chatbot .chatbot {
   white-space: pre-wrap;
   padding: 12px 16px;
   border-radius: 10px 10px 0 10px;
-  max-width: 75%;
+  max-width: 400px;
   color: #000000;
   font-size: 0.95rem;
   background: #ffffff;
