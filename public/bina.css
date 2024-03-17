@@ -207,6 +207,15 @@
     background-position: center;
 }
 
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); 
+  z-index: -1; 
+}
 
 .container{
     min-height: 72vh;
@@ -215,8 +224,9 @@
     font-family: 'Varela Round', sans-serif;
     display: flex;
     margin: 23px auto;
-    margin-top: 50px;
-    width: 70%;
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 60vw;
     border-radius: 12px;
     padding: 34px;
     background-image: url('5584cd4dd825f959d39bb19cf6460930.jpg');
@@ -229,13 +239,15 @@
 
 .bottom{
     position: sticky;
+    margin: auto;
     bottom: 0;
     height: 10vh;
-    border-radius: 5vh;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    width: 60vw;
+    border-radius: 1rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-bottom: 6vh;
-    background-color: rgb(19, 8, 50);
+    background-color: rgba(19, 8, 50, 0.504);
     color: white;
     display: flex;
     justify-content: center;
@@ -251,7 +263,7 @@
 }
 
 #myProgressBar{
-    width: 80vw; 
+    width: 90%; 
     cursor: pointer;
 }
 
@@ -263,7 +275,6 @@
     height: 50px;
     display: flex;
     background-color: white;
-    
     color: black;
     margin: 12px 0;
     justify-content: space-between;
