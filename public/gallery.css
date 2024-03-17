@@ -242,16 +242,17 @@ section{
   box-shadow: 0px 0px 20px 3px #00000042;
 }
 .item:nth-last-child(1){
-  margin-top: 0;
+  margin-bottom: 0;
 }
 .item h3{
   width: 100%;
   padding: 20px;
   position: absolute;
+  top: -70px;
   background-color: #00000040;
   color: aliceblue;
   font-weight: 300;
-  transition: .5s ease-in-out bottom;
+  transition: 0.5s ease-in-out top;
 }
 .item:hover h3{
   top: 0;
