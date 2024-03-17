@@ -202,7 +202,9 @@
     height: 94vh;
     width: 100%;
     margin: auto;
-    background: #d8c1ea;
+    background-image: url('./WhatsApp\ Image\ 2024-03-17\ at\ 6.10.54\ PM.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -217,7 +219,7 @@
     width: 70%;
     border-radius: 12px;
     padding: 34px;
-    background-image: url('bgp.jpg');
+    background-image: url('5584cd4dd825f959d39bb19cf6460930.jpg');
     box-shadow: 
     0 0 128px 0 rgba(0, 0, 0, 0.1), /* Bottom shadow */
     0 32px 64px -48px rgba(0, 0, 0, 0.4), /* Bottom shadow */
