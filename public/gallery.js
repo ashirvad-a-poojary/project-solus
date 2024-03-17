@@ -2,7 +2,6 @@ class VideoGallery {
   constructor() {
     this.API_KEY = 'ZEDhusJoMXRsjNj0lyLTZmUpAVeaQwmdXUiuXCDf0mB3ZgW22756NaaO';
     this.galleryDiv = document.querySelector('.gallery');
-    this.loadMore = document.querySelector('.load-more');
     this.pageIndex = 1;
     this.eventHandle();
   }
@@ -11,13 +10,14 @@ class VideoGallery {
     document.addEventListener('DOMContentLoaded', () => {
       this.getVideos(1);
     });
-    this.loadMore.addEventListener('click', (e) => {
-      this.loadMoreVideos(e);
+    window.addEventListener('scroll', () => {
+      if (this.isScrolledToBottom()) {
+        this.loadMoreVideos();
+      }
     });
   }
 
   async getVideos(index) {
-    this.loadMore.setAttribute('data-video', 'curated');
     const baseURL = `https://api.pexels.com/videos/search?query=nature+animals&page=${index}&per_page=12`;
     const data = await this.fetchVideos(baseURL);
     this.generateHTML(data.videos);
@@ -51,9 +51,13 @@ class VideoGallery {
     });
   }
 
-  async loadMoreVideos(e) {
+  async loadMoreVideos() {
     let index = ++this.pageIndex;
     this.getVideos(index);
+  }
+
+  isScrolledToBottom() {
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
   }
 }
 
