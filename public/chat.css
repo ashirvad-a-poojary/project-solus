@@ -169,7 +169,9 @@
   display: flex;
   margin: auto;
   height: 94vh;
-  background: #d8c1ea;
+  background-image: url('./forest.jpg');
+  background-size: cover;
+  background-position: center;
   width: 100%;
   overflow: hidden;
 }
@@ -226,28 +228,6 @@ body.show-chatbot .chatbot {
   opacity: 1;
   pointer-events: auto;
   transform: scale(1);
-}
-
-.chatbot header {
-  padding: 16px 0;
-  position: relative;
-  text-align: center;
-  color: #fff;
-  background: #550466;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.chatbot header span {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  display: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-
-header h2 {
-  font-size: 1.4rem;
 }
 
 .chatbot .chatbox {
@@ -318,15 +298,18 @@ header h2 {
 
 }
 
-.chatbot .chat-input {
+.chat-input {
   display: flex;
   gap: 5px;
-  position: absolute;
   bottom: 0;
-  width: 100%;
-  background: #fff;
+  width: 100;
+  background: #ffffff00;
   padding: 3px 20px;
-  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  margin-bottom: 0.6rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
 }
 
 .chat-input textarea {
