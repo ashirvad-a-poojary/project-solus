@@ -124,6 +124,8 @@ stories:
   - action: utter_exam
   - intent: worried
   - action: utter_worried
+  - intent: no_motivation
+  - action: utter_motivate
 
 - story: preparing for exam 2
   steps:
@@ -132,6 +134,19 @@ stories:
   - intent: exam
   - action: utter_worried
   - action: utter_exam
+  - intent: procrastination
+  - action: utter_procrastination
+  - intent: no_motivation
+  - action: utter_motivate
+
+- story: preparing for exam 3
+  steps:
+  - intent: exam
+  - action: utter_exam
+  - intent: no_motivation
+  - action: utter_motivate
+  - intent: worried
+  - action: utter_worried
 
 - story: User feels judged and left out
   steps:
@@ -177,3 +192,17 @@ stories:
   - action: utter_motivate
   - intent: affirm
   - action: utter_compliment
+
+- story: problem with procrastination
+  steps:
+  - intent: procrastination
+  - action: utter_procrastination
+  - intent: no_motivation
+  - action: utter_motivate
+
+- story: coping with change
+  steps: 
+  - intent: issue
+  - action: utter_question
+  - intent: coping_with_change
+  - action: utter_copong_with_change
