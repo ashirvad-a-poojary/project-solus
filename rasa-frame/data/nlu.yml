@@ -147,6 +147,17 @@ nlu:
     - unhappy
     - not good
     - not very good
+    - I'm feeling a bit down
+    - I'm feeling somewhat unhappy
+    - I'm not in the best mood
+    - I'm feeling a little blue
+    - I'm feeling somewhat low
+    - I'm not feeling quite myself today
+    - I'm feeling a bit low today.
+    - Today hasn't been the greatest.
+    - I'm not in the mood for anything.
+    - Feeling kind of down lately.
+    - Things just don't seem to be going my way.
 
 - intent: mood_sad
   examples: |
@@ -162,9 +173,17 @@ nlu:
     - It's a bad time for me
     - worst time for me
     - very sad
-    - extremly sad
+    - extremely sad
     - sad right now
     - depressed right now
+    - I feel utterly devastated
+    - I'm completely overwhelmed with sadness
+    - I can't shake this feeling of despair
+    - I'm at my lowest point emotionally
+    - I'm struggling to find any joy in anything
+    - I'm drowning in sorrow
+    - I'm feeling absolutely miserable
+    - I'm completely consumed by sadness
 
 - intent: heartbreak
   examples: |
@@ -257,13 +276,13 @@ nlu:
     - I don't feel like communicating with others
     - It's hard for me to communicate
 
-- intent: feeling_leftout
+- intent: loneliness
   examples: |
     - I have been ignored a lot
     - I'm ignored by people
-    - I'm beinng ignored
+    - I'm being ignored
     - I feel ignored by others
-    - It feels I'm being left out
+    - It feels like I'm being left out
     - I'm so lonely
     - It seems like I'm always the one left out.
     - Others don't seem to notice me.
@@ -283,7 +302,7 @@ nlu:
     - people are staying away from me
     - I feel like I'm avoided by others
     - I'm being avoided
-    - my freids are starting to avoid me 
+    - my friends are starting to avoid me 
 
 - intent: judged
   examples: |
@@ -352,6 +371,11 @@ nlu:
     - I want to end myself
     - I feel like ending myself
     - I want to commit suicide
+    - I feel like I'm reaching my breaking point.
+    - I'm overwhelmed with despair.
+    - I don't know how much longer I can keep going.
+    - Life feels unbearable right now.
+    - I'm in so much pain, I can't handle it anymore.
 
 - intent: worried
   examples: |
@@ -413,6 +437,61 @@ nlu:
     - Hit me with a punchline
     - Got any comedy material?
     - Can you tell something amusing?
+
+- intent: coping_with_change
+  examples: |
+    - I'm struggling with change
+    - How to adapt to new situations?
+    - Dealing with changes is hard for me
+    - I find it difficult to cope with unexpected changes
+    - Change makes me anxious
+    - I'm feeling overwhelmed by all the changes happening around me
+    - I'm not sure how to handle all these changes in my life
+    - Every time something changes, I feel stressed out
+    - I wish I could handle change better
+    - I feel like I'm always behind when things change
+    - Why do I feel so unsettled when things change suddenly?
+    - How can I embrace change more gracefully?
+    - I'm having a hard time adjusting to the recent changes at work
+    - What can I do to feel more comfortable with change?
+    - I'm worried about how I'll cope with upcoming changes in my life
+    - Change feels overwhelming, and I'm not sure how to manage it
+
+- intent: procrastination
+  examples: |
+    - I keep procrastinating
+    - How to stop procrastination?
+    - I always delay tasks until the last minute
+    - Procrastination is getting in the way of my productivity
+    - I want to break free from my procrastination habits
+    - I need help managing my time better to avoid procrastination
+    - Every time I try to start something, I end up procrastinating
+    - Procrastination is making me feel guilty and stressed
+    - I wish I could stop putting things off all the time
+    - I'm tired of procrastinating and want to change
+    - What are some effective strategies for overcoming procrastination?
+    - How can I motivate myself to stop procrastinating?
+    - I need advice on how to kick my procrastination habit for good
+    - Procrastination is sabotaging my goals, and I don't know how to stop it
+    - I'm tired of feeling unproductive due to procrastination
+
+- intent: no_motivation
+  examples: |
+    - I lack motivation
+    - How to stay motivated?
+    - I'm feeling demotivated and uninspired
+    - I'm struggling to find the motivation to pursue my goals
+    - I need some tips to stay motivated
+    - It's hard for me to stay focused and motivated
+    - I keep losing interest in the things I used to enjoy
+    - I want to maintain my motivation, but I don't know how
+    - I feel like I'm constantly in a rut and can't find the motivation to get out
+    - How can I reignite my passion and stay motivated?
+    - Why do I feel so apathetic lately?
+    - What can I do to stay enthusiastic about my goals?
+    - I feel like I'm stuck in a motivational slump
+    - I'm searching for ways to boost my motivation and drive
+    - How do I stay motivated when faced with obstacles?
 
 - intent: bot_challenge
   examples: |

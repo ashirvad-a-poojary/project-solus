@@ -13,7 +13,7 @@ intents:
 - mood_great
 - mood_unhappy
 - mood_sad
-- feeling_leftout
+- loneliness
 - problem_communicating
 - heartbreak
 - close_ones_death
@@ -25,6 +25,9 @@ intents:
 - judged
 - jokes
 - not_satisfied
+- coping_with_change
+- procrastination
+- no_motivation
 
 responses:
   utter_greet:
@@ -38,9 +41,15 @@ responses:
   - text: What happend my friend?
 
   utter_sad:
-  - text: Sorry to hear that. I'm sure it's very overvelming for you. If you'd like to talk about what's on your mind, I'm here to listen.
-  - text: I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Please take good care of yourself.
-  
+    - text: Sorry to hear that. I'm sure it's very overwhelming for you. If you'd like to talk about what's on your mind, I'm here to listen.
+    - text: I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Please take good care of yourself.
+    - text: Remember, you're stronger than you think. You've overcome tough times before, and you can do it again.
+    - text: It's okay to not be okay. Give yourself permission to feel your emotions fully.
+    - text: You're not alone in this. Reach out to someone you trust and let them know how you're feeling.
+    - text: Sending you virtual hugs. Take things one step at a time, and remember to be kind to yourself.
+    - text: Even in the darkest moments, there's a glimmer of hope. Hang in there, brighter days are ahead.
+    - text: Allow yourself to feel what you're feeling. It's a sign that you're human. You'll get through this.
+
   utter_help:
   - text: Don't worry my friend. Its surely very hard for you dealing with all this. It's okay, take your time and you'll be alright soon.
   
@@ -85,10 +94,16 @@ responses:
   - text: It's okay to have doubts about the future, but try to stay hopeful and focus on the steps you can take to improve your situation. Recovery is possible, and you're not alone in your journey.
 
   utter_leftout:
-  - text: Feeling left out can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
-  - text: It's understandable to feel left out sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
-  - text: Feeling ignored or left out can be difficult. Consider talking to someone you trust about how you're feeling. You deserve to be included and valued by those around you.
-  - text: You're not alone in feeling this way. Many people experience moments of loneliness or feeling left out. Take steps to prioritize self-care and reach out to supportive friends or family members for company and connection.
+    - text: Feeling left out or lonely can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
+    - text: It's understandable to feel left out or lonely sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
+    - text: You're not alone in experiencing feelings of loneliness. Many people go through similar emotions and understand what you're going through.
+    - text: Feeling ignored or left out can be difficult. Remember that your worth is not defined by others' actions. You deserve to be valued and included.
+    - text: Loneliness is a common human experience, but it's important to remember that you're not alone. Reach out to supportive friends or family members for connection and companionship.
+    - text: It's okay to feel lonely at times. Take this opportunity to engage in activities you enjoy or reach out to someone you trust for a chat.
+    - text: Feeling overlooked or left out can be challenging, but remember that your presence matters. Take steps to connect with others who appreciate and value you.
+    - text: Loneliness is a temporary feeling that can be eased by reaching out to others, engaging in hobbies you enjoy, and practicing self-care.
+    - text: Remember that feeling lonely doesn't mean you're alone. Reach out to friends, family, or support groups for connection and understanding.
+    - text: Feeling lonely is a common experience, but it's important to take steps to address it. Consider joining clubs or groups where you can meet like-minded individuals.
 
   utter_dont_suicide:
   - text: I'm deeply concerned to hear that you're feeling this way. Your safety is the most important thing right now. Please, if you're in immediate danger, call emergency services or a suicide hotline right away. You are not alone, and there are people who want to help you through this difficult time. You can also reach out to a trusted friend, family member, or mental health professional for support. Remember, there is hope and help available, and you deserve to receive support and care.
@@ -161,8 +176,12 @@ responses:
   - text: I'm here to listen and help in any way I can. What can I do to make things better for you?
 
   utter_motivate:
-  - text: You got this! Keep pushing forward and don't give up.
-  - text: Believe in yourself and your abilities. You can do it!
+  - text: Finding motivation can be tough, but it's essential for achieving your goals. Surround yourself with positive influences, set clear objectives, and celebrate your progress along the way.
+  - text: When you're feeling unmotivated, try visualizing your goals and the benefits of achieving them. Break big goals into smaller, achievable tasks to maintain momentum.
+  - text: Stay motivated by focusing on the reasons why you started. Keep your goals in sight, stay persistent, and don't be afraid to seek inspiration from others.
+  - text: Create a vision board or collage that represents your goals and aspirations to keep you motivated and inspired.
+  - text: Engage in activities that bring you joy and fulfillment to reignite your passion and motivation.
+  - text: Practice self-compassion and acknowledge your accomplishments, no matter how small, to stay motivated and build momentum.
   - text: Remember why you started and let that motivate you to keep going.
 
   utter_relax:
@@ -174,6 +193,22 @@ responses:
   - text: You're doing great! I'm proud of you for taking steps towards your goals.
   - text: You have a lot of potential and I believe in you. Keep up the good work!
   - text: You're an amazing person with so many talents and strengths. Don't forget that.
+
+  utter_copong_with_change:
+  - text: Change can be challenging, but it's also an opportunity for growth. Try to embrace the uncertainty and focus on what you can control.
+  - text: Remember that change is a natural part of life. Take small steps to adapt to new situations, and be patient with yourself during the process.
+  - text: When facing change, it's important to practice self-care and reach out for support when needed. You're stronger and more resilient than you think.
+  - text: Consider exploring mindfulness or relaxation techniques to help manage the stress associated with change.
+  - text: Journaling about your feelings surrounding change can provide clarity and perspective.
+  - text: Seek out stories of resilience and adaptation to inspire you during times of change.
+
+  utter_procrastination:
+  - text: Procrastination is a common challenge, but it's possible to overcome. Break tasks into smaller, manageable steps and set realistic deadlines to stay on track.
+  - text: To beat procrastination, try implementing a schedule or to-do list to prioritize tasks. Remember to reward yourself for completing tasks on time.
+  - text: Overcoming procrastination requires self-discipline and commitment. Start by identifying the root cause of your procrastination habits and develop strategies to address them.
+  - text: Consider creating a designated workspace free from distractions to help you focus on your tasks.
+  - text: Accountability partners can provide support and encouragement to help you stay accountable for your goals.
+  - text: Set specific, measurable, achievable, relevant, and time-bound (SMART) goals to keep yourself motivated and on track.
 
 session_config:
   session_expiration_time: 60

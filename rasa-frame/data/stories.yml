@@ -17,14 +17,14 @@ stories:
   steps:
   - intent: mood_unhappy
   - action: utter_what
-  - intent: feeling_leftout
+  - intent: loneliness
   - action: utter_leftout
 
 - story: feeling leftout 2
   steps:
   - intent: mood_sad
   - action: utter_sad
-  - intent: feeling_leftout
+  - intent: loneliness
   - action: utter_leftout
 
 - story: close ones death 1
@@ -85,7 +85,7 @@ stories:
   - action: utter_question
   - intent: problem_communicating
   - action: utter_communicate
-  - intent: feeling_leftout
+  - intent: loneliness
   - action: utter_leftout
 
 - story: having trouble communicating 2
@@ -137,7 +137,7 @@ stories:
   steps:
   - intent: judged
   - action: utter_judged
-  - intent: feeling_leftout
+  - intent: loneliness
   - action: utter_leftout
   - intent: not_satisfied
   - action: utter_not_satisfied
@@ -153,7 +153,7 @@ stories:
 
 - story: feeling lonely and ignored
   steps:
-  - intent: feeling_leftout
+  - intent: loneliness
   - action: utter_leftout
   - intent: deny
   - action: utter_help
