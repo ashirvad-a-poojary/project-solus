@@ -709,37 +709,24 @@
       {
         "intent": "procrastination",
         "patterns": [
-          "I keep procrastinating",
-          "How to stop procrastination?",
           "I always delay tasks until the last minute",
-          "Procrastination is getting in the way of my productivity",
-          "I want to break free from my procrastination habits",
-          "I need help managing my time better to avoid procrastination",
-          "Every time I try to start something, I end up procrastinating",
-          "Procrastination is making me feel guilty and stressed",
           "I wish I could stop putting things off all the time",
-          "I'm tired of procrastinating and want to change",
-          "What are some effective strategies for overcoming procrastination?",
-          "How can I motivate myself to stop procrastinating?",
-          "I need advice on how to kick my procrastination habit for good",
-          "Procrastination is sabotaging my goals, and I don't know how to stop it",
           "I always delay tasks until the last minute",
-          "Procrastination is getting in the way of my productivity",
           "I need help managing my time better",
           "Every time I try to start something, I end up leaving it for later",
-          "Procrastination is making me feel guilty and stressed",
           "I wish I could stop putting things off all the time",
-          "I'm tired of procrastinating and want to change",
           "How can I motivate myself to do things right now instead of leaving it for later?",
-          "I'm tired of feeling unproductive due to doing things at the last moment"
+          "I'm tired of feeling unproductive due to doing things at the last moment",
+          "I keep doing things late",
+          "I keep everything for the last minute"
         ],
         "responses": [
-          "Procrastination is a common challenge, but it's possible to overcome. Break tasks into smaller, manageable steps and set realistic deadlines to stay on track.",
-          "To beat procrastination, try implementing a schedule or to-do list to prioritize tasks. Remember to reward yourself for completing tasks on time.",
-          "Overcoming procrastination requires self-discipline and commitment. Start by identifying the root cause of your procrastination habits and develop strategies to address them.",
-          "Consider creating a designated workspace free from distractions to help you focus on your tasks.",
-          "Accountability partners can provide support and encouragement to help you stay accountable for your goals.",
-          "Set specific, measurable, achievable, relevant, and time-bound (SMART) goals to keep yourself motivated and on track."
+          "It's common to face challenges in managing tasks, but breaking them into smaller steps and setting realistic deadlines can help you stay on track.",
+          "Implementing a structured schedule or to-do list can assist in prioritizing tasks effectively, and don't forget to acknowledge your achievements along the way.",
+          "Developing self-discipline and understanding the underlying reasons behind delaying tasks are key to overcoming this habit. Identifying triggers and addressing them is essential.",
+          "Creating a dedicated workspace free from distractions can significantly enhance your focus and productivity.",
+          "Having someone to share your goals with and keep you accountable can provide valuable support and motivation.",
+          "Setting clear and achievable goals with defined milestones can help you stay motivated and maintain progress without getting sidetracked."
         ]
       },
       {

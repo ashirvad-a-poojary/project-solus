@@ -16,3 +16,13 @@ rules:
   steps:
   - intent: jokes
   - action: utter_joke
+
+- rule: flc is the best
+  steps:
+  - intent: flc
+  - action: utter_flc
+ 
+- rule: why flc is the best
+  steps:
+  - intent: why_flc
+  - action: utter_why_flc

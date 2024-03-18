@@ -459,22 +459,9 @@ nlu:
 
 - intent: procrastination
   examples: |
-    - I keep procrastinating
-    - How to stop procrastination?
     - I always delay tasks until the last minute
-    - Procrastination is getting in the way of my productivity
-    - I want to break free from my procrastination habits
-    - I need help managing my time better to avoid procrastination
-    - Every time I try to start something, I end up procrastinating
-    - Procrastination is making me feel guilty and stressed
     - I wish I could stop putting things off all the time
-    - I'm tired of procrastinating and want to change
-    - What are some effective strategies for overcoming procrastination?
-    - How can I motivate myself to stop procrastinating?
-    - I need advice on how to kick my procrastination habit for good
-    - Procrastination is sabotaging my goals, and I don't know how to stop it
-    - I'm tired of feeling unproductive due to procrastination
-    - I keep procrastinating
+    - I'm tired of feeling unproductive 
     - I always delay tasks until the last minute
     - Procrastination is getting in the way of my productivity
     - I need help managing my time better
@@ -484,6 +471,8 @@ nlu:
     - I'm tired of procrastinating and want to change
     - How can I motivate myself to do things righ now instead of leaving it for later?
     - I'm tired of feeling unproductive due to doing things at the last moment
+    - I keep everything for the last minute
+    - I keep doing things late
 
 - intent: no_motivation
   examples: |
@@ -502,6 +491,30 @@ nlu:
     - I feel like I'm stuck in a motivational slump
     - I'm searching for ways to boost my motivation and drive
     - How do I stay motivated when faced with obstacles?
+
+- intent: flc
+  examples: |
+    - which is the best club in nitte?
+    - best club in nmamit
+    - which club is the best one in nitte
+    - nitte's best club
+    - nmamit's greatest club
+    - greatest club in nitte
+    - whihc is the nmamit's greatest club
+    - which is the greatest club in nitte
+    
+- intent: why_flc
+  examples: |
+    - why flc?
+    - why finiteloop club?
+    - how is it best?
+    - why is it the best
+    - why flc is the greatest?
+    - why finiteloop club is the best?
+    - why finiteloop club is the greatest?
+    - How is it the best?
+    - How is finiteloop best?
+    - How is flc the best?
 
 - intent: bot_challenge
   examples: |
