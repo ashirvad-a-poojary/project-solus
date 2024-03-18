@@ -195,10 +195,10 @@ section{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./camping.jpg');
+  background-image: url('./forest.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(8px);
+  filter: blur(1px);
   z-index: -1; 
 }
 

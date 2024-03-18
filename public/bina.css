@@ -201,55 +201,57 @@
     justify-self: center;
     height: 94vh;
     width: 100%;
-    margin: auto;
     background-image: url('./WhatsApp\ Image\ 2024-03-17\ at\ 6.10.54\ PM.jpeg');
     background-size: cover;
     background-position: center;
-}
-
-.blur-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px); 
-  z-index: -1; 
-}
-
-.container{
-    min-height: 72vh;
-    background-color: black;
-    color: white;
+  }
+  
+  .container {
+    position: absolute;
+    justify-self: center;
+    max-height: 86vh;
+    height: 100%;
+    width: 100%;
+    max-width: 60vw;
+    background-color: #00000017;
+    color: rgb(255, 255, 255);
     font-family: 'Varela Round', sans-serif;
     display: flex;
     margin: 23px auto;
-    margin-top: 5vh;
-    width: 100%;
-    max-width: 60vw;
     border-radius: 12px;
     padding: 34px;
-    background-image: url('5584cd4dd825f959d39bb19cf6460930.jpg');
-    box-shadow: 
-    0 0 128px 0 rgba(0, 0, 0, 0.1), /* Bottom shadow */
-    0 32px 64px -48px rgba(0, 0, 0, 0.4), /* Bottom shadow */
-    32px 0 64px -48px rgba(0, 0, 0, 0.4), /* Right side shadow */
-    -32px 0 64px -48px rgba(0, 0, 0, 0.4); /* Left side shadow */
-}
-
-.bottom{
-    position: sticky;
-    margin: auto;
-    bottom: 0;
-    height: 10vh;
-    width: 60vw;
-    border-radius: 1rem;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.4), 32px 0 64px -48px rgba(0, 0, 0, 0.4), -32px 0 64px -48px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .blur-background {
+    position: absolute;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    max-width: 60vw;
+    max-height: 90vh;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-bottom: 6vh;
-    background-color: rgba(19, 8, 50, 0.504);
-    color: white;
+    border-radius: 12px;
+    backdrop-filter: blur(14px);
+    z-index: 0;
+  }
+
+.bottom{
+    position: absolute;
+    margin: auto;
+    bottom: 10vh;
+    height: 10vh;
+    max-width: 56vw;
+    width: 100%;
+    border-radius: 1rem;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    background-color: rgba(19, 8, 50, 0);
+    color: rgb(255, 255, 255);
     display: flex;
+    border: 0.1rem solid #ffffff;
     justify-content: center;
     align-items: center;
     flex-direction: column; 

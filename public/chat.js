@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const typeWriter = (text, element) => {
         let i = 0;
-        const speed = 15;
+        const speed = 25;
         const type = () => {
             if (i < text.length) {
                 element.textContent += text.charAt(i);
