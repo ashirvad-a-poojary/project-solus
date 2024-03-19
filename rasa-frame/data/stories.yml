@@ -165,6 +165,8 @@ stories:
   - action: utter_ask_feelings
   - intent: deny
   - action: utter_communicate
+  - intent: affirm
+  - action: utter_compliment
 
 - story: feeling lonely and ignored
   steps:
@@ -172,6 +174,8 @@ stories:
   - action: utter_leftout
   - intent: deny
   - action: utter_help
+  - intent: thanks
+  - action: utter_thanks
 
 - story: feeling hopeless and wants to know if things get better
   steps:
@@ -181,6 +185,8 @@ stories:
   - action: utter_recover
   - intent: deny
   - action: utter_therapist
+  - intent: affirm
+  - action: utter_compliment
 
 - story: user feeling stressed and unmotivated
   steps:
@@ -199,6 +205,8 @@ stories:
   - action: utter_procrastination
   - intent: no_motivation
   - action: utter_motivate
+  - intent: affirm
+  - action: utter_compliment
 
 - story: coping with change
   steps: 

@@ -51,6 +51,16 @@ nlu:
     - absolutely
     - absolutely right
     - certainly
+    - I'll try
+    - I'll do my best
+
+- intent: thanks
+  examples: |
+    - thanks
+    - tnks
+    - thank you
+    - thank you very much
+    - tq
 
 - intent: deny
   examples: |
@@ -157,14 +167,16 @@ nlu:
     - Today hasn't been the greatest.
     - I'm not in the mood for anything.
     - Feeling kind of down lately.
+    - I am disappointed
     - Things just don't seem to be going my way.
 
 - intent: mood_sad
   examples: |
     - my day was horrible
     - I am sad
-    - I am disappointed
+    - I'm a bit sad
     - I am depressed
+    - feeling a bit depressed
     - super sad
     - I'm so sad
     - I'm feeling sad

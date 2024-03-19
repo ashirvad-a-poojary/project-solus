@@ -30,6 +30,7 @@ intents:
 - no_motivation
 - flc
 - why_flc
+- thanks
 
 responses:
   utter_greet:
@@ -43,14 +44,12 @@ responses:
   - text: What happend my friend?
 
   utter_sad:
-    - text: Sorry to hear that. I'm sure it's very overwhelming for you. If you'd like to talk about what's on your mind, I'm here to listen.
-    - text: I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Please take good care of yourself.
-    - text: Remember, you're stronger than you think. You've overcome tough times before, and you can do it again.
-    - text: It's okay to not be okay. Give yourself permission to feel your emotions fully.
-    - text: You're not alone in this. Reach out to someone you trust and let them know how you're feeling.
-    - text: Sending you virtual hugs. Take things one step at a time, and remember to be kind to yourself.
-    - text: Even in the darkest moments, there's a glimmer of hope. Hang in there, brighter days are ahead.
-    - text: Allow yourself to feel what you're feeling. It's a sign that you're human. You'll get through this.
+  - text: Sorry to hear that. I'm sure it's very overwhelming for you. If you'd like to talk about what's on your mind, I'm here to listen.
+  - text: I'm deeply sorry to learn that you're facing a challenging time at the moment. Dealing with such pain can indeed feel overwhelming. It's crucial to allow yourself the necessary time and space to grieve and process your emotions. Seek comfort in the company of supportive friends and family, and don't hesitate to consider professional support if it could be beneficial. Please take good care of yourself.
+  - text: Remember, you're stronger than you think. You've overcome tough times before, and you can do it again.
+  - text: Sending you virtual hugs. Take things one step at a time, and remember to be kind to yourself.
+  - text: Even in the darkest moments, there's a glimmer of hope. Hang in there, brighter days are ahead.
+  - text: Allow yourself to feel what you're feeling. It's a sign that you're human. You'll get through this.
 
   utter_help:
   - text: Don't worry my friend. Its surely very hard for you dealing with all this. It's okay, take your time and you'll be alright soon.
@@ -192,9 +191,12 @@ responses:
   - text: Sometimes it helps to step back and take a break. You'll feel more refreshed and ready to tackle your challenges.
 
   utter_compliment:
-  - text: You're doing great! I'm proud of you for taking steps towards your goals.
-  - text: You have a lot of potential and I believe in you. Keep up the good work!
-  - text: You're an amazing person with so many talents and strengths. Don't forget that.
+  - text: Great! I'm proud that you are moving in a positive way.
+  - text: That's great. Keep it up my friend!
+
+  utter_thanks:
+  - text: Anytime my friend, I'm here for you always.
+  - text: No worries. I'm here for you anytime.
 
   utter_copong_with_change:
   - text: Change can be challenging, but it's also an opportunity for growth. Try to embrace the uncertainty and focus on what you can control.
