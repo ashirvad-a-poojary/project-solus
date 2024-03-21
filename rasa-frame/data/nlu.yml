@@ -388,6 +388,7 @@ nlu:
     - I don't know how much longer I can keep going.
     - Life feels unbearable right now.
     - I'm in so much pain, I can't handle it anymore.
+    - I think I should end myself
 
 - intent: worried
   examples: |
