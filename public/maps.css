@@ -96,6 +96,7 @@ body {
 
 .container h3{
   color: white;
+  font-size: 1.3rem;
   padding-left: 30px;
 }
 
@@ -108,4 +109,9 @@ body {
   font-size: 1.2rem;
   color: white;
  padding: 0 30px;
+}
+
+.links {
+  color: #ffb199; 
+  text-decoration: none; 
 }
