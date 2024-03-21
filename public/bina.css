@@ -201,7 +201,7 @@
     justify-self: center;
     height: 94vh;
     width: 100%;
-    background-image: url('./sculpture.jpeg');
+    background-image: url('./background/sculpture.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -209,7 +209,7 @@
   .container {
     position: absolute;
     justify-self: center;
-    max-height: 86vh;
+    max-height: 80vh;
     height: 100%;
     width: 100%;
     max-width: 60vw;
@@ -220,6 +220,7 @@
     margin: 23px auto;
     border-radius: 12px;
     padding: 34px;
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.4), 32px 0 64px -48px rgba(0, 0, 0, 0.4), -32px 0 64px -48px rgba(0, 0, 0, 0.4);
   }
 
@@ -263,7 +264,7 @@
     display: flex;
     background-color: white;
     color: black;
-    margin: 12px 0;
+    margin: 20px 0;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
@@ -285,7 +286,8 @@
 
 .songInfo{
     position: absolute;
-    left: 10vw;
+    bottom: 25vh;
+    margin-left: 25vw;
     font-family: 'Varela Round', sans-serif;
 }
 

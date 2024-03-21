@@ -195,7 +195,7 @@ section{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./forest.jpg');
+  background-image: url('./background/forest.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(1px);

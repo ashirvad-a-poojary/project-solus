@@ -167,7 +167,7 @@
   
   /* Main Content CSS */
   .main {
-    background-image: url('./white-abstract.jpg');
+    background-image: url('./background/white-abstract.jpg');
     background-size: cover;
     background-position: center;
   }

@@ -7,7 +7,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 .map iframe {
-  width: 100vw;
+  width: 75vw;
   height: 94vh;
 }
 
@@ -82,24 +82,30 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 30%;
+  width: 25vw;
+  border: solid #131313;
   background-color: white;
 }
 .container h1 {
   font-size: 2rem;
   color: black;
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.container h3{
+  color: black;
+  padding-left: 30px;
 }
 
 .container ul{
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 .container p{  
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: black;
  padding: 0 30px;
- text-align: center;
 }
