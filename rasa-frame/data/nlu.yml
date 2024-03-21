@@ -228,6 +228,12 @@ nlu:
     - I recently broke up
     - I recently broke up with my girlfriend
     - I recently broke up with my boyfriend
+    - she cheated on me
+    - he ceated on me
+    - she dumped me
+    - he dumped me
+    - she left me for someone else
+    - he left me for someone else
 
 - intent: close_ones_death
   examples: |
@@ -261,6 +267,11 @@ nlu:
     - My grandma passed away recently.
     - I lost my grandma recently.
     - It's been tough since my grandma passed away.
+    - my friend died
+    - he died
+    - she died
+    - I wish he didn't die
+    - I wish she didn't die
 
 - intent: mood_cry
   examples: |
@@ -289,6 +300,8 @@ nlu:
     - What is the reson of feeling this way?
     - What is the reson of feeling like this?
     - I'm struggling to know the cause of my emotions.
+    - I can't find a way out fo this
+    - I can't seem to find a way out
 
 - intent: problem_communicating
   examples: |
@@ -316,6 +329,10 @@ nlu:
     - It seems like I'm always the one left out.
     - Others don't seem to notice me.
     - I don't have anyone to rely on
+    - I can't rely one others
+    - can't rely on people
+    - people avoid me
+    - I'm avoided
     - Dont have anybody i can rally rely on
     - Feeling invisible lately, like no one acknowledges my presence.
     - I'm starting to think people intentionally ignore me.
@@ -395,16 +412,16 @@ nlu:
   examples: |
     - I'm committing suicide
     - I'll kill myself
-    - I will die
+    - will die
     - I feel like committing suicide
-    - I don't want to live
-    - I don't feel like living
-    - I want to end myself
+    - don't want to live
+    - don't feel like living
+    - want to end myself
     - I feel like ending myself
     - I want to commit suicide
     - I feel like I'm reaching my breaking point.
     - I'm overwhelmed with despair.
-    - I don't know how much longer I can keep going.
+    - don't know how much longer I can keep going.
     - Life feels unbearable right now.
     - I'm in so much pain, I can't handle it anymore.
     - I think I should end myself
@@ -483,6 +500,10 @@ nlu:
     - I'm not sure how to handle all these changes in my life
     - Every time something changes, I feel stressed out
     - I wish I could handle change better
+    - too much for me to take in right now
+    - Its just too much to take in
+    - too much going on
+    - hard to handle all this
     - I feel like I'm always behind when things change
     - Why do I feel so unsettled when things change suddenly?
     - How can I embrace change more gracefully?

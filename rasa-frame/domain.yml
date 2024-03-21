@@ -99,13 +99,8 @@ responses:
 
   utter_leftout:
   - text: Feeling left out or lonely can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
-  - text: It's understandable to feel left out or lonely sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
-  - text: You're not alone in experiencing feelings of loneliness. Many people go through similar emotions and understand what you're going through.
-  - text: Feeling ignored or left out can be difficult. Remember that your worth is not defined by others' actions. You deserve to be valued and included.
-  - text: Loneliness is a common human experience, but it's important to remember that you're not alone. Reach out to supportive friends or family members for connection and companionship.
-  - text: It's okay to feel lonely at times. Take this opportunity to engage in activities you enjoy or reach out to someone you trust for a chat.
-  - text: Feeling overlooked or left out can be challenging, but remember that your presence matters. Take steps to connect with others who appreciate and value you.
-  - text: Feeling lonely is a common experience, but it's important to take steps to address it. Consider joining clubs or groups where you can meet like-minded individuals.
+  - text: Feeling down and hopeless can be a sign that something needs attention, but it doesn't define you.  Everyone experiences challenges in life, and you have the strength to navigate through this difficult period.  There are resources available to help you understand your emotions and develop tools to cope with them.  Let's explore some options together and find a path towards feeling hopeful and fulfilled again.
+  - text: It's completely understandable to feel lost when you're experiencing sadness or hopelessness. These emotions can be overwhelming, and it's natural to wonder why you're feeling this way.  Remember, there's no shame in not having all the answers.  Many things can contribute to our emotional state, and sometimes it takes time and exploration to understand the root cause.  The important thing is to know that you're not alone, and there are definitely ways to move forward and feel better.
 
   utter_dont_suicide:
   - text: I'm deeply concerned to hear that you're feeling this way. Your safety is the most important thing right now. Please, if you're in immediate danger, call emergency services or a suicide hotline right away. You are not alone, and there are people who want to help you through this difficult time. You can also reach out to a trusted friend, family member, or mental health professional for support. Remember, there is hope and help available, and you deserve to receive support and care.
@@ -113,12 +108,8 @@ responses:
   - text: You're not alone in feeling this way, and there are people who can help you through this difficult time. It's important to reach out for support and talk to someone you trust about how you're feeling. Remember, there is hope for a brighter tomorrow, and you deserve to find happiness and fulfillment in life.
 
   utter_ask_feelings:
-  - text: It's completely normal to have questions about your feelings. I'm here to help you explore and understand them.
-  - text: Feeling this way can be tough, but it's okay to seek answers and support. Let's talk about it.
-  - text: Many people experience similar emotions and wonder about their causes. You're not alone in this journey.
-  - text: Understanding our emotions can sometimes be a complex process. Let's try to unpack your feelings together.
-  - text: It's brave of you to ask these questions. I'm here to provide guidance and support as you navigate your emotions.
-  - text: Exploring the reasons behind our feelings can be a meaningful step towards healing and growth. I'm here to support you every step of the way.
+  - text: It sounds like you're going through a tough time right now.  It's completely normal to wonder why you're feeling a certain way, especially if it's sadness, hopelessness, or depression.  There isn't always a single reason for how we feel, but there are definitely things that can help.
+  - text: It seems like you're questioning your emotions right now. Feeling down, hopeless, or even lost is completely understandable.  Life can throw curveballs, and it's natural to wonder what's causing these feelings.  Remember, there's help available, and we can explore ways to navigate this together.
   
   utter_therapist:
   - text: Seeking help from a therapist or professional can be beneficial for managing difficult emotions and experiences. Consider reaching out for support if you feel overwhelmed or stuck.
@@ -128,14 +119,14 @@ responses:
   - text: While therapy may not be the solution for everyone, many people find it helpful in managing stress, anxiety, depression, and other mental health concerns. It's worth exploring if you're open to it.
 
   utter_communicate:
-  - text: I understand. It's not uncommon to feel this way. If you ever want to talk, I'm here to listen.
   - text: Opening up can be challenging, but you're not alone. Take your time, and remember that it's okay to share when you're ready.
   - text: Communication can be difficult, especially when it comes to emotions. It's okay to take small steps at your own pace.
   - text: Feeling hesitant to communicate is understandable. Remember, there's no rush, and it's okay to reach out whenever you feel comfortable.
   
   utter_heartbreak:
-  - text: I'm truly sorry to hear that you're going through a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
-  
+  - text: I'm truly sorry to hear that you're going through such a difficult time right now. The pain can be overwhelming. It's important to give yourself the space to grieve and process your emotions. Surround yourself with supportive friends and family, and consider seeking professional help if needed. Remember that healing is a gradual process, and it's okay to take things one step at a time. Take care of yourself and prioritize your well-being during this challenging period.
+  - text: My deepest condolences for your heartbreak. It's a painful experience, and the weight of it can feel overwhelming.  Allow yourself to grieve and feel your emotions. Bottling things up won't help. Cry it out, talk to someone you trust, or express yourself creatively - whatever helps you process this difficult time.  Remember, healing is a journey, not a destination. Take things one day at a time and prioritize your well-being.
+
   utter_judged:
   - text: Feeling judged can be challenging. Remember that you have the right to express yourself authentically, and the opinions of others don't define your worth. Surround yourself with supportive individuals who accept you for who you are.
   - text: It's natural to feel judged at times, but it's important to remember that you're worthy of respect and understanding. Focus on being true to yourself and seek out non-judgmental people who appreciate you for who you are.
@@ -156,11 +147,8 @@ responses:
   - text: Keep calm and study on! Wish you all the success.
   
   utter_worried:
-  - text: Take a deep breath and focus.
-  - text: Try to relax and take it one step at a time.
-  - text: Remember, you're not alone in feeling this way.
-  - text: Let's take a moment to calm down together.
-  - text: You're stronger than you think. We'll get through this.
+  - text: Let's take a moment to calm down. You're stronger than you think. You will get through this, I believe in you my friend.
+  - text: This situation might feel tough right now, but you are capable of handling it. You are much stronger than you think, you can get through this.
 
   utter_joke:
   - text: Why don't scientists trust atoms? Because they make up everything!

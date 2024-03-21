@@ -19,6 +19,7 @@ stories:
   - action: utter_what
   - intent: loneliness
   - action: utter_leftout
+  - checkpoint: feeling_lonely
 
 - story: feeling leftout 2
   steps:
@@ -26,6 +27,17 @@ stories:
   - action: utter_sad
   - intent: loneliness
   - action: utter_leftout
+  - checkpoint: feeling_lonely
+
+- story: feeling lonely and ignored
+  steps:
+  - checkpoint: feeling_lonely
+  - intent: deny
+  - action: utter_help
+  - or:
+    - intent: thanks
+    - intent: affirm
+  - action: utter_thanks
 
 - story: close ones death 1
   steps:
@@ -115,6 +127,8 @@ stories:
   steps:
   - intent: distress
   - action: utter_dont_suicide
+  - intent: loneliness
+  - action: utter_leftout
   - intent: ask_professional
   - action: utter_therapist
 
@@ -129,6 +143,15 @@ stories:
 
 - story: preparing for exam 2
   steps:
+  - intent: exam
+  - action: utter_exam
+  - intent: no_motivation
+  - action: utter_motivate
+  - intent: worried
+  - action: utter_worried
+
+- story: preparing for exam 3
+  steps:
   - intent: worried
   - action: utter_what
   - intent: exam
@@ -138,15 +161,6 @@ stories:
   - action: utter_procrastination
   - intent: no_motivation
   - action: utter_motivate
-
-- story: preparing for exam 3
-  steps:
-  - intent: exam
-  - action: utter_exam
-  - intent: no_motivation
-  - action: utter_motivate
-  - intent: worried
-  - action: utter_worried
 
 - story: User feels judged and left out
   steps:
@@ -165,17 +179,10 @@ stories:
   - action: utter_ask_feelings
   - intent: deny
   - action: utter_communicate
-  - intent: affirm
+  - or:
+    - intent: thanks
+    - intent: affirm
   - action: utter_compliment
-
-- story: feeling lonely and ignored
-  steps:
-  - intent: loneliness
-  - action: utter_leftout
-  - intent: deny
-  - action: utter_help
-  - intent: thanks
-  - action: utter_thanks
 
 - story: feeling hopeless and wants to know if things get better
   steps:
@@ -185,7 +192,9 @@ stories:
   - action: utter_recover
   - intent: deny
   - action: utter_therapist
-  - intent: affirm
+  - or:
+    - intent: thanks
+    - intent: affirm
   - action: utter_compliment
 
 - story: user feeling stressed and unmotivated
@@ -196,7 +205,9 @@ stories:
   - action: utter_relax
   - intent: mood_unhappy
   - action: utter_motivate
-  - intent: affirm
+  - or:
+    - intent: thanks
+    - intent: affirm
   - action: utter_compliment
 
 - story: problem with procrastination
@@ -205,7 +216,9 @@ stories:
   - action: utter_procrastination
   - intent: no_motivation
   - action: utter_motivate
-  - intent: affirm
+  - or:
+    - intent: thanks
+    - intent: affirm
   - action: utter_compliment
 
 - story: coping with change
