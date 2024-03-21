@@ -12,6 +12,11 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: reply to "how are you"
+  steps:
+  - intent: howareyou
+  - action: utter_imfine
+
 - rule: telling a joke
   steps:
   - intent: jokes

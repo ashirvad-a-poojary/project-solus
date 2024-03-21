@@ -62,6 +62,23 @@ nlu:
     - thank you very much
     - tq
 
+- intent: howareyou
+  examples: |
+    - how are you?
+    - are you doing good?
+    - are you fine?
+    - How are you doing?
+    - are you doing great?
+    - are you well?
+    - are you good?
+    - is your day good?
+    - how is your day?
+    - how is today for you?
+    - how's today?
+    - doing good?
+    - you good?
+    - how you doing?
+
 - intent: deny
   examples: |
     - no
@@ -298,6 +315,8 @@ nlu:
     - I'm so lonely
     - It seems like I'm always the one left out.
     - Others don't seem to notice me.
+    - I don't have anyone to rely on
+    - Dont have anybody i can rally rely on
     - Feeling invisible lately, like no one acknowledges my presence.
     - I'm starting to think people intentionally ignore me.
     - Lonely again. What can I do about it?
@@ -402,6 +421,8 @@ nlu:
     - lot of stress
     - so much stress
     - feeling anxious
+    - It's too much to take in
+    - too much for me to handle
 
 - intent: exam
   examples: |

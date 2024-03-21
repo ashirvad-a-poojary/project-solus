@@ -31,6 +31,7 @@ intents:
 - flc
 - why_flc
 - thanks
+- howareyou
 
 responses:
   utter_greet:
@@ -70,7 +71,10 @@ responses:
   - text: Hey, I'm Solus, an AI assistant.
   - text: My name is Solus, an assistant for your support.
 
-  
+  utter_imfine:
+  - text: I'm doing great! Thanks for asking. How are you my friend?
+  - text: Good as always my friend. How are you today?
+
   utter_question:
   - text: What is it buddy?
   - text: Go ahead, ask me.
@@ -87,7 +91,6 @@ responses:
   - text: Struggling with feelings of worthlessness is tough, but you're not alone. Reach out to loved ones or a mental health professional for support and guidance.
   - text: It's okay to feel lost or useless at times. Remember that your worth isn't defined by productivity or achievements. Take small steps towards self-care and self-discovery.
 
-
   utter_recover:
   - text: It's normal to have doubts about the future, but remember that change is possible. Keep taking positive steps towards your well-being and believe in your ability to overcome challenges.
   - text: Recovery is a journey, and it's natural to wonder about the future. Stay hopeful and focus on the progress you've already made. With time and effort, things can improve.
@@ -95,16 +98,14 @@ responses:
   - text: It's okay to have doubts about the future, but try to stay hopeful and focus on the steps you can take to improve your situation. Recovery is possible, and you're not alone in your journey.
 
   utter_leftout:
-    - text: Feeling left out or lonely can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
-    - text: It's understandable to feel left out or lonely sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
-    - text: You're not alone in experiencing feelings of loneliness. Many people go through similar emotions and understand what you're going through.
-    - text: Feeling ignored or left out can be difficult. Remember that your worth is not defined by others' actions. You deserve to be valued and included.
-    - text: Loneliness is a common human experience, but it's important to remember that you're not alone. Reach out to supportive friends or family members for connection and companionship.
-    - text: It's okay to feel lonely at times. Take this opportunity to engage in activities you enjoy or reach out to someone you trust for a chat.
-    - text: Feeling overlooked or left out can be challenging, but remember that your presence matters. Take steps to connect with others who appreciate and value you.
-    - text: Loneliness is a temporary feeling that can be eased by reaching out to others, engaging in hobbies you enjoy, and practicing self-care.
-    - text: Remember that feeling lonely doesn't mean you're alone. Reach out to friends, family, or support groups for connection and understanding.
-    - text: Feeling lonely is a common experience, but it's important to take steps to address it. Consider joining clubs or groups where you can meet like-minded individuals.
+  - text: Feeling left out or lonely can be tough. Remember that your worth is not determined by others' actions. There are people who care about you and would love to spend time with you. You're not alone.
+  - text: It's understandable to feel left out or lonely sometimes. Try reaching out to people you trust and expressing how you feel. Building connections and engaging in activities you enjoy can help alleviate loneliness.
+  - text: You're not alone in experiencing feelings of loneliness. Many people go through similar emotions and understand what you're going through.
+  - text: Feeling ignored or left out can be difficult. Remember that your worth is not defined by others' actions. You deserve to be valued and included.
+  - text: Loneliness is a common human experience, but it's important to remember that you're not alone. Reach out to supportive friends or family members for connection and companionship.
+  - text: It's okay to feel lonely at times. Take this opportunity to engage in activities you enjoy or reach out to someone you trust for a chat.
+  - text: Feeling overlooked or left out can be challenging, but remember that your presence matters. Take steps to connect with others who appreciate and value you.
+  - text: Feeling lonely is a common experience, but it's important to take steps to address it. Consider joining clubs or groups where you can meet like-minded individuals.
 
   utter_dont_suicide:
   - text: I'm deeply concerned to hear that you're feeling this way. Your safety is the most important thing right now. Please, if you're in immediate danger, call emergency services or a suicide hotline right away. You are not alone, and there are people who want to help you through this difficult time. You can also reach out to a trusted friend, family member, or mental health professional for support. Remember, there is hope and help available, and you deserve to receive support and care.
@@ -172,9 +173,8 @@ responses:
   - text: SAD spelled backwards is DAS. And das not good.
 
   utter_not_satisfied:
-  - text: I'm sorry to hear that you're not satisfied. Can you tell me more about what's bothering you?
-  - text: It's understandable to feel frustrated when things don't go as planned. Let's see if we can find a solution together.
-  - text: I'm here to listen and help in any way I can. What can I do to make things better for you?
+  - text: I sense that you're experiencing discontentment, and I want to reassure you that it's completely normal to feel this way from time to time. It's important to validate your emotions and understand that they're valid. If you'd like to delve deeper into what's triggering your dissatisfaction or if there's a particular aspect of your life you'd like to discuss, I'm here to offer my support and lend an ear.
+  - text: I see that you're expressing a sense of dissatisfaction, and I want to acknowledge that it's okay to feel this way sometimes. It's essential to honor your feelings and recognize that they're valid. If you're comfortable sharing more about what's causing your dissatisfaction or if there's a specific area of your life you'd like to focus on, I'm here to listen and provide support.
 
   utter_motivate:
   - text: Finding motivation can be tough, but it's essential for achieving your goals. Surround yourself with positive influences, set clear objectives, and celebrate your progress along the way.
