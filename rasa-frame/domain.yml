@@ -138,13 +138,8 @@ responses:
   - text: During times of loss, it's important to lean on your support network. Allow yourself to grieve, and don't hesitate to seek professional help if needed. Remember that healing is a gradual process, and everyone copes in their own way and time. Take care of yourself during this difficult journey.
   
   utter_exam:
-  - text: Stay focused and keep studying! Good luck.
-  - text: You got this! Keep up the hard work. Best wishes!
-  - text: Take regular breaks to keep your mind fresh. Wishing you success!
-  - text: Believe in yourself and your abilities. Do well!
-  - text: Practice makes perfect. Keep practicing! Best of luck.
-  - text: Don't stress. Just do your best. Sending positive vibes!
-  - text: Keep calm and study on! Wish you all the success.
+  - text: Think of this exam as an exciting opportunity to showcase your understanding. Show off your knowledge! If you get stuck, take a moment to recollect your studies and approach the question from a different angle.  Believe in yourself and your ability to succeed. Sending positive vibes your way!
+  - text: Keep a steady pace with your studying, and don't forget to take care of yourself too. You're capable of doing great things, so stay confident and focused as you prepare for your exams. Sending encouragement and good vibes your way!
   
   utter_worried:
   - text: Let's take a moment to calm down. You're stronger than you think. You will get through this, I believe in you my friend.
