@@ -13,6 +13,22 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+- story: thanks affirm
+  steps:
+  - checkpoint: affirm_thanks
+  - or:
+    - intent: thanks
+    - intent: affirm
+  - action: utter_thanks
+
+- story: thanks comlipliment
+  steps:
+  - checkpoint: affirm_compliment
+  - or:
+    - intent: thanks
+    - intent: affirm
+  - action: utter_compliment
+
 - story: feeling leftout 1
   steps:
   - intent: mood_unhappy
@@ -34,10 +50,7 @@ stories:
   - checkpoint: feeling_lonely
   - intent: deny
   - action: utter_help
-  - or:
-    - intent: thanks
-    - intent: affirm
-  - action: utter_thanks
+  - checkpoint: affirm_thanks
 
 - story: close ones death 1
   steps:
@@ -179,10 +192,7 @@ stories:
   - action: utter_ask_feelings
   - intent: deny
   - action: utter_communicate
-  - or:
-    - intent: thanks
-    - intent: affirm
-  - action: utter_compliment
+  - checkpoint: affirm_compliment
 
 - story: feeling hopeless and wants to know if things get better
   steps:
@@ -192,10 +202,7 @@ stories:
   - action: utter_recover
   - intent: deny
   - action: utter_therapist
-  - or:
-    - intent: thanks
-    - intent: affirm
-  - action: utter_compliment
+  - checkpoint: affirm_compliment
 
 - story: user feeling stressed and unmotivated
   steps:
@@ -205,10 +212,7 @@ stories:
   - action: utter_relax
   - intent: mood_unhappy
   - action: utter_motivate
-  - or:
-    - intent: thanks
-    - intent: affirm
-  - action: utter_compliment
+  - checkpoint: affirm_compliment
 
 - story: problem with procrastination
   steps:
@@ -216,10 +220,7 @@ stories:
   - action: utter_procrastination
   - intent: no_motivation
   - action: utter_motivate
-  - or:
-    - intent: thanks
-    - intent: affirm
-  - action: utter_compliment
+  - checkpoint: affirm_compliment
 
 - story: coping with change
   steps: 
@@ -227,3 +228,4 @@ stories:
   - action: utter_question
   - intent: coping_with_change
   - action: utter_copong_with_change
+  - checkpoint: affirm_compliment
