@@ -110,6 +110,7 @@ stories:
   - action: utter_question
   - intent: problem_communicating
   - action: utter_communicate
+  - action: utter_worried
   - intent: loneliness
   - action: utter_leftout
 
@@ -119,6 +120,7 @@ stories:
   - action: utter_question
   - intent: problem_communicating
   - action: utter_communicate
+  - action: utter_worried
   - intent: judged
   - action: utter_judged
 
@@ -150,7 +152,7 @@ stories:
   - intent: exam
   - action: utter_exam
   - intent: worried
-  - action: utter_worried
+  - action: utter_relax
   - intent: no_motivation
   - action: utter_motivate
 
@@ -161,14 +163,14 @@ stories:
   - intent: no_motivation
   - action: utter_motivate
   - intent: worried
-  - action: utter_worried
+  - action: utter_relax
 
 - story: preparing for exam 3
   steps:
   - intent: worried
   - action: utter_what
   - intent: exam
-  - action: utter_worried
+  - action: utter_relax
   - action: utter_exam
   - intent: procrastination
   - action: utter_procrastination
