@@ -15,7 +15,7 @@ lemmatizer = WordNetLemmatizer()
 with open('intents.json', 'r') as file:
     intents = json.load(file)
 
-for intent in intents['nlu']:
+for intent in intents['intents']:
     for pattern in intent['patterns']:
         w = nltk.word_tokenize(pattern)
         words.extend(w)

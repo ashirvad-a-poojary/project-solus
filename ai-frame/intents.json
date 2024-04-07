@@ -1,5 +1,5 @@
 {
-    "nlu": [
+    "intents": [
       {
         "tag": "greet",
         "patterns": [
