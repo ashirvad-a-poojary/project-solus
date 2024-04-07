@@ -1,40 +1,57 @@
 import os
 import json
-import pickle
-import random
-import numpy as np
-import nltk
-from nltk.stem import WordNetLemmatizer
-from tensorflow.keras.optimizers import SGD
-from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.models import Sequential
+from difflib import get_close_matches
 
-nltk.download('punkt')
-nltk.download('wordnet')
-lemmatizer = WordNetLemmatizer()
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(base_dir, 'intents.json')
+def absolute_path(file_path: str) -> str:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_dir, file_path)
 
-if os.path.exists(file_path):
+def load_knowledge_base(file_path: str)  -> dict:
+    file_path = absolute_path(file_path)
+
     with open(file_path, 'r') as file:
-        intents = json.load(file)
-else:
-    raise FileNotFoundError("Could not find file intents.json in the directory")
+        data: dict = json.load(file)
+        return data
+
+def save_knowledge_base(file_path: str, data: dict):
+    file_path = absolute_path(file_path)
+
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=2)
+
+def find_best_match(user_intent: str, intents: list[str]) -> str | None:
+    matches: list = get_close_matches(user_intent, intents, n=1, cutoff=0.6)
+    return matches[0] if matches else None
+
+def get_answer_for_intent(intent: str, knowledge_base: dict) -> str | None:
+    for q in knowledge_base["intents"]:
+        if q["intent"] == intent:
+            return q["response"]   
+
+def chat_bot():
+    knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+
+    while True:
+        user_input: str = input('You: ')
+
+        if user_input.lower() == '/quit' or user_input.lower() == '/exit':
+            break
+
+        best_match: str | None = find_best_match(user_input, [q["intent"] for q in knowledge_base["intents"]])
+
+        if best_match:
+            response: str = get_answer_for_intent(best_match, knowledge_base)
+            print(f'Bot: {response}')
+        else:
+            print('Bot: I don\'t know the answer. Can you teach me?')
+            new_response: str = input('Type the answer or "/skip" to skip: ')
+
+            if new_response.lower() != "/skip":
+                knowledge_base["intents"].append({"intent": user_input, "response": new_response})
+                save_knowledge_base('knowledge_base.json', knowledge_base)
+                print('Bot: Thank you! I learned a new response!')
 
 
-for intent in intents['intents']:
-    for pattern in intent['patterns']:
-        w = nltk.word_tokenize(pattern)
-        words.extend(w)
-        documents.append((w, intent['tag']))
-
-        if intent['tag'] not in classes:
-            classes.append(intent['tag'])
-
-words = [
-  lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words
-]
-words = sorted(list(set(words)))
-
-classes = sorted(list(set(classes)))
+if __name__ == '__main__':
+    chat_bot()

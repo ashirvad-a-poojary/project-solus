@@ -2,7 +2,7 @@
     "intents": [
       {
         "tag": "greet",
-        "patterns": [
+        "intent": [
           "good morning",
           "good afternoon",
           "good evening",
@@ -31,7 +31,7 @@
       },
       {
         "tag": "goodbye",
-        "patterns": [
+        "intent": [
           "good bye",
           "see you later",
           "good night",
@@ -53,7 +53,7 @@
       },
       {
         "tag": "affirm",
-        "patterns": [
+        "intent": [
           "yes",
           "y",
           "indeed",
@@ -80,7 +80,7 @@
       },
       {
         "tag": "deny",
-        "patterns": [
+        "intent": [
           "no",
           "n",
           "never",
@@ -108,7 +108,7 @@
       },
       {
         "tag": "question",
-        "patterns": [
+        "intent": [
           "I have a question",
           "I want to ask a question",
           "I want to ask few questions",
@@ -130,7 +130,7 @@
       },
       {
         "tag": "mood_great",
-        "patterns": [
+        "intent": [
           "perfect",
           "great",
           "amazing",
@@ -168,7 +168,7 @@
       },
       {
         "tag": "issue",
-        "patterns": [
+        "intent": [
           "I'm having an issue",
           "I have an issue",
           "I got one issue",
@@ -192,7 +192,7 @@
       },
       {
         "tag": "mood_unhappy",
-        "patterns": [
+        "intent": [
           "my day was not good",
           "my day was bad",
           "I don't feel very well",
@@ -221,7 +221,7 @@
       },
       {
         "tag": "mood_sad",
-        "patterns": [
+        "intent": [
           "my day was horrible",
           "I am sad",
           "I am disappointed",
@@ -257,7 +257,7 @@
       },
       {
         "tag": "heartbreak",
-        "patterns": [
+        "intent": [
           "My heart got broken",
           "My girlfriend broke up with me",
           "My boyfriend broke up with me",
@@ -278,7 +278,7 @@
       },
       {
         "tag": "close_ones_death",
-        "patterns": [
+        "intent": [
           "My mom passed away recently",
           "I lost my mom recently",
           "It's been tough since my mom passed away",
@@ -317,7 +317,7 @@
       },
       {
         "tag": "mood_cry",
-        "patterns": [
+        "intent": [
           "I was crying",
           "I cired",
           "I'm crying",
@@ -336,7 +336,7 @@
       },
       {
         "tag": "ask_feelings",
-        "patterns": [
+        "intent": [
           "Why do I feel this way?",
           "Why do I feel like this?",
           "Is it normal to feel so hopeless and helpless?",
@@ -361,7 +361,7 @@
       },
       {
         "tag": "problem_communicating",
-        "patterns": [
+        "intent": [
           "It's very difficult for me to open up to people",
           "I find it difficult to open up with people",
           "I's hard for me to open up with people",
@@ -384,7 +384,7 @@
       },
       {
         "tag": "loneliness",
-        "patterns": [
+        "intent": [
           "I feel lonely",
           "I'm all alone",
           "No one understands me",
@@ -436,7 +436,7 @@
       },      
       {
         "tag": "judged",
-        "patterns": [
+        "intent": [
           "I feel judged",
           "people judge me when i share feelings",
           "people judge me when i share emotions",
@@ -456,7 +456,7 @@
       },
       {
         "tag": "ask_recover",
-        "patterns": [
+        "intent": [
           "Will I ever get better?",
           "Will things ever get brighter for me?",
           "Will I see improvement in my situation?",
@@ -480,7 +480,7 @@
       },
       {
         "tag": "life_meaning",
-        "patterns": [
+        "intent": [
           "What's the point of anything?",
           "Why can't I just be happy like everyone else?",
           "I can't find joy like others do?",
@@ -506,7 +506,7 @@
       },
       {
         "tag": "ask_professional",
-        "patterns": [
+        "intent": [
           "should I ask advice from a therapist?",
           "Is it good to go near a therapist?",
           "Do I need to go near therapist?",
@@ -528,7 +528,7 @@
       },
       {
         "tag": "distress",
-        "patterns": [
+        "intent": [
           "I'm committing suicide",
           "I'll kill myself",
           "I will die",
@@ -552,7 +552,7 @@
       },
       {
         "tag": "worried",
-        "patterns": [
+        "intent": [
           "I am worried",
           "It's making me worry",
           "I am worried a lot",
@@ -574,7 +574,7 @@
       },
       {
         "tag": "exam",
-        "patterns": [
+        "intent": [
           "I have exams",
           "I have examination",
           "exams are coming up",
@@ -597,7 +597,7 @@
       },
       {
         "tag": "jokes",
-        "patterns": [
+        "intent": [
           "tell me a joke",
           "say a joke",
           "make me laugh",
@@ -633,7 +633,7 @@
       },
       {
         "tag": "not_satisfied",
-        "patterns": [
+        "intent": [
             "I'm not satisfied",
             "This is not what I expected",
             "I'm disappointed",
@@ -647,8 +647,8 @@
         ]
       },
       {
-        "intent": "stress_management",
-        "patterns": [
+        "tag": "stress_management",
+        "intent": [
           "How can I reduce stress?",
           "Ways to cope with stress?",
           "I'm feeling stressed, what should I do?",
@@ -678,8 +678,8 @@
         ]
       },
       {
-        "intent": "coping_with_change",
-        "patterns": [
+        "tag": "coping_with_change",
+        "intent": [
           "I'm struggling with change",
           "How to adapt to new situations?",
           "Dealing with changes is hard for me",
@@ -707,8 +707,8 @@
         ]
       },
       {
-        "intent": "procrastination",
-        "patterns": [
+        "tag": "procrastination",
+        "intent": [
           "I always delay tasks until the last minute",
           "I wish I could stop putting things off all the time",
           "I always delay tasks until the last minute",
@@ -730,8 +730,8 @@
         ]
       },
       {
-        "intent": "no_motivation",
-        "patterns": [
+        "tag": "no_motivation",
+        "intent": [
           "I lack motivation",
           "How to stay motivated?",
           "I'm feeling demotivated and uninspired",
@@ -759,7 +759,7 @@
       },            
       {
         "tag": "bot_challenge",
-        "patterns": [
+        "intent": [
           "are you a bot?",
           "are you a human?",
           "am I talking to a bot?",
@@ -778,7 +778,7 @@
       },
       {
         "tag": "utter_motivate",
-        "patterns": [],
+        "intent": [],
         "responses": [
             "You got this! Keep pushing forward and don't give up.",
             "Believe in yourself and your abilities. You can do it!",
@@ -787,7 +787,7 @@
       },
       {
         "tag": "utter_relax",
-        "patterns": [],
+        "intent": [],
         "responses": [
             "Take a deep breath and try to relax. You deserve a break.",
             "It's important to take care of yourself and your mental health. Try to find some time to relax and unwind.",
@@ -796,7 +796,7 @@
       },
       {
         "tag": "utter_compliment",
-        "patterns": [],
+        "intent": [],
         "responses": [
             "You're doing great! I'm proud of you for taking steps towards your goals.",
             "You have a lot of potential and I believe in you. Keep up the good work!",
