@@ -1,7 +1,22 @@
 import os
 import json
-from difflib import get_close_matches
+import random
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.models import Sequential
+import numpy as np
+import pickle
+from nltk.stem import WordNetLemmatizer
+import nltk
 
+nltk.download('punkt')
+nltk.download('wordnet')
+lemmatizer = WordNetLemmatizer()
+
+words = ["h"]
+classes = ["tag"]
+documents = [(["Hi", "How", "are"], "tag")]
+ignore_words = ['?', '!', '*', "/", ",", '5', "("]
 
 def absolute_path(file_path: str) -> str:
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -14,44 +29,75 @@ def load_knowledge_base(file_path: str)  -> dict:
         data: dict = json.load(file)
         return data
 
-def save_knowledge_base(file_path: str, data: dict):
-    file_path = absolute_path(file_path)
+knowledge_base = load_knowledge_base('knowledge_base.json')
 
-    with open(file_path, 'w') as file:
-        json.dump(data, file, indent=2)
+for intent in knowledge_base['intents']:
+  for pattern in intent['patterns']:
+    w = nltk.word_tokenize(pattern)
+    words.extend(w)
+    documents.append((w, intent['tag']))
 
-def find_best_match(user_intent: str, intents: list[str]) -> str | None:
-    matches: list = get_close_matches(user_intent, intents, n=1, cutoff=0.6)
-    return matches[0] if matches else None
+    if intent['tag'] not in classes:
+      classes.append(intent['tag'])
 
-def get_answer_for_intent(intent: str, knowledge_base: dict) -> str | None:
-    for q in knowledge_base["intents"]:
-        if q["intent"] == intent:
-            return q["response"]   
+words = [
+  lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words
+]
+words = sorted(list(set(words)))
+classes = sorted(list(set(classes)))
 
-def chat_bot():
-    knowledge_base: dict = load_knowledge_base('knowledge_base.json')
-
-    while True:
-        user_input: str = input('You: ')
-
-        if user_input.lower() == '/quit' or user_input.lower() == '/exit':
-            break
-
-        best_match: str | None = find_best_match(user_input, [q["intent"] for q in knowledge_base["intents"]])
-
-        if best_match:
-            response: str = get_answer_for_intent(best_match, knowledge_base)
-            print(f'Bot: {response}')
-        else:
-            print('Bot: I don\'t know the answer. Can you teach me?')
-            new_response: str = input('Type the answer or "/skip" to skip: ')
-
-            if new_response.lower() != "/skip":
-                knowledge_base["intents"].append({"intent": user_input, "response": new_response})
-                save_knowledge_base('knowledge_base.json', knowledge_base)
-                print('Bot: Thank you! I learned a new response!')
+pickle.dump(words, open(absolute_path('words.pkl'), 'wb'))
+pickle.dump(classes, open(absolute_path('classes.pkl'), 'wb'))
 
 
-if __name__ == '__main__':
-    chat_bot()
+# initializing training data
+training = []
+output_empty = [0] * len(classes)
+for document in documents:
+  bag = []
+  pattern_words = document[0]
+  pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
+
+  for word in words:
+    if word in pattern_words:
+      bag.append(1)
+    else:
+      bag.append(0)
+
+  output_row = list(output_empty)
+  output_row[classes.index(document[1])] = 1
+
+  training.append([bag, output_row])
+
+random.shuffle(training)
+training = np.array(training)
+
+train_x = list(training[:, 0])
+train_y = list(training[:, 1])
+
+
+model = Sequential()
+model.add(Dense(128, input_shape=(len(train_x[0]), ), activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(len(train_y[0]), activation='softmax'))
+
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',
+              optimizer=sgd,
+              metrics=['accuracy'])
+
+
+hist = model.fit(np.array(train_x),
+                 np.array(train_y),
+                 epochs=10000,
+                 batch_size=100,
+                 verbose=2)
+model.save('bot.h5', hist)
+
+print("created")
