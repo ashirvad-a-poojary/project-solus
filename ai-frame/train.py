@@ -1,3 +1,4 @@
+import os
 import json
 import pickle
 import random
@@ -12,8 +13,15 @@ nltk.download('punkt')
 nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 
-with open('intents.json', 'r') as file:
-    intents = json.load(file)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(base_dir, 'intents.json')
+
+if os.path.exists(file_path):
+    with open(file_path, 'r') as file:
+        intents = json.load(file)
+else:
+    raise FileNotFoundError("Could not find file intents.json in the directory")
+
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
