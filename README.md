@@ -2,7 +2,7 @@
 SolusAI is a friendly AI companion which assists user with mental health support.
 
 ## NMAMIT Hackxpo
-This project idea was made for the Finite Loop Club's Hakxpo 2024 event.
+This project idea was made for Hakxpo 2024 event held by the Finite Loop Club.
 
 
 ### Running rasa server
