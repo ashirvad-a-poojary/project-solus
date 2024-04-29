@@ -1,0 +1,584 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - good morning
+    - good afternoon
+    - good evening
+    - hello
+    - yo
+    - hi
+    - sup
+    - hey
+    - hey there
+    - hey dude
+    - whatsup
+    - hi solus
+    - hello solus
+    - hey solus
+    - yo solus
+    - whatsup solus
+    - Hello
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - signing off
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - definitely 
+    - definitely
+    - definately right
+    - okay
+    - ok
+    - absolutely
+    - absolutely right
+    - certainly
+    - I'll try
+    - I'll do my best
+
+- intent: thanks
+  examples: |
+    - thanks
+    - tnks
+    - thank you
+    - thank you very much
+    - tq
+
+- intent: howareyou
+  examples: |
+    - how are you?
+    - are you doing good?
+    - are you fine?
+    - How are you doing?
+    - are you doing great?
+    - are you well?
+    - are you good?
+    - is your day good?
+    - how is your day?
+    - how is today for you?
+    - how's today?
+    - doing good?
+    - you good?
+    - how you doing?
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - I don't want to
+    - I won't
+    - I disagree
+    - I refuse
+    - Absolutely not
+    - Not at all
+    - No
+
+- intent: question
+  examples: |
+    - I have a question
+    - I want to ask a question
+    - I want to ask few questions
+    - I want ot ask something
+    - tell me this
+    - tell me one thing
+    - can I ask a question
+    - can I ask a few questions?
+    - can I ask something?
+    - I need to ask something
+    - I have a question for you
+    - answer this for me
+    - I need you to answer this for me
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - feeling like a queen
+    - feeling like a prince
+    - feeling like a princess 
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I'm happy
+    - I am happy
+    - I am very happy
+    - I'm feeling happy
+    - I am good
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - I'm fine
+    - fine
+    - so perfect
+    - I am feeling refreshed 
+    - I am feeling refreshed
+
+- intent: issue
+  examples: |
+    - I'm having an issue
+    - I have an issue
+    - I got one issue
+    - I'm having a problem
+    - I have a problem
+    - I'm facing a problem
+    - there is one issue
+    - there is one problem
+    - I encountered a problem
+    - I'm experiencing an issue
+    - There seems to be a problem
+    - I'm having trouble with something
+    - Can you help me with a problem?
+    - I need assistance with an issue
+    - There's an issue I need help with
+
+- intent: mood_unhappy
+  examples: |
+    - my day was not good
+    - my day was bad
+    - I don't feel very well
+    - I am not feeling good
+    - I'm feeling really down today.
+    - I am feeling down
+    - unhappy
+    - not good
+    - not very good
+    - I'm feeling a bit down
+    - I'm feeling somewhat unhappy
+    - I'm not in the best mood
+    - I'm feeling a little blue
+    - I'm feeling somewhat low
+    - I'm not feeling quite myself today
+    - I'm feeling a bit low today.
+    - Today hasn't been the greatest.
+    - I'm not in the mood for anything.
+    - Feeling kind of down lately.
+    - I am disappointed
+    - Things just don't seem to be going my way.
+
+- intent: mood_sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I'm a bit sad
+    - I am depressed
+    - feeling a bit depressed
+    - super sad
+    - I'm so sad
+    - I'm feeling sad
+    - sad
+    - I'm feeling very bad
+    - It's a bad time for me
+    - worst time for me
+    - very sad
+    - extremely sad
+    - sad right now
+    - depressed right now
+    - I feel utterly devastated
+    - I'm completely overwhelmed with sadness
+    - I can't shake this feeling of despair
+    - I'm at my lowest point emotionally
+    - I'm struggling to find any joy in anything
+    - I'm drowning in sorrow
+    - I'm feeling absolutely miserable
+    - I'm completely consumed by sadness
+
+- intent: heartbreak
+  examples: |
+    - My heart got broken
+    - My girlfriend broke up with me
+    - My boyfriend broke up with me
+    - I went through a breakup
+    - I had a breakup
+    - She broke my heart
+    - He broke my heart
+    - It was a heartbreak
+    - I broke up
+    - I recently broke up
+    - I recently broke up with my girlfriend
+    - I recently broke up with my boyfriend
+    - she cheated on me
+    - he ceated on me
+    - she dumped me
+    - he dumped me
+    - she left me for someone else
+    - he left me for someone else
+
+- intent: close_ones_death
+  examples: |
+    - My mom passed away recently
+    - I lost my mom recently
+    - It's been tough since my mom passed away
+    - my dad passed away recemtly
+    - I lost my dad recemtly
+    - It's been tough since my dad passed away
+    - My wife passed away recently
+    - I lost my wife recently
+    - It's been tough since my wife passed away
+    - my girlfriend passed away recemtly
+    - I lost my girlfriend recemtly
+    - It's been tough since my girlfriend passed away
+    - my girlfriend passed away recemtly
+    - I lost my boyfriend recemtly
+    - It's been tough since my boyfriend passed away
+    - my son passed away recemtly
+    - I lost my son recemtly
+    - It's been tough since my son passed away
+    - my daughter passed away recemtly
+    - I lost my daughter recemtly
+    - It's been tough since my daughter passed away
+    - My kid passed away recently.
+    - I lost my kid recently.
+    - It's been tough since my kid passed away.
+    - My grandpa passed away recently.
+    - I lost my grandpa recently.
+    - It's been tough since my grandpa passed away.
+    - My grandma passed away recently.
+    - I lost my grandma recently.
+    - It's been tough since my grandma passed away.
+    - my friend died
+    - he died
+    - she died
+    - I wish he didn't die
+    - I wish she didn't die
+
+- intent: mood_cry
+  examples: |
+    - I was crying
+    - I cired
+    - I'm crying
+    - I was about to cry
+    - I cried a lot
+    - that made me cry
+    - about to cry
+    - I was in tears
+    - my eyes teared up
+    - eyes were in tears
+
+- intent: ask_feelings
+  examples: |
+    - Why do I feel this way?
+    - Why do I feel like this?
+    - Is it normal to feel so hopeless and helpless?
+    - Is feeling hopeless normal?
+    - What's the purpose of my sadness?
+    - What causes my constant sadness?
+    - why am I always sad?
+    - why am I like this?
+    - why am I depressed?
+    - What is the reson of feeling this way?
+    - What is the reson of feeling like this?
+    - I'm struggling to know the cause of my emotions.
+    - I can't find a way out fo this
+    - I can't seem to find a way out
+
+- intent: problem_communicating
+  examples: |
+    - It's very difficult for me to open up to people
+    - I find it difficult to open up with people
+    - I's hard for me to open up with people
+    - It's very difficult for me to talk to people about my emotions
+    - It's very difficult for me to talk to people about my feelings
+    - I find it difficult to talk people about my feelings or emotions
+    - I find it difficult to talk people about my feelings or feelings
+    - I's hard for me to talk with people about my emotions
+    - I's hard for me to talk with people about my feelings
+    - I find it difficult to communicate
+    - I don't feel like communicating with others
+    - It's hard for me to communicate
+
+- intent: loneliness
+  examples: |
+    - I have been ignored a lot
+    - I'm ignored by people
+    - I'm being ignored
+    - I feel ignored by others
+    - It feels like I'm being left out
+    - I'm so lonely
+    - It seems like I'm always the one left out.
+    - Others don't seem to notice me.
+    - I don't have anyone to rely on
+    - I can't rely one others
+    - can't rely on people
+    - people avoid me
+    - I'm avoided
+    - Dont have anybody i can rally rely on
+    - Feeling invisible lately, like no one acknowledges my presence.
+    - I'm starting to think people intentionally ignore me.
+    - Lonely again. What can I do about it?
+    - It's like nobody pays attention to me.
+    - I'm often left out
+    - Feeling ignored by everyone
+    - Feeling ignored by others
+    - It seems people don't include me.
+    - I'm dealing with loneliness a lot
+    - I'm overlooked.
+    - so lonely
+    - left out
+    - people are going away from me
+    - people are staying away from me
+    - I feel like I'm avoided by others
+    - I'm being avoided
+    - my friends are starting to avoid me 
+
+- intent: judged
+  examples: |
+    - I feel judged
+    - people judge me when i share feelings
+    - people judge me when i share emotions
+    - I'm judged for sharing my feelings
+    - I'm judged for sharing my emotions
+    - It seems like everyone is constantly judging me.
+    - they judge me
+    - everyone judges me
+    - lot of people judge me
+
+- intent: ask_recover
+  examples: |
+    - Will I ever get better?
+    - Will things ever get brighter for me?
+    - Will I see improvement in my situation?
+    - I will be better right?
+    - Can things turn around for the better?
+    - will things change for me?
+    - will all this change?
+    - I will see change right?
+    - will things change?
+    - Will I overcome these challenges eventually?
+    - I'll be better eventually right?
+    - Eventually it will be better right?
+    - will it be better eventually?
+
+- intent: life_meaning
+  examples: |
+    - What's the point of anything?
+    - Why can't I just be happy like everyone else?
+    - I can't find joy like others do?
+    - Why does everything seem so meaningless?
+    - Is there any purpose to my existence?
+    - How do I find joy like others seem to?
+    - Why do I always have to struggle?
+    - Why am I always leftout?
+    - Can I discover a path to happiness?
+    - Is there a way to find purpose in life?
+    - my life feels pointless
+    - I feel like I'm useless
+
+- intent: ask_professional
+  examples: |
+    - should I ask advice from a therapist?
+    - Is it good to go near a therapist?
+    - Do I need to go near therapist?
+    - should I seek help from therapist?
+    - should I seek help from professional?
+    - Do I need professional help?
+    - can a therapist help me?
+    - Is going to a therapist recommended?
+    - does therapy really work?
+    - Should i go to therapy?
+
+- intent: distress
+  examples: |
+    - I'm committing suicide
+    - I'll kill myself
+    - will die
+    - I feel like committing suicide
+    - don't want to live
+    - don't feel like living
+    - want to end myself
+    - I feel like ending myself
+    - I want to commit suicide
+    - I feel like I'm reaching my breaking point.
+    - I'm overwhelmed with despair.
+    - don't know how much longer I can keep going.
+    - Life feels unbearable right now.
+    - I'm in so much pain, I can't handle it anymore.
+    - I think I should end myself
+
+- intent: worried
+  examples: |
+    - I am worried
+    - It's making me worry
+    - I am worried a lot
+    - very worried
+    - It is stressful
+    - I'm stressed
+    - very stressful
+    - lot of stress
+    - so much stress
+    - feeling anxious
+    - It's too much to take in
+    - too much for me to handle
+
+- intent: exam
+  examples: |
+    - I have exams
+    - I have examination
+    - exams are coming up
+    - preparing foe exam
+    - preparing for JEE exam
+    - preparing for NEET exam
+    - preparing for CET exam
+    - I'm preparing for entrance exam
+    - studiyinng for exams
+
+- intent: not_satisfied
+  examples: |
+    - that's not enough
+    - not satisfied
+    - not happy with it
+    - not enough
+    - that wont do much
+    - that wont cut it
+    - im am not convinced
+    - not enough to convince me
+    - too little
+
+- intent: jokes
+  examples: |
+    - tell me a joke
+    - say a joke
+    - make me laugh
+    - do you have any jokes?
+    - are you good at jokes?
+    - let me hear a joke
+    - tell me a joke
+    - say a joke
+    - make me laugh
+    - do you have any jokes?
+    - are you good at jokes?
+    - let me hear a joke
+    - I need a laugh
+    - I want to hear something funny
+    - Can you lighten the mood?
+    - Could you share something humorous?
+    - Can you crack a joke?
+    - Got any funny stories?
+    - Hit me with a punchline
+    - Got any comedy material?
+    - Can you tell something amusing?
+
+- intent: coping_with_change
+  examples: |
+    - I'm struggling with change
+    - How to adapt to new situations?
+    - Dealing with changes is hard for me
+    - I find it difficult to cope with unexpected changes
+    - Change makes me anxious
+    - I'm feeling overwhelmed by all the changes happening around me
+    - I'm not sure how to handle all these changes in my life
+    - Every time something changes, I feel stressed out
+    - I wish I could handle change better
+    - too much for me to take in right now
+    - Its just too much to take in
+    - too much going on
+    - hard to handle all this
+    - I feel like I'm always behind when things change
+    - Why do I feel so unsettled when things change suddenly?
+    - How can I embrace change more gracefully?
+    - I'm having a hard time adjusting to the recent changes at work
+    - What can I do to feel more comfortable with change?
+    - I'm worried about how I'll cope with upcoming changes in my life
+    - Change feels overwhelming, and I'm not sure how to manage it
+
+- intent: procrastination
+  examples: |
+    - I always delay tasks until the last minute
+    - I wish I could stop putting things off all the time
+    - I'm tired of feeling unproductive 
+    - I always delay tasks until the last minute
+    - Procrastination is getting in the way of my productivity
+    - I need help managing my time better
+    - Every time I try to start something, I end up leaving it for later
+    - Procrastination is making me feel guilty and stressed
+    - I wish I could stop putting things off all the time
+    - I'm tired of procrastinating and want to change
+    - How can I motivate myself to do things righ now instead of leaving it for later?
+    - I'm tired of feeling unproductive due to doing things at the last moment
+    - I keep everything for the last minute
+    - I keep doing things late
+
+- intent: no_motivation
+  examples: |
+    - I lack motivation
+    - How to stay motivated?
+    - I'm feeling demotivated and uninspired
+    - I'm struggling to find the motivation to pursue my goals
+    - I need some tips to stay motivated
+    - It's hard for me to stay focused and motivated
+    - I keep losing interest in the things I used to enjoy
+    - I want to maintain my motivation, but I don't know how
+    - I feel like I'm constantly in a rut and can't find the motivation to get out
+    - How can I reignite my passion and stay motivated?
+    - Why do I feel so apathetic lately?
+    - What can I do to stay enthusiastic about my goals?
+    - I feel like I'm stuck in a motivational slump
+    - I'm searching for ways to boost my motivation and drive
+    - How do I stay motivated when faced with obstacles?
+
+- intent: flc
+  examples: |
+    - which is the best club in nitte?
+    - best club in nmamit
+    - which club is the best one in nitte
+    - nitte's best club
+    - nmamit's greatest club
+    - greatest club in nitte
+    - whihc is the nmamit's greatest club
+    - which is the greatest club in nitte
+    
+- intent: why_flc
+  examples: |
+    - why flc?
+    - why finiteloop club?
+    - how is it best?
+    - why is it the best
+    - why flc is the greatest?
+    - why finiteloop club is the best?
+    - why finiteloop club is the greatest?
+    - How is it the best?
+    - How is finiteloop best?
+    - How is flc the best?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - are you an AI?
+    - what are you?
+    - what is your name?
+    - Who is this?
