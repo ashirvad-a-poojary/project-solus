@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_sad];
+2 [class="", fontsize=12, label=utter_leftout];
+4 [class="", fontsize=12, label=utter_sorry_for_death];
+5 [class="", fontsize=12, label=utter_cry];
+8 [class="", fontsize=12, label=utter_help];
+10 [class="", fontsize=12, label=utter_heartbreak];
+15 [class="", fontsize=12, label=utter_life_meaning];
+16 [class="", fontsize=12, label=utter_ask_feelings];
+17 [class="", fontsize=12, label=utter_question];
+18 [class="", fontsize=12, label=utter_life_meaning];
+19 [class="", fontsize=12, label=utter_recover];
+20 [class="", fontsize=12, label=utter_question];
+21 [class="", fontsize=12, label=utter_communicate];
+25 [class="", fontsize=12, label=utter_judged];
+26 [class="", fontsize=12, label=utter_therapist];
+27 [class="", fontsize=12, label=utter_dont_suicide];
+32 [class="", fontsize=12, label=utter_exam];
+33 [class="", fontsize=12, label=utter_worried];
+34 [class="", fontsize=12, label=utter_motivate];
+35 [class="", fontsize=12, label=utter_what];
+36 [class="", fontsize=12, label=utter_worried];
+37 [class="", fontsize=12, label=utter_exam];
+38 [class="", fontsize=12, label=utter_procrastination];
+41 [class="", fontsize=12, label=utter_motivate];
+42 [class="", fontsize=12, label=utter_worried];
+43 [class="", fontsize=12, label=utter_judged];
+44 [class="", fontsize=12, label=utter_leftout];
+45 [class="", fontsize=12, label=utter_not_satisfied];
+47 [class="", fontsize=12, label=utter_ask_feelings];
+48 [class="", fontsize=12, label=utter_communicate];
+49 [class="", fontsize=12, label=utter_compliment];
+50 [class="", fontsize=12, label=utter_leftout];
+51 [class="", fontsize=12, label=utter_help];
+52 [class="", fontsize=12, label=utter_thanks];
+53 [class="", fontsize=12, label=utter_what];
+54 [class="", fontsize=12, label=utter_recover];
+55 [class="", fontsize=12, label=utter_therapist];
+58 [class="", fontsize=12, label=utter_relax];
+59 [class="", fontsize=12, label=utter_motivate];
+65 [class="", fontsize=12, label=utter_copong_with_change];
+66 [class="", fontsize=12, label=utter_greet];
+68 [class="", fontsize=12, label=utter_happy];
+71 [class="", fontsize=12, label="..."];
+72 [class="", fontsize=12, label=utter_goodbye];
+74 [class="", fontsize=12, label=utter_iamabot];
+76 [class="", fontsize=12, label=utter_imfine];
+78 [class="", fontsize=12, label=utter_joke];
+80 [class="", fontsize=12, label=utter_flc];
+82 [class="", fontsize=12, label=utter_why_flc];
+83 [class=intent, fillcolor=lightblue, label="I am depressed", shape=rect, style=filled];
+84 [class=intent, fillcolor=lightblue, label="What's the point of anything?", shape=rect, style=filled];
+85 [class=intent, fillcolor=lightblue, label="I want ot ask something", shape=rect, style=filled];
+86 [class=intent, fillcolor=lightblue, label="I'm facing a problem", shape=rect, style=filled];
+87 [class=intent, fillcolor=lightblue, label="should I ask advice from a therapist?", shape=rect, style=filled];
+88 [class=intent, fillcolor=lightblue, label="I don't want to live", shape=rect, style=filled];
+89 [class=intent, fillcolor=lightblue, label="preparing foe exam", shape=rect, style=filled];
+90 [class=intent, fillcolor=lightblue, label="I'm stressed", shape=rect, style=filled];
+91 [class=intent, fillcolor=lightblue, label="It seems like everyone is constantly judging me.", shape=rect, style=filled];
+92 [class=intent, fillcolor=lightblue, label="Dont have anybody i can rally rely on", shape=rect, style=filled];
+93 [class=intent, fillcolor=lightblue, label="Today hasn't been the greatest.", shape=rect, style=filled];
+94 [class=intent, fillcolor=lightblue, label="hey there", shape=rect, style=filled];
+95 [class=intent, fillcolor=lightblue, label="Procrastination is making me feel guilty and stressed", shape=rect, style=filled];
+96 [class=intent, fillcolor=lightblue, label="left out", shape=rect, style=filled];
+97 [class=intent, fillcolor=lightblue, label="My mom passed away recently", shape=rect, style=filled];
+98 [class=intent, fillcolor=lightblue, label="I recently broke up with my girlfriend", shape=rect, style=filled];
+99 [class=intent, fillcolor=lightblue, label="why am I always sad?", shape=rect, style=filled];
+100 [class=intent, fillcolor=lightblue, label="eyes were in tears", shape=rect, style=filled];
+101 [class=intent, fillcolor=lightblue, label="I'm completely consumed by sadness", shape=rect, style=filled];
+102 [class=intent, fillcolor=lightblue, label="I cried a lot", shape=rect, style=filled];
+103 [class=intent, fillcolor=lightblue, label="I am depressed", shape=rect, style=filled];
+104 [class=intent, fillcolor=lightblue, label="What is the reson of feeling like this?", shape=rect, style=filled];
+105 [class=intent, fillcolor=lightblue, label="What's the point of anything?", shape=rect, style=filled];
+106 [class=intent, fillcolor=lightblue, label="I will be better right?", shape=rect, style=filled];
+107 [class=intent, fillcolor=lightblue, label="I's hard for me to open up with people", shape=rect, style=filled];
+108 [class=intent, fillcolor=lightblue, label="I'm struggling with change", shape=rect, style=filled];
+109 [class=intent, fillcolor=lightblue, label="so lonely", shape=rect, style=filled];
+110 [class=intent, fillcolor=lightblue, label="I feel judged", shape=rect, style=filled];
+111 [class=intent, fillcolor=lightblue, label="Why does everything seem so meaningless?", shape=rect, style=filled];
+112 [class=intent, fillcolor=lightblue, label="should I seek help from therapist?", shape=rect, style=filled];
+113 [class=intent, fillcolor=lightblue, label="lot of stress", shape=rect, style=filled];
+114 [class=intent, fillcolor=lightblue, label="I feel like I'm stuck in a motivational slump", shape=rect, style=filled];
+115 [class=intent, fillcolor=lightblue, label="I feel like I'm constantly in a rut and can't find the motivation to get out", shape=rect, style=filled];
+116 [class=intent, fillcolor=lightblue, label="studiyinng for exams", shape=rect, style=filled];
+117 [class=intent, fillcolor=lightblue, label="I keep everything for the last minute", shape=rect, style=filled];
+118 [class=intent, fillcolor=lightblue, label="How do I stay motivated when faced with obstacles?", shape=rect, style=filled];
+119 [class=intent, fillcolor=lightblue, label="I lack motivation", shape=rect, style=filled];
+120 [class=intent, fillcolor=lightblue, label="I am worried", shape=rect, style=filled];
+121 [class=intent, fillcolor=lightblue, label="Dont have anybody i can rally rely on", shape=rect, style=filled];
+122 [class=intent, fillcolor=lightblue, label="too little", shape=rect, style=filled];
+123 [class=intent, fillcolor=lightblue, label="I don't want to", shape=rect, style=filled];
+124 [class=intent, fillcolor=lightblue, label=ok, shape=rect, style=filled];
+125 [class=intent, fillcolor=lightblue, label="don't like that", shape=rect, style=filled];
+126 [class=intent, fillcolor=lightblue, label="thank you very much", shape=rect, style=filled];
+127 [class=intent, fillcolor=lightblue, label="Will I ever get better?", shape=rect, style=filled];
+128 [class=intent, fillcolor=lightblue, label="very worried", shape=rect, style=filled];
+129 [class=intent, fillcolor=lightblue, label="I'm ignored by people", shape=rect, style=filled];
+130 [class=intent, fillcolor=lightblue, label=nah, shape=rect, style=filled];
+131 [class=intent, fillcolor=lightblue, label="definately right", shape=rect, style=filled];
+132 [class=intent, fillcolor=lightblue, label="my day was bad", shape=rect, style=filled];
+133 [class=intent, fillcolor=lightblue, label=yes, shape=rect, style=filled];
+134 [class=intent, fillcolor=lightblue, label=amazing, shape=rect, style=filled];
+135 [class=intent, fillcolor=lightblue, label="see you later", shape=rect, style=filled];
+136 [class=intent, fillcolor=lightblue, label="are you a bot?", shape=rect, style=filled];
+137 [class=intent, fillcolor=lightblue, label="how is today for you?", shape=rect, style=filled];
+138 [class=intent, fillcolor=lightblue, label="I need a laugh", shape=rect, style=filled];
+139 [class=intent, fillcolor=lightblue, label="which is the greatest club in nitte", shape=rect, style=filled];
+140 [class=intent, fillcolor=lightblue, label="why is it the best", shape=rect, style=filled];
+0 -> 71  [class="", key=NONE, label=""];
+0 -> 83  [class="", key=0];
+0 -> 84  [class="", key=0];
+0 -> 85  [class="", key=0];
+0 -> 86  [class="", key=0];
+0 -> 87  [class="", key=0];
+0 -> 88  [class="", key=0];
+0 -> 89  [class="", key=0];
+0 -> 90  [class="", key=0];
+0 -> 91  [class="", key=0];
+0 -> 92  [class="", key=0];
+0 -> 93  [class="", key=0];
+0 -> 94  [class="", key=0];
+0 -> 95  [class="", key=0];
+1 -> 96  [class="", key=0];
+1 -> 97  [class="", key=0];
+1 -> 98  [class="", key=0];
+1 -> 99  [class="", key=0];
+2 -> "-1"  [class="", key=NONE, label=""];
+4 -> 100  [class="", key=0];
+4 -> 101  [class="", key=0];
+5 -> "-1"  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+10 -> 102  [class="", key=0];
+10 -> 103  [class="", key=0];
+15 -> 104  [class="", key=0];
+16 -> "-1"  [class="", key=NONE, label=""];
+17 -> 105  [class="", key=0];
+18 -> 106  [class="", key=0];
+19 -> "-1"  [class="", key=NONE, label=""];
+20 -> 107  [class="", key=0];
+20 -> 108  [class="", key=0];
+21 -> 109  [class="", key=0];
+21 -> 110  [class="", key=0];
+25 -> "-1"  [class="", key=NONE, label=""];
+26 -> "-1"  [class="", key=NONE, label=""];
+27 -> 111  [class="", key=0];
+27 -> 112  [class="", key=0];
+32 -> 113  [class="", key=0];
+32 -> 114  [class="", key=0];
+33 -> 115  [class="", key=0];
+34 -> "-1"  [class="", key=NONE, label=""];
+35 -> 116  [class="", key=0];
+36 -> 37  [class="", key=NONE, label=""];
+37 -> 117  [class="", key=0];
+38 -> 118  [class="", key=0];
+38 -> 119  [class="", key=0];
+41 -> 120  [class="", key=0];
+42 -> "-1"  [class="", key=NONE, label=""];
+43 -> 121  [class="", key=0];
+44 -> 122  [class="", key=0];
+45 -> "-1"  [class="", key=NONE, label=""];
+47 -> 123  [class="", key=0];
+48 -> 124  [class="", key=0];
+49 -> "-1"  [class="", key=NONE, label=""];
+50 -> 125  [class="", key=0];
+51 -> 126  [class="", key=0];
+52 -> "-1"  [class="", key=NONE, label=""];
+53 -> 127  [class="", key=0];
+53 -> 128  [class="", key=0];
+53 -> 129  [class="", key=0];
+54 -> 130  [class="", key=0];
+55 -> 131  [class="", key=0];
+58 -> 132  [class="", key=0];
+59 -> 133  [class="", key=0];
+65 -> "-1"  [class="", key=NONE, label=""];
+66 -> "-1"  [class="", key=NONE, label=""];
+66 -> 134  [class="", key=0];
+68 -> "-1"  [class="", key=NONE, label=""];
+71 -> 135  [class="", key=0];
+71 -> 136  [class="", key=0];
+71 -> 137  [class="", key=0];
+71 -> 138  [class="", key=0];
+71 -> 139  [class="", key=0];
+71 -> 140  [class="", key=0];
+72 -> "-1"  [class="", key=NONE, label=""];
+74 -> "-1"  [class="", key=NONE, label=""];
+76 -> "-1"  [class="", key=NONE, label=""];
+78 -> "-1"  [class="", key=NONE, label=""];
+80 -> "-1"  [class="", key=NONE, label=""];
+82 -> "-1"  [class="", key=NONE, label=""];
+83 -> 1  [class="", key=0];
+84 -> 15  [class="", key=0];
+85 -> 17  [class="", key=0];
+86 -> 20  [class="", key=0];
+87 -> 26  [class="", key=0];
+88 -> 27  [class="", key=0];
+89 -> 32  [class="", key=0];
+90 -> 35  [class="", key=0];
+91 -> 43  [class="", key=0];
+92 -> 50  [class="", key=0];
+93 -> 53  [class="", key=0];
+94 -> 66  [class="", key=0];
+95 -> 38  [class="", key=0];
+96 -> 2  [class="", key=0];
+97 -> 4  [class="", key=0];
+98 -> 10  [class="", key=0];
+99 -> 47  [class="", key=0];
+100 -> 5  [class="", key=0];
+101 -> 8  [class="", key=0];
+102 -> 5  [class="", key=0];
+103 -> 8  [class="", key=0];
+104 -> 16  [class="", key=0];
+105 -> 18  [class="", key=0];
+106 -> 19  [class="", key=0];
+107 -> 21  [class="", key=0];
+108 -> 65  [class="", key=0];
+109 -> 2  [class="", key=0];
+110 -> 25  [class="", key=0];
+111 -> 15  [class="", key=0];
+112 -> 26  [class="", key=0];
+113 -> 33  [class="", key=0];
+114 -> 41  [class="", key=0];
+115 -> 34  [class="", key=0];
+116 -> 36  [class="", key=0];
+117 -> 38  [class="", key=0];
+118 -> 34  [class="", key=0];
+119 -> 59  [class="", key=0];
+120 -> 42  [class="", key=0];
+121 -> 44  [class="", key=0];
+122 -> 45  [class="", key=0];
+123 -> 48  [class="", key=0];
+124 -> 49  [class="", key=0];
+125 -> 51  [class="", key=0];
+126 -> 52  [class="", key=0];
+127 -> 54  [class="", key=0];
+128 -> 58  [class="", key=0];
+129 -> 2  [class="", key=0];
+130 -> 55  [class="", key=0];
+131 -> 49  [class="", key=0];
+132 -> 59  [class="", key=0];
+133 -> 49  [class="", key=0];
+134 -> 68  [class="", key=0];
+135 -> 72  [class="", key=0];
+136 -> 74  [class="", key=0];
+137 -> 76  [class="", key=0];
+138 -> 78  [class="", key=0];
+139 -> 80  [class="", key=0];
+140 -> 82  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>
