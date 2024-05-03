@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputField = document.querySelector('.chat-input textarea');
     const sendButton = document.getElementById('send-btn');
 
-    // Function to send user message to Rasa
     const sendUserMessage = async (message) => {
         try {
             const response = await axios.post('http://localhost:5005/webhooks/rest/webhook', {
