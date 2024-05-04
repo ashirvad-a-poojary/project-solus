@@ -1,8 +1,8 @@
 # project-solus
 SolusAI is a friendly AI companion which assists user with mental health support.
 
-## NMAMIT Hackxpo
-This project idea was made for Hakxpo 2024 event held by the Finite Loop Club.
+## NMAMIT HackXpo
+This project idea was made for HackXpo 2024 event held by the Finite Loop Club.
 
 
 ### This was built exclusively for HackXpo '24
